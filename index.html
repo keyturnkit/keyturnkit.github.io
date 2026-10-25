@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyturn Kit: license keys for paid Chrome extensions</title>
+<meta name="description" content="A WXT + React starter that checks Lemon Squeezy, Polar or Dodo license keys from your Chrome extension. No server, no secret key. Free MIT edition, Pro $59 one-time.">
+<style>
+  :root {
+    --bg: #fbfbf9; --fg: #1c1c1a; --muted: #5d5d58; --line: #e3e2dc;
+    --code-bg: #f1f0ea; --accent: #1f6f4a; --accent-fg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #151614; --fg: #e9e8e2; --muted: #a3a29b; --line: #2e2f2b; --code-bg: #1e201d; --accent: #4fb386; --accent-fg: #0d1a13; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 16px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.35rem; margin: 56px 0 12px; }
+  h3 { font-size: 1.05rem; margin: 24px 0 4px; }
+  p { margin: 0 0 14px; }
+  .lede { font-size: 1.15rem; color: var(--muted); }
+  a { color: var(--accent); }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 8px; }
+  .btn { display: inline-block; padding: 11px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--accent-fg); }
+  .btn.secondary { color: var(--accent); }
+  .small { font-size: 0.9rem; color: var(--muted); }
+  pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-size: 0.86rem; line-height: 1.5; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  p code, li code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  ol, ul { padding-left: 1.3em; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; }
+  td.c, th.c { text-align: center; width: 90px; }
+  details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { margin-top: 8px; }
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); }
+  @media (max-width: 520px) { h1 { font-size: 1.7rem; } body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Charge for your Chrome extension without running a server</h1>
+  <p class="lede">Keyturn Kit is a WXT + React starter that checks license keys from Lemon Squeezy, Polar or Dodo Payments straight from the extension. Your payment provider takes the money. The kit handles keys, offline use and locking Pro when a key is disabled.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
+    <a class="btn secondary" href="/guides/license-keys-chrome-extension/">Read the guide</a>
+  </div>
+  <p class="small">The free edition is MIT licensed and works with Lemon Squeezy on its own. Keyturn Kit Pro ($59, one-time) goes on sale here shortly.</p>
+
+  <h2>Why this exists</h2>
+  <p>Google wound down Chrome Web Store payments between 2020 and early 2021. Since then every paid extension has needed its own checkout, its own way of knowing who paid, and some protection against one key being shared with a whole Discord server.</p>
+  <p>Most guides answer that with user accounts and a backend. For an extension that sells for $5 to $30, that is a database, auth and a privacy policy you didn't need. License keys skip all of it: the provider emails a key, the user pastes it once, the extension checks it against the provider's public API.</p>
+
+  <h2>What it looks like in your code</h2>
+<pre><code>// Hide a feature from free users
+&lt;ProGate&gt;
+  &lt;BulkExport /&gt;
+&lt;/ProGate&gt;
+
+// Or check in code
+if (await license.isPro()) { ... }
+
+// Pro edition: 7-day trial, then 3 free exports a day
+const r = await access.check('export');
+if (!r.allowed) return showUpgrade(r.reason);
+await doExport();
+await access.use('export');</code></pre>
+
+  <h2>What happens after someone pays</h2>
+  <ol>
+    <li>They click Upgrade and pay on your provider's hosted checkout.</li>
+    <li>The provider emails them a license key.</li>
+    <li>They paste it into your popup. The extension activates it. No API key ships in the extension.</li>
+    <li>Once a day the extension re-checks the key. Keys the provider reports as disabled or expired lock Pro on the next check. If the provider can't be reached, Pro keeps working for 7 days after the last good check.</li>
+  </ol>
+  <p>Keys from other stores are rejected by store, organization or business id. Without that check, any key bought from any seller on the same provider would turn your Pro features on.</p>
+
+  <h2>Free and Pro</h2>
+  <table>
+    <thead><tr><th></th><th class="c">Free</th><th class="c">Pro</th></tr></thead>
+    <tbody>
+      <tr><td>Lemon Squeezy license keys, daily re-check, 7-day offline grace</td><td class="c">yes</td><td class="c">yes</td></tr>
+      <tr><td><code>ProGate</code>, license box, license settings page</td><td class="c">yes</td><td class="c">yes</td></tr>
+      <tr><td>Tests with mocked network calls</td><td class="c">15</td><td class="c">28</td></tr>
+      <tr><td>Polar and Dodo Payments, switched with one line</td><td class="c"></td><td class="c">yes</td></tr>
+      <tr><td>Free trial counted from install</td><td class="c"></td><td class="c">yes</td></tr>
+      <tr><td>Daily free uses per feature before the paywall</td><td class="c"></td><td class="c">yes</td></tr>
+      <tr><td>AGENTS.md for Claude Code and Cursor</td><td class="c"></td><td class="c">yes</td></tr>
+      <tr><td>License</td><td class="c">MIT</td><td class="c">your own extensions, unlimited</td></tr>
+    </tbody>
+  </table>
+  <p>Pro is $59 once, delivered as a zip download with a license key, with every 1.x update. If it doesn't work for you, email within 14 days for a full refund.</p>
+
+  <h2>Guides</h2>
+  <ul>
+    <li><a href="/guides/license-keys-chrome-extension/">Selling a Chrome extension with license keys, no backend</a></li>
+  </ul>
+
+  <h2>Questions</h2>
+  <details>
+    <summary>Can someone crack it?</summary>
+    <p>Yes. Anything checked inside an extension can be patched by a determined person. What the kit stops is a key being shared past the activation limit you set, and a key you've disabled continuing to work. If you need more than that, put the valuable part on a server and gate that.</p>
+  </details>
+  <details>
+    <summary>Does it work in Firefox?</summary>
+    <p>WXT builds a Firefox version with <code>npm run zip:firefox</code>. We have tested Chrome only so far, so treat Firefox as untested.</p>
+  </details>
+  <details>
+    <summary>Why not ExtensionPay?</summary>
+    <p>ExtensionPay is a good hosted service built on Stripe, with its own login and a 5% fee on top of Stripe's. Keyturn Kit is code you own, with no extra fee, and it works with merchant-of-record providers that handle sales tax for you. If you'd rather not touch code, ExtensionPay is the easier choice.</p>
+  </details>
+  <details>
+    <summary>Do I need a backend?</summary>
+    <p>No. Lemon Squeezy, Polar and Dodo all have license endpoints that are meant to be called from client apps without a secret. Creem isn't supported because its license API needs a secret key.</p>
+  </details>
+  <details>
+    <summary>What happens when I refund someone?</summary>
+    <p>Disable their key in your provider's dashboard. The extension locks Pro at its next daily check. We don't promise that a refund disables the key on its own, because not every provider documents that.</p>
+  </details>
+
+  <footer>
+    Keyturn Kit. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
