@@ -178,6 +178,8 @@ Lemon Squeezy has a test mode with test cards. Buy your own product in test mode
 
 If you plan to refund customers, try a refund in test mode as well and see what it does to the key. Don't assume a refund disables it.
 
+Test mode and live mode are separate in Lemon Squeezy. When you go live, the product is copied to live mode with a new ID and a new checkout link. If your extension checks the product ID, update it before you publish, or every real customer's key fails the check.
+
 ## The longer version
 
 Keyturn Kit's free edition (MIT) is this same approach with React components, a settings page and tests with a mocked `fetch`: https://github.com/keyturnkit/keyturn-kit
