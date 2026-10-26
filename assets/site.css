@@ -60,7 +60,7 @@ h1, h2, h3 { line-height: 1.1; }
 .nav a:not(.btn):hover { color: var(--ink); }
 
 /* Buttons: brass is only for the one action that costs money or starts the thing. */
-.btn { display: inline-flex; align-items: center; justify-content: center; height: 48px; padding: 0 22px; border-radius: 6px; font: 600 16px/1 inherit; font-family: inherit; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+.btn { white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; height: 48px; padding: 0 22px; border-radius: 6px; font: 600 16px/1 inherit; font-family: inherit; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
 .btn-primary { background: var(--brass); color: var(--brass-ink); }
 .btn-primary:hover { background: var(--brass-deep); color: var(--paper); }
 .btn-ghost { border-color: var(--ink); color: var(--ink); background: transparent; }
@@ -183,6 +183,7 @@ pre.file .n { color: #8fd19e; }
   .site-header .wrap { height: 60px; }
   .nav { gap: 16px; }
   .nav a:not(.btn) { display: none; }
+  .brand { font-size: 16px; line-height: 1.15; }
   .hero { padding: 48px 0 64px; }
   .lede { font-size: 18px; }
   .section { padding: 64px 0; }
