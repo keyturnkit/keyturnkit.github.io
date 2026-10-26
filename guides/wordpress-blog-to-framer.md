@@ -45,6 +45,10 @@ Two catches:
 - *PostPort* by Luke Sn reads the export file for $39 one-time. Every post arrives as a draft, authors and tags come in as text, and you pick image files from your computer to upload.
 - [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours) reads the export file or the live site. It brings drafts from the export file, turns authors, categories and tags into linked collections, copies images into Framer, and adds redirects on Framer Pro or higher. It is free for your newest 25 posts; a $29 per-project license for the rest is coming. It doesn't do custom post types or WooCommerce.
 
+![Blog Import reading a Squarespace export: 9 posts, 1 draft, 2 authors, 4 categories, 6 tags, with options for redirects and copying images](/guides/img/blog-import-review.jpg)
+
+![The imported blog in Framer CMS: a Journal collection with linked Authors, Categories and Tags collections](/guides/img/blog-import-collections.jpg)
+
 Pick by what you have. A site that keeps running, with custom post types, fits WP Sync or Sillyweb WP Sync, and both cost nothing. A blog you're closing, where you want drafts, linked authors and categories, and redirects, fits a one-time import from the file.
 
 ## Keep your old links working
