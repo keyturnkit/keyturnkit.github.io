@@ -54,7 +54,8 @@ document.addEventListener('click', (e) => {
 
 // Let the host page size the frame to the popup, so no scrollbar shows.
 addEventListener('DOMContentLoaded', () => {
-  const report = () => parent.postMessage({ keyturnDemoHeight: document.documentElement.scrollHeight }, location.origin);
+  // body height follows the content in both directions; documentElement.scrollHeight can never drop below the frame height
+  const report = () => parent.postMessage({ keyturnDemoHeight: Math.ceil(document.body.getBoundingClientRect().height) }, location.origin);
   new ResizeObserver(report).observe(document.body);
   report();
 });

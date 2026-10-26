@@ -336,3 +336,9 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
 .works ul { background: #f7f7f9; border-radius: 12px; padding: 8px 16px; align-items: center; justify-content: center; }
 .works li img.lg-dodo { height: 34px; }
 @media (max-width: 1023px) { .works ul { justify-content: flex-start; } .works li img.lg-dodo { margin-left: -10px; } }
+
+/* Round 8: run video in the Gate a feature slot */
+.vid { width: 100%; max-width: 448px; }
+.vid video { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--m4); background: var(--m2); }
+.vid figcaption { margin-top: 8px; font-size: 14px; line-height: 20px; color: var(--m10); }
+@media (min-width: 1280px) { .rev .vid { max-width: 600px; margin-right: -152px; } }

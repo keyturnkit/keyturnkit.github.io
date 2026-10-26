@@ -92,7 +92,7 @@
       <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><div class="win-addr"><div class="addr">your-extension.example</div><span class="ext-btn"></span></div></div>
       <div class="win-body">
         <div class="skel" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-        <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
+        <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=4" scrolling="no" title="The free edition's popup, running in this page"></iframe>
       </div>
     </div>
   </div>
@@ -121,17 +121,12 @@
           </div>
           <div class="fbody">
             <div class="fmock">
-              <div class="shell code-shell">
-                <div class="bar"><span class="tab">lib/config.ts</span></div>
-                <div class="codewrap">
-                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
-                  <pre class="code"><span class="l">lemonsqueezy: {</span>
-<span class="l">  storeId: 0,</span>
-<span class="l">},</span>
-<span class="l">recheckHours: 24,</span>
-<span class="l">offlineGraceDays: 7,</span></pre>
-                </div>
-              </div>
+              <figure class="vid">
+                <video autoplay muted loop playsinline preload="metadata" poster="/assets/shots/chrome-1-locked.png" width="720" height="492" aria-label="The free edition's popup in a Chrome window: a key is typed, Activate is pressed and the Pro feature unlocks.">
+                  <source src="/assets/shots/popup-run.mp4" type="video/mp4">
+                </video>
+                <figcaption>The free edition's popup, rendered from its build, in a drawn Chrome window.</figcaption>
+              </figure>
             </div>
             <div class="fcards">
               <div class="card"><h4>ProGate or isPro()</h4><p>Wrap a component in ProGate, as in the window above, or call license.isPro() in your own code.</p></div>
@@ -335,6 +330,9 @@
     if (!e.data.keyturnDemo) return;
     note.textContent = said[e.data.keyturnDemo] || '';
   });
+
+  var vv = document.querySelector('.vid video');
+  if (vv && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { vv.removeAttribute('autoplay'); vv.pause(); }
 
   var burger = document.querySelector('.burger');
   var top = document.querySelector('header.top');
