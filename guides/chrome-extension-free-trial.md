@@ -43,7 +43,7 @@ The free uses matter more than they look. A trial that ends with everything lock
 
 **Reinstalling.** Chrome clears `storage.local` when an extension is removed, so a reinstall starts a fresh trial. We accept that: it costs the user their settings and any key they activated each time, and most people don't bother.
 
-**Editing storage.** Anyone with DevTools can change the stored install time or the counters. Like any check that runs on the user's machine, the trial is a fence, not a lock. If a feature is valuable enough that people will patch your extension for it, it belongs on a server.
+**Editing storage.** Anyone with DevTools can change the stored install time or the counters. Like any check that runs on the user's machine, the trial only stops casual use. If a feature is valuable enough that people will patch your extension for it, it belongs on a server.
 
 **Changing the clock.** Moving the system clock back extends the trial. Same answer: possible, rare, not worth a server for an extension that sells for a few dollars.
 
