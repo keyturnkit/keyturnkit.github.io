@@ -20,27 +20,28 @@
 </head>
 <body>
 {% assign framer = false %}{% if page.og_image == '/og-blog-import.png' %}{% assign framer = true %}{% endif %}
-<!-- Icons: Lucide (ISC License), key-round, arrow-right. -->
+<!-- Icons: Lucide (ISC License), key-round, import, arrow-right. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
 </svg>
 
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>
+    {% if framer %}<a class="brand" href="/blog-import/"><span class="brand-mark"><svg><use href="#i-import"/></svg></span>Blog Import for Framer</a>{% else %}<a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>{% endif %}
     <nav class="nav">
-      <a href="/#guides">Guides</a>
+      <a href="{% if framer %}/blog-import/#guides{% else %}/#guides{% endif %}">Guides</a>
       {% unless framer %}<a href="/#pricing">Pricing</a>
       <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>{% endunless %}
-      {% if framer %}<a class="btn btn-primary btn-sm" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Blog Import plugin</a>{% else %}<a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro</a>{% endif %}
+      {% if framer %}<a class="btn btn-primary btn-sm" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in Framer</a>{% else %}<a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro</a>{% endif %}
     </nav>
   </div>
 </header>
 
 <main>
   <article class="article">
-    {% if page.url contains '/guides/' %}<p class="crumbs"><a href="/">Home</a> / <a href="/#guides">Guides</a></p>{% endif %}
+    {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a> / <a href="/#guides">Guides</a>{% endif %}</p>{% endif %}
     {{ content }}
   </article>
 
@@ -61,12 +62,10 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <div>Keyturn Kit. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a><br>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</div>
+    <div>Keyturn Kit and Blog Import for Framer are made by Mam Studio, the name you'll see on Polar checkouts and receipts. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a><br>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</div>
     <nav>
       <a href="/">Keyturn Kit</a>
-      <a href="/#guides">Guides</a>
-      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
-      <a href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Blog Import for Framer</a>
+      <a href="/blog-import/">Blog Import for Framer</a>
     </nav>
   </div>
 </footer>
