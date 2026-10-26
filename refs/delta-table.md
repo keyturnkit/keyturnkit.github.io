@@ -41,3 +41,14 @@
 | popup top vs first card top 1280 | +28 | +65 | +24 |
 | popup bottom to first card 390 | ~33 | 24 | 32 |
 | terminal 390 | no mid-word break | broke git URL | white-space pre, scrolls inside box (453 wide in 340) |
+
+## Round 5 (1366 wide)
+| item | target | clone r4 | clone r5 |
+|---|---|---|---|
+| scheme | light only | dark variant + grid lines | light only, no grid |
+| neutrals | mauve #fdfcfd to #1a1523 | grey-blue set | Plasmo's real mauve values |
+| accent | violet #6e56cf | blue #0a66c2 | green #0e7a5a (5.32:1 with white text) |
+| tinted words | "AI-Powered", "Supercharge" | none | "for paid Chrome", "Charge" |
+| browser mock | 30px bar, 12px dots, 24px address pill, r6 | popup in a plain card | same chrome numbers, live popup at top right, code window left |
+| scroll reveal | opacity 0 + translate until in view (Plasmo) | same | removed, all blocks visible, no opacity or transform |
+| page height 1366 | 10298 | n/a | 9154 (390: 15290 vs 11762) |
