@@ -37,7 +37,7 @@ The newest 25 posts import free, so you can see the result on your own blog firs
 
 ## Guides {#guides}
 
-<ul class="guide-list">
+<ul class="guide-list" style="padding-left:0">
 {% assign guides = site.pages | where: "og_image", "/og-blog-import.png" | sort: "title" %}{% for g in guides %}{% if g.url contains '/guides/' %}
   <li><a href="{{ g.url }}"><span>{{ g.title }}</span><svg><use href="#i-arrow"/></svg></a></li>
 {% endif %}{% endfor %}
