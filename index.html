@@ -13,100 +13,319 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css?v=3">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/home.css?v=1">
+<script>document.documentElement.className='js'</script>
 </head>
 <body>
-<!-- Icon: Lucide (ISC License), key-round. -->
+<!-- Icons: Lucide (ISC License). -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></symbol>
+<symbol id="i-key-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /> <circle cx="16.5" cy="7.5" r=".5" /></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol>
+<symbol id="i-chevrons-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5" /> <path d="m13 17 5-5-5-5" /></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol>
+<symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /> <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /> <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18" /> <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /> <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M7 21h10" /></symbol>
+<symbol id="i-refresh-cw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /> <path d="M8 16H3v5" /></symbol>
+<symbol id="i-wifi-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01" /> <path d="M8.5 16.429a5 5 0 0 1 7 0" /> <path d="M5 12.859a10 10 0 0 1 5.17-2.69" /> <path d="M19 12.859a10 10 0 0 0-2.007-1.523" /> <path d="M2 8.82a15 15 0 0 1 4.177-2.643" /> <path d="M22 8.82a15 15 0 0 0-11.288-3.764" /> <path d="m2 2 20 20" /></symbol>
+<symbol id="i-flask-conical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /> <path d="M6.453 15h11.094" /> <path d="M8.5 2h7" /></symbol>
+<symbol id="i-credit-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2" /> <line x1="2" x2="22" y1="10" y2="10" /> <path d="M6 14h2" /></symbol>
+<symbol id="i-timer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2" /> <line x1="12" x2="15" y1="14" y2="11" /> <circle cx="12" cy="14" r="8" /></symbol>
+<symbol id="i-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4" /> <path d="M3.34 19a10 10 0 1 1 17.32 0" /></symbol>
+<symbol id="i-bot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8" /> <rect width="16" height="12" x="4" y="8" rx="2" /> <path d="M2 14h2" /> <path d="M20 14h2" /> <path d="M15 13v2" /> <path d="M9 13v2" /></symbol>
+<symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol>
+<symbol id="i-import" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12" /> <path d="m8 11 4 4 4-4" /> <path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4" /></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></symbol>
+<symbol id="i-external-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6" /> <path d="M10 14 21 3" /> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></symbol>
 </svg>
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>
-    <nav class="nav">
-      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
-      <a class="btn" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a>
-    </nav>
-  </div>
-</header>
+<main>
+  <div class="grid-bg" aria-hidden="true"></div>
 
-<main class="wrap home">
-  <h1>License keys for paid Chrome extensions</h1>
-  <p>Keyturn Kit is a WXT + React starter for selling a Chrome extension. The buyer pays on Lemon Squeezy (or Polar or Dodo in Pro), gets a license key by email and pastes it into your extension. The extension checks the key with the provider's public license API. You don't run a server and no secret key ships in the extension.</p>
-  <div class="actions">
-    <a class="btn btn-primary" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
-  </div>
-
-<pre><code>git clone https://github.com/keyturnkit/keyturn-kit
-cd keyturn-kit
-npm install
-npm run dev     # opens Chrome with the extension loaded</code></pre>
-
-  <div class="try">
-    <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
-    <div>
-      <p>This is the popup the free edition ships with, built from the repo and running in this page. Paste <code>KEYTURN-DEMO-2026</code> and press Activate to see Pro turn on, or any other key to see the error your users would get.</p>
-      <p>In this page only, the calls to Chrome storage and to Lemon Squeezy are answered by a small script. In your extension they go to the real APIs.</p>
-      <p id="demo-note" aria-live="polite"></p>
+  <header class="top">
+    <div class="pill">
+      <a class="logo" href="/"><svg class="logo-mark"><use href="#i-key-round"/></svg><span>Keyturn Kit</span></a>
+      <nav class="menu" id="menu" aria-label="Main">
+        <div class="menu-links">
+          <a href="#guides">Guides</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="menu-end">
+          <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
+          <a class="btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a>
+        </div>
+      </nav>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg class="i-open"><use href="#i-menu"/></svg><svg class="i-close"><use href="#i-x"/></svg></button>
     </div>
+  </header>
+
+  <section class="hero">
+    <h1>License keys for paid Chrome extensions</h1>
+    <p class="lede">The extension checks the buyer's key with the provider's public license API. You run no server and ship no secret key.</p>
+    <div class="works">
+      <label>Works with</label>
+      <ul>
+        <li>Lemon Squeezy</li>
+        <li>Polar</li>
+        <li>Dodo Payments</li>
+        <li>WXT</li>
+      </ul>
+    </div>
+    <a class="cta" href="https://github.com/keyturnkit/keyturn-kit"><span>Free edition</span><svg><use href="#i-chevrons-right"/></svg></a>
+  </section>
+
+  <div class="groups">
+
+    <!-- Group 1 -->
+    <div class="group">
+      <div class="gh"><hr><h2>Keyturn Kit Free</h2><hr></div>
+      <div class="blocks">
+
+        <section class="feature reveal">
+          <div class="fhead">
+            <label class="eyebrow">Try it here</label>
+            <div class="frow">
+              <h2>Check the key from the extension</h2>
+              <a class="btn-out" href="/guides/license-keys-chrome-extension/"><span>Read the guide</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+          <div class="fbody">
+            <div class="fmock">
+              <div class="shell shell-popup">
+                <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
+              </div>
+            </div>
+            <div class="fcards">
+              <div class="card"><h4>Paste a key</h4><p>This is the popup the free edition ships with, running in this page. Paste <code>KEYTURN-DEMO-2026</code> and press Activate to see Pro turn on, or any other key to see the error your users would get.</p></div>
+              <div class="card"><h4>What the demo fakes</h4><p>In this page only, the calls to Chrome storage and to Lemon Squeezy are answered by a small script. In your extension they go to the real APIs.</p><p class="note" id="demo-note" aria-live="polite"></p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature reveal rev">
+          <div class="fhead">
+            <label class="eyebrow">Add Pro features</label>
+            <div class="frow">
+              <h2>Gate a feature in one line</h2>
+              <a class="btn-out" href="https://github.com/keyturnkit/keyturn-kit"><span>Read the code</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+          <div class="fbody">
+            <div class="fmock stack">
+              <div class="shell code-shell">
+                <div class="bar"><span class="tab">App.tsx</span></div>
+                <div class="codewrap">
+                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+                  <pre class="code"><span class="l">&lt;<mark>ProGate</mark>&gt;</span>
+<span class="l">  &lt;<mark>BulkExport</mark> /&gt;</span>
+<span class="l">&lt;/<mark>ProGate</mark>&gt;</span>
+<span class="l"> </span>
+<span class="l"><b>if</b> (<b>await</b> license.isPro()) {</span>
+<span class="l">  ...</span>
+<span class="l">}</span></pre>
+                </div>
+              </div>
+              <div class="shell code-shell over">
+                <div class="bar"><span class="tab">lib/config.ts</span></div>
+                <div class="codewrap">
+                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+                  <pre class="code"><span class="l">lemonsqueezy: {</span>
+<span class="l">  storeId: 0,</span>
+<span class="l">},</span>
+<span class="l">recheckHours: 24,</span>
+<span class="l">offlineGraceDays: 7,</span></pre>
+                </div>
+              </div>
+            </div>
+            <div class="fcards">
+              <div class="card"><h4>ProGate or isPro()</h4><p>Wrap a component in ProGate, or call license.isPro() in your own code.</p></div>
+              <div class="card"><h4>One config file</h4><p>Set your store id and checkout link in lib/config.ts. The re-check interval and the offline grace days are there too.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fact reveal">
+          <div class="tile"><b>24 h</b><span>re-check</span></div>
+          <div class="fact-main">
+            <p class="fact-text">The extension re-checks the key every 24 hours, so a key you disable after a refund stops working the next day. Pro keeps working for 7 days without a connection.</p>
+            <div class="fact-foot">
+              <div class="who"><div class="who-name">Free edition</div><div class="who-sub">Keys from other Lemon Squeezy stores are rejected</div></div>
+              <a class="btn-out" href="https://github.com/keyturnkit/keyturn-kit"><span>See the code</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature reveal">
+          <div class="fhead">
+            <label class="eyebrow">Quick start</label>
+            <div class="frow">
+              <h2>Clone it and run it</h2>
+              <a class="btn-out" href="https://github.com/keyturnkit/keyturn-kit"><span>Read the docs</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+          <div class="fbody">
+            <div class="fmock">
+              <div class="shell code-shell">
+                <div class="bar"><span class="tab">Terminal</span></div>
+                <pre class="term"><span>git clone https://github.com/keyturnkit/keyturn-kit</span>
+<span>cd keyturn-kit</span>
+<span>npm install</span>
+<span>npm run dev   # opens Chrome with the extension loaded</span></pre>
+              </div>
+            </div>
+            <div class="fcards">
+              <div class="card"><h4>MIT license</h4><p>The free edition is on GitHub. Clone it, install it, and npm run dev opens Chrome with the extension loaded.</p></div>
+              <div class="card"><h4>15 tests</h4><p>They run with the network mocked.</p></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Group 2 -->
+    <div class="group">
+      <div class="gh"><hr><h2>Keyturn Kit Pro</h2><hr></div>
+      <div class="blocks">
+
+        <section class="feature reveal">
+          <div class="fhead">
+            <label class="eyebrow"></label>
+            <div class="frow">
+              <h2>More ways to charge</h2>
+              <a class="btn-out" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro, $59</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+          <div class="fbody">
+            <div class="fmock">
+              <div class="shell shell-popup">
+                <picture>
+                  <source srcset="/assets/popup-dark.png" media="(prefers-color-scheme: dark)">
+                  <img class="popup-shot" src="/assets/popup-light.png" width="360" height="330" alt="The popup the free edition ships with, showing the Upgrade button and the license key field">
+                </picture>
+              </div>
+            </div>
+            <div class="fcards">
+              <div class="card"><h4>Polar and Dodo Payments</h4><p>Lemon Squeezy is in the free edition. Pro adds Polar and Dodo Payments, and switching is one line.</p></div>
+              <div class="card"><h4>Trial and free uses</h4><p>A free trial counted from install, and a number of free uses per day before the paywall.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="fact reveal">
+          <div class="tile"><b>28</b><span>tests</span></div>
+          <div class="fact-main">
+            <p class="fact-text">Pro comes with an AGENTS.md for Claude Code and Cursor, 28 tests, and every 1.x update.</p>
+            <div class="fact-foot">
+              <div class="who"><div class="who-name">Pro, $59 once</div><div class="who-sub">For all your own extensions, as a zip from Polar</div></div>
+              <a class="btn-out" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature reveal rev">
+          <div class="fhead">
+            <label class="eyebrow">Questions</label>
+            <div class="frow">
+              <h2>Before you buy</h2>
+              <a class="btn-out" href="/guides/extensionpay-alternative/"><span>ExtensionPay or keys</span><svg><use href="#i-arrow-right"/></svg></a>
+            </div>
+          </div>
+          <div class="fbody faq">
+            <div class="fcards">
+              <div class="card"><h4>Can someone crack it?</h4><p>Yes. Anything checked inside an extension can be patched by a determined person. The kit stops a key being shared past the activation limit you set, and a disabled key from carrying on. If you need more, put the valuable part on a server and gate that.</p></div>
+              <div class="card"><h4>Firefox?</h4><p>WXT builds it with <code>npm run zip:firefox</code>. We have only tested Chrome.</p></div>
+            </div>
+            <div class="fcards">
+              <div class="card"><h4>Why not ExtensionPay?</h4><p>ExtensionPay is a hosted service on Stripe with its own login and a 5% fee on top of Stripe's, and you handle sales tax yourself. Keyturn Kit is code you own with no extra fee, and Lemon Squeezy, Polar and Dodo collect and pay the tax. If you'd rather not touch code, ExtensionPay is easier.</p></div>
+              <div class="card"><h4>Can I get a refund?</h4><p>Email within 14 days if Pro doesn't work for you and you get a full refund.</p></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing reveal" id="pricing">
+      <div class="gh gh-s"><hr><h2>Pricing</h2><hr></div>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-in">
+            <h3 class="plan-name">Free</h3>
+            <div class="plan-price"><h4>Free</h4><span></span></div>
+            <ul class="plan-rows">
+              <li><svg><use href="#i-store"/></svg><span>Lemon Squeezy</span></li>
+              <li><svg><use href="#i-scale"/></svg><span>MIT license, on GitHub</span></li>
+              <li><svg><use href="#i-refresh-cw"/></svg><span>Keys re-checked every 24 hours</span></li>
+              <li><svg><use href="#i-wifi-off"/></svg><span>Pro works 7 days offline</span></li>
+              <li><svg><use href="#i-flask-conical"/></svg><span>15 tests</span></li>
+            </ul>
+            <a class="plan-btn" href="https://github.com/keyturnkit/keyturn-kit"><span>Get started</span><svg><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+        <div class="plan plan-pro">
+          <div class="halo"></div>
+          <div class="plan-in">
+            <h3 class="plan-name">Pro</h3>
+            <div class="plan-price"><h4>$59</h4><span>one time</span></div>
+            <ul class="plan-rows">
+              <li><svg><use href="#i-plus"/></svg><span>Everything in Free</span></li>
+              <li><svg><use href="#i-credit-card"/></svg><span>Polar and Dodo Payments</span></li>
+              <li><svg><use href="#i-timer"/></svg><span>Free trial from install, free uses per day</span></li>
+              <li><svg><use href="#i-bot"/></svg><span>AGENTS.md for Claude Code and Cursor</span></li>
+              <li><svg><use href="#i-flask-conical"/></svg><span>28 tests</span></li>
+            </ul>
+            <a class="plan-btn plan-btn-pro" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro</span><svg><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <p class="plans-note">Pro is a zip from Polar for all your own extensions, with every 1.x update. Email within 14 days for a full refund.</p>
+    </div>
+
   </div>
 
-  <h2>Gating a feature</h2>
-<pre><code>&lt;ProGate&gt;
-  &lt;BulkExport /&gt;
-&lt;/ProGate&gt;
+  <section class="closer">
+    <h3>Charge for your extension without running a server</h3>
+    <a class="cta" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro, $59</span><svg><use href="#i-chevrons-right"/></svg></a>
+  </section>
 
-if (await license.isPro()) { ... }</code></pre>
-  <p>Set your store id and checkout link in <code>lib/config.ts</code>. The free edition then:</p>
-  <ul>
-    <li>rejects keys from other Lemon Squeezy stores, so a key bought from someone else's product can't turn on yours;</li>
-    <li>re-checks the key every 24 hours, so a key you disable after a refund stops working the next day;</li>
-    <li>keeps Pro working for 7 days without a connection;</li>
-    <li>has 15 tests with the network mocked.</li>
-  </ul>
+  <section class="friends reveal" id="guides">
+    <div class="gh gh-s"><hr><h2>Guides</h2><hr></div>
+    <div class="friends-body">
+      <div class="friends-label">Two guides</div>
+      <a class="dashed" href="/guides/license-keys-chrome-extension/"><h4>Selling a Chrome extension with license keys, no backend</h4><p>License keys checked from the extension, with no backend of yours.</p></a>
+      <a class="dashed" href="/guides/extensionpay-alternative/"><h4>ExtensionPay or license keys</h4><p>When ExtensionPay is the easier choice and when owning the code is.</p></a>
+    </div>
+  </section>
 
-  <h2 id="pro">Pro</h2>
-  <p>$59 once, for all your own extensions, as a zip from Polar. Email within 14 days if it doesn't work for you and you get a full refund.</p>
-  <div class="table-scroll">
-    <table class="compare">
-      <thead><tr><th scope="col"></th><th scope="col">Free</th><th scope="col">Pro</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">Lemon Squeezy</th><td>Yes</td><td>Yes</td></tr>
-        <tr><th scope="row">Polar, Dodo Payments</th><td>No</td><td>Yes, one line to switch</td></tr>
-        <tr><th scope="row">Free trial counted from install</th><td>No</td><td>Yes</td></tr>
-        <tr><th scope="row">A number of free uses per day before the paywall</th><td>No</td><td>Yes</td></tr>
-        <tr><th scope="row">AGENTS.md for Claude Code and Cursor</th><td>No</td><td>Yes</td></tr>
-        <tr><th scope="row">Tests</th><td>15</td><td>28</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a></p>
-
-  <h2>Questions</h2>
-  <h3>Can someone crack it?</h3>
-  <p>Yes. Anything checked inside an extension can be patched by a determined person. The kit stops a key being shared past the activation limit you set, and a disabled key from carrying on. If you need more, put the valuable part on a server and gate that.</p>
-  <h3>Why not ExtensionPay?</h3>
-  <p>ExtensionPay is a hosted service on Stripe with its own login and a 5% fee on top of Stripe's, and you handle sales tax yourself. Keyturn Kit is code you own with no extra fee, and Lemon Squeezy, Polar and Dodo collect and pay the tax. If you'd rather not touch code, ExtensionPay is easier. There's a <a href="/guides/extensionpay-alternative/">longer comparison</a>.</p>
-  <h3>Firefox?</h3>
-  <p>WXT builds it with <code>npm run zip:firefox</code>. We have only tested Chrome.</p>
-
-  <h2>Guides</h2>
-  <ul>
-    <li><a href="/guides/license-keys-chrome-extension/">Selling a Chrome extension with license keys, no backend</a></li>
-    <li><a href="/guides/extensionpay-alternative/">ExtensionPay or license keys</a></li>
-  </ul>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-brand"><a class="logo" href="/"><svg class="logo-mark"><use href="#i-key-round"/></svg><span>Keyturn Kit</span></a></div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <div class="foot-links">
+          <a href="/guides/license-keys-chrome-extension/"><svg><use href="#i-file-text"/></svg>License keys, no backend</a>
+          <a href="/guides/extensionpay-alternative/"><svg><use href="#i-file-text"/></svg>ExtensionPay or license keys</a>
+          <a href="/blog-import/"><svg><use href="#i-import"/></svg>Blog Import for Framer</a>
+        </div>
+      </div>
+      <div class="foot-col foot-end">
+        <h3>Links</h3>
+        <div class="foot-links">
+          <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
+          <a href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Made by Mam Studio, the name on Polar checkouts and receipts. <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a></span>
+      <span>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</span>
+    </div>
+  </footer>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div>Made by Mam Studio, the name on Polar checkouts and receipts. <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a></div>
-    <nav>
-      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
-      <a href="/blog-import/">Blog Import for Framer</a>
-    </nav>
-  </div>
-</footer>
 
 <script>
 (function () {
@@ -123,6 +342,20 @@ if (await license.isPro()) { ... }</code></pre>
     if (!e.data.keyturnDemo) return;
     note.textContent = said[e.data.keyturnDemo] || '';
   });
+
+  var burger = document.querySelector('.burger');
+  var top = document.querySelector('header.top');
+  burger.addEventListener('click', function () {
+    var open = top.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+  els.forEach(function (el) { io.observe(el); });
 })();
 </script>
 </body>
