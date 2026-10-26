@@ -19,3 +19,12 @@
 | footer | gradient, pad 80, gap 160 | logo centered | logo left | 3 links vs 5, blue |
 | page height | 10538 | 9766 | 9590 | content length |
 | y of first feature label | 1480 | 1404 | 1464 | -16 (h1 py-2) |
+
+## Round 3 (changed sections)
+| section | target | clone r2 | clone r3 | gap |
+|---|---|---|---|---|
+| eyebrow labels | 3 in group 1, none in Itero | 5 | 0 | removed by decision (TEAM.md), matches Itero opening |
+| fact row | image 144 + text + name + button | number tile + text | no tile, text + 2-line caption + button, left aligned, column 896 | no image column |
+| Pro mockup | browser mockup | free popup PNG | 2 stacked code cards, lib/config.ts lines verbatim from products/extkit | 13px font so comments wrap |
+| Pro plan rows | 1 feature per row, 64px | 5 rows, trial and uses merged | 6 rows, split | card taller than 550 |
+| page height 1280 | 10538 | 9590 | 9422 | content length |

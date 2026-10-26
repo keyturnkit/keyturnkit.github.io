@@ -85,7 +85,6 @@
 
         <section class="feature reveal">
           <div class="fhead">
-            <label class="eyebrow">Try it here</label>
             <div class="frow">
               <h2>Check the key from the extension</h2>
               <a class="btn-out" href="/guides/license-keys-chrome-extension/"><span>Read the guide</span><svg><use href="#i-arrow-right"/></svg></a>
@@ -106,7 +105,6 @@
 
         <section class="feature reveal rev">
           <div class="fhead">
-            <label class="eyebrow">Add Pro features</label>
             <div class="frow">
               <h2>Gate a feature in one line</h2>
               <a class="btn-out" href="https://github.com/keyturnkit/keyturn-kit"><span>Read the code</span><svg><use href="#i-arrow-right"/></svg></a>
@@ -147,7 +145,6 @@
         </section>
 
         <section class="fact reveal">
-          <div class="tile"><b>24 h</b><span>re-check</span></div>
           <div class="fact-main">
             <p class="fact-text">The extension re-checks the key every 24 hours, so a key you disable after a refund stops working the next day. Pro keeps working for 7 days without a connection.</p>
             <div class="fact-foot">
@@ -159,7 +156,6 @@
 
         <section class="feature reveal">
           <div class="fhead">
-            <label class="eyebrow">Quick start</label>
             <div class="frow">
               <h2>Clone it and run it</h2>
               <a class="btn-out" href="https://github.com/keyturnkit/keyturn-kit"><span>Read the docs</span><svg><use href="#i-arrow-right"/></svg></a>
@@ -192,19 +188,24 @@
 
         <section class="feature reveal">
           <div class="fhead">
-            <label class="eyebrow"></label>
             <div class="frow">
               <h2>More ways to charge</h2>
               <a class="btn-out" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro, $59</span><svg><use href="#i-arrow-right"/></svg></a>
             </div>
           </div>
           <div class="fbody">
-            <div class="fmock">
-              <div class="shell shell-popup">
-                <picture>
-                  <source srcset="/assets/popup-dark.png" media="(prefers-color-scheme: dark)">
-                  <img class="popup-shot" src="/assets/popup-light.png" width="360" height="330" alt="The popup the free edition ships with, showing the Upgrade button and the license key field">
-                </picture>
+            <div class="fmock stack flat">
+              <div class="shell code-shell">
+                <div class="bar"><span class="tab">lib/config.ts</span></div>
+                <pre class="code wrap"><span class="l">/** 'lemonsqueezy', 'polar' or 'dodo'. Switching later only changes this line and the matching block below. */</span>
+<span class="l">provider: 'lemonsqueezy' as 'lemonsqueezy' | 'polar' | 'dodo',</span></pre>
+              </div>
+              <div class="shell code-shell over">
+                <div class="bar"><span class="tab">lib/config.ts</span></div>
+                <pre class="code wrap"><span class="l">/** Days of full access from install, no key needed. 0 turns the trial off. */</span>
+<span class="l">trialDays: 7,</span>
+<span class="l">/** After the trial: free uses per day for each feature name you pass to access.check(). Features not listed are Pro-only. */</span>
+<span class="l">freeUsesPerDay: { export: 3 } as Record&lt;string, number&gt;,</span></pre>
               </div>
             </div>
             <div class="fcards">
@@ -215,7 +216,6 @@
         </section>
 
         <section class="fact reveal">
-          <div class="tile"><b>28</b><span>tests</span></div>
           <div class="fact-main">
             <p class="fact-text">Pro comes with an AGENTS.md for Claude Code and Cursor, 28 tests, and every 1.x update.</p>
             <div class="fact-foot">
@@ -227,7 +227,6 @@
 
         <section class="feature reveal rev">
           <div class="fhead">
-            <label class="eyebrow">Questions</label>
             <div class="frow">
               <h2>Before you buy</h2>
               <a class="btn-out" href="/guides/extensionpay-alternative/"><span>ExtensionPay or keys</span><svg><use href="#i-arrow-right"/></svg></a>
@@ -274,7 +273,8 @@
             <ul class="plan-rows">
               <li><svg><use href="#i-plus"/></svg><span>Everything in Free</span></li>
               <li><svg><use href="#i-credit-card"/></svg><span>Polar and Dodo Payments</span></li>
-              <li><svg><use href="#i-timer"/></svg><span>Free trial from install, free uses per day</span></li>
+              <li><svg><use href="#i-timer"/></svg><span>Free trial from install</span></li>
+              <li><svg><use href="#i-gauge"/></svg><span>Free uses per day before the paywall</span></li>
               <li><svg><use href="#i-bot"/></svg><span>AGENTS.md for Claude Code and Cursor</span></li>
               <li><svg><use href="#i-flask-conical"/></svg><span>28 tests</span></li>
             </ul>
@@ -295,7 +295,6 @@
   <section class="friends reveal" id="guides">
     <div class="gh gh-s"><hr><h2>Guides</h2><hr></div>
     <div class="friends-body">
-      <div class="friends-label">Two guides</div>
       <a class="dashed" href="/guides/license-keys-chrome-extension/"><h4>Selling a Chrome extension with license keys, no backend</h4><p>License keys checked from the extension, with no backend of yours.</p></a>
       <a class="dashed" href="/guides/extensionpay-alternative/"><h4>ExtensionPay or license keys</h4><p>When ExtensionPay is the easier choice and when owning the code is.</p></a>
     </div>

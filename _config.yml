@@ -8,3 +8,5 @@ kramdown:
 url: https://keyturnkit.github.io
 plugins:
   - jekyll-sitemap
+exclude:
+  - refs

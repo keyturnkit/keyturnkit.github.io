@@ -195,7 +195,7 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
 .fact-main { display: flex; flex-direction: column; gap: 32px; width: 100%; }
 .fact-text { font-size: 20px; line-height: 28px; text-align: left; color: var(--m12); }
 .fact-foot { display: flex; flex-direction: column; gap: 16px; }
-.who { padding: 0 16px; }
+.who { padding: 0; }
 .who-name { font-weight: 700; color: var(--m12); }
 .who-sub { font-size: 14px; line-height: 20px; color: var(--m10); }
 @media (min-width: 768px) {
@@ -282,3 +282,10 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
 .js .reveal { transition: opacity .7s cubic-bezier(.4, 0, .2, 1), transform .7s cubic-bezier(.4, 0, .2, 1); will-change: transform; }
 .js .reveal:not(.in) { opacity: 0; transform: translateY(16rem); }
 @media (prefers-reduced-motion: reduce) { .js .reveal, .js .reveal:not(.in) { transition: none; opacity: 1; transform: none; } }
+
+.code.wrap .l { white-space: pre-wrap; overflow-wrap: anywhere; }
+.code.wrap { color: var(--m12); }
+.code.wrap { font-size: 13px; }
+.stack.flat { gap: 16px; }
+.stack.flat .over { transform: none; }
+@media (min-width: 1024px) { .stack.flat .over { transform: translateX(32px); } }
