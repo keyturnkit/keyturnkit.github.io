@@ -44,7 +44,7 @@ npm install
 npm run dev     # opens Chrome with the extension loaded</code></pre>
 
   <div class="try">
-    <iframe class="popup-frame" id="popup" src="/demo/popup.html" title="The free edition's popup, running in this page"></iframe>
+    <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
     <div>
       <p>This is the popup the free edition ships with, built from the repo and running in this page. Paste <code>KEYTURN-DEMO-2026</code> and press Activate to see Pro turn on, or any other key to see the error your users would get.</p>
       <p>In this page only, the calls to Chrome storage and to Lemon Squeezy are answered by a small script. In your extension they go to the real APIs.</p>
@@ -118,7 +118,9 @@ if (await license.isPro()) { ... }</code></pre>
     'License settings': 'In your extension, License settings opens the options page, where the buyer can see or remove their key.'
   };
   window.addEventListener('message', function (e) {
-    if (e.origin !== location.origin || !e.data || !e.data.keyturnDemo) return;
+    if (e.origin !== location.origin || !e.data) return;
+    if (e.data.keyturnDemoHeight) { popup.style.height = (e.data.keyturnDemoHeight + 2) + 'px'; return; }
+    if (!e.data.keyturnDemo) return;
     note.textContent = said[e.data.keyturnDemo] || '';
   });
 })();

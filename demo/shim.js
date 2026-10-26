@@ -51,3 +51,10 @@ document.addEventListener('click', (e) => {
   e.preventDefault();
   parent.postMessage({ keyturnDemo: a.textContent.trim() }, location.origin);
 }, true);
+
+// Let the host page size the frame to the popup, so no scrollbar shows.
+addEventListener('DOMContentLoaded', () => {
+  const report = () => parent.postMessage({ keyturnDemoHeight: document.documentElement.scrollHeight }, location.origin);
+  new ResizeObserver(report).observe(document.body);
+  report();
+});
