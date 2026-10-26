@@ -5,3 +5,6 @@ kramdown:
   input: GFM
   syntax_highlighter_opts:
     disable: true
+url: https://keyturnkit.github.io
+plugins:
+  - jekyll-sitemap
