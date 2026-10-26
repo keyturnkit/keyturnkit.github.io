@@ -19,12 +19,11 @@
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<!-- Icons: Lucide (ISC License), key-round, check, arrow-right, shield-check. -->
+<!-- Icons: Lucide (ISC License), key-round, check, arrow-right. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
 </svg>
 
 <header class="site-header">
@@ -45,7 +44,7 @@
     <div class="wrap">
       <div>
         <h1>Charge for your Chrome extension <em>without running a server</em></h1>
-        <p class="lede">Keyturn Kit is a WXT + React starter that checks license keys from Lemon Squeezy, Polar or Dodo Payments straight from the extension. Your payment provider takes the money. The kit handles keys, offline use and locking Pro when a key is disabled.</p>
+        <p class="lede">Keyturn Kit is a WXT + React starter that checks license keys from Lemon Squeezy, Polar or Dodo Payments straight from the extension. Your payment provider takes the money. The kit re-checks the key once a day and locks Pro when the key is disabled.</p>
         <div class="actions">
           <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59 one-time</a>
           <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
@@ -53,22 +52,19 @@
         <p class="fine">The free edition is MIT licensed and works with Lemon Squeezy on its own. Pro is sold through Polar, which handles payment and tax.</p>
       </div>
 
-      <div class="popup" role="img" aria-label="An extension popup with Pro unlocked by a license key">
-        <div class="popup-bar"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Your extension</div>
-        <div class="popup-body">
-          <div class="status"><svg><use href="#i-shield"/></svg>Pro unlocked</div>
-          <div class="field">License key<span>LS-9F2C-41AE-B7D0-77E1</span></div>
-          <div class="row">Checked<b>today, 09:41</b></div>
-          <div class="row">Offline grace<b>7 days</b></div>
-          <div class="feature-line">Bulk export<span class="toggle"></span></div>
-        </div>
-      </div>
+      <figure class="shot">
+        <picture>
+          <source srcset="/assets/popup-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="/assets/popup-light.png" width="360" height="330" alt="The free edition's popup: a free feature, a Pro feature with an Upgrade link, and the license key box">
+        </picture>
+        <figcaption>The free edition's popup as it ships, before you add your own features.</figcaption>
+      </figure>
     </div>
   </section>
 
   <div class="providers">
     <div class="wrap">
-      <span>Works with</span><b>Lemon Squeezy</b><b>Polar</b><b>Dodo Payments</b><span>Built on</span><b>WXT</b><b>React</b>
+      <span class="grp"><span>Works with</span><b>Lemon Squeezy</b><b>Polar</b><b>Dodo Payments</b></span><span class="grp"><span>Built on</span><b>WXT</b><b>React</b></span>
     </div>
   </div>
 
@@ -115,7 +111,7 @@
   <section class="section" id="pricing">
     <div class="wrap">
       <h2>Free and Pro</h2>
-      <p class="intro">Start with the free edition. Pro adds more providers, trials and metered free use.</p>
+      <p class="intro">Start with the free edition. Pro is for selling through Polar or Dodo, or giving a free trial before the paywall.</p>
       <div class="plans">
         <div class="plan">
           <h3>Free</h3>
@@ -151,7 +147,6 @@
   <section class="section section-alt" id="guides">
     <div class="wrap">
       <h2>Guides</h2>
-      <p class="intro">Written while building and selling our own tools.</p>
       <ul class="guide-list guide-grid">
         <li><a href="/guides/license-keys-chrome-extension/"><span><small>Chrome extensions</small>Selling a Chrome extension with license keys, no backend</span><svg><use href="#i-arrow"/></svg></a></li>
         <li><a href="/guides/squarespace-blog-to-framer/"><span><small>Framer blog move</small>Squarespace to Framer, without losing images or links</span><svg><use href="#i-arrow"/></svg></a></li>
@@ -195,7 +190,7 @@
   <section class="cta section-alt">
     <div class="wrap">
       <h2>Add a paid tier to your extension</h2>
-      <p>Clone the free edition and try it with a Lemon Squeezy test key, or get Pro for Polar, Dodo, trials and metered free use.</p>
+      <p>Clone the free edition and try it with a Lemon Squeezy test key. Get Pro if you sell through Polar or Dodo.</p>
       <div class="actions">
         <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59 one-time</a>
         <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
