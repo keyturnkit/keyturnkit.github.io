@@ -13,10 +13,10 @@ Polar sends a confirmation email with an **Access purchase** button. That button
 ## Blog Import license
 
 1. Copy the license key from your purchase on Polar. It starts with `BLOGIMPORT-`.
-2. In Framer, open the project you want to import into and run Blog Import.
-3. Paste the key into the **License key** box and press **Activate**.
+2. Paste it on the [license code page](https://blog-import-license.mam-studio.workers.dev/code) and press **Get code**.
+3. In Framer, run Blog Import, paste the code into the **License code** box and press **Activate**.
 
-The $29 license works in one Framer project at a time. To move it, press **Remove it** next to "License active in this project", then activate it in the other project.
+The plugin checks the code itself and sends nothing anywhere. Keep the code: you can paste it again in the same project after reinstalling. Each new code uses one activation of your key, and the $29 license has 3.
 
 ## Keyturn Kit Pro
 
