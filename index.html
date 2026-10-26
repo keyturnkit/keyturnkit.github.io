@@ -15,7 +15,6 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/home.css?v=1">
-<script>document.documentElement.className='js'</script>
 </head>
 <body>
 <!-- Icons: Lucide (ISC License). -->
@@ -42,8 +41,7 @@
 </svg>
 
 <main>
-  <div class="grid-bg" aria-hidden="true"></div>
-
+  
   <header class="top">
     <div class="pill">
       <a class="logo" href="/"><svg class="logo-mark"><use href="#i-key-round"/></svg><span>Keyturn Kit</span></a>
@@ -62,19 +60,48 @@
   </header>
 
   <section class="hero">
-    <h1>License keys for paid Chrome extensions</h1>
+    <h1><span class="line">License keys</span><span class="tint">for paid Chrome</span><span class="line">extensions</span></h1>
     <p class="lede">The extension checks the buyer's key with the provider's public license API. You run no server and ship no secret key.</p>
     <div class="works">
       <label>Works with</label>
       <ul>
         <li>Lemon Squeezy</li>
-        <li>Polar</li>
+        <li><img src="/assets/logos/polar.svg" alt="Polar" width="91" height="32"></li>
         <li>Dodo Payments</li>
-        <li>WXT</li>
+        <li><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M354.435 418.141C383.217 418.141 406.55 394.808 406.55 366.026V313.91H416.026C444.808 313.91 468.141 290.578 468.141 261.795C468.141 233.013 444.808 209.68 416.026 209.68H406.55V157.565C406.55 128.783 383.217 105.45 354.435 105.45H302.32V95.9745C302.32 67.1921 278.987 43.8594 250.205 43.8594C221.422 43.8594 198.09 67.1921 198.09 95.9745V105.45H145.974C117.192 105.45 93.8594 128.783 93.8594 157.565V209.68H103.335C132.117 209.68 155.45 233.013 155.45 261.795C155.45 290.578 132.117 313.91 103.335 313.91H93.8594V418.141H198.09V408.665C198.09 379.883 221.422 356.55 250.205 356.55C278.987 356.55 302.32 379.883 302.32 408.665V418.141H354.435Z"/></svg>WXT</li>
       </ul>
     </div>
     <a class="cta" href="https://github.com/keyturnkit/keyturn-kit"><span>Free edition</span><svg><use href="#i-chevrons-right"/></svg></a>
   </section>
+
+  <div class="hero-mock">
+    <div class="hm-code win">
+      <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><span class="win-tab">App.tsx</span></div>
+      <div class="codewrap">
+        <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+        <pre class="code"><span class="l">&lt;<mark>ProGate</mark>&gt;</span>
+<span class="l">  &lt;<mark>BulkExport</mark> /&gt;</span>
+<span class="l">&lt;/<mark>ProGate</mark>&gt;</span>
+<span class="l"> </span>
+<span class="l"><b>if</b> (<b>await</b> license.isPro()) {</span>
+<span class="l">  ...</span>
+<span class="l">}</span></pre>
+      </div>
+    </div>
+    <div class="hm-browser win">
+      <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><div class="win-addr"><div class="addr">your-extension.example</div><span class="ext-btn"></span></div></div>
+      <div class="win-body">
+        <div class="skel" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+        <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="hm-cap">
+    <p>This is the popup the free edition ships with, running in this page. Paste <code>KEYTURN-DEMO-2026</code> and press Activate to see Pro turn on, or any other key to see the error your users would get.</p>
+    <p>In this page only, the calls to Chrome storage and to Lemon Squeezy are answered by a small script. In your extension they go to the real APIs.</p>
+    <p class="note" id="demo-note" aria-live="polite"></p>
+  </div>
+
 
   <div class="groups">
 
@@ -83,27 +110,9 @@
       <div class="gh"><hr><h2>Keyturn Kit Free</h2><hr></div>
       <div class="blocks">
 
-        <section class="feature reveal">
-          <div class="fhead">
-            <div class="frow">
-              <h2>Check the key from the extension</h2>
-              <a class="btn-out" href="/guides/license-keys-chrome-extension/"><span>Read the guide</span><svg><use href="#i-arrow-right"/></svg></a>
-            </div>
-          </div>
-          <div class="fbody">
-            <div class="fmock top">
-              <div class="shell shell-popup">
-                <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=3" scrolling="no" title="The free edition's popup, running in this page"></iframe>
-              </div>
-            </div>
-            <div class="fcards">
-              <div class="card"><h4>Paste a key</h4><p>This is the popup the free edition ships with, running in this page. Paste <code>KEYTURN-DEMO-2026</code> and press Activate to see Pro turn on, or any other key to see the error your users would get.</p></div>
-              <div class="card"><h4>What the demo fakes</h4><p>In this page only, the calls to Chrome storage and to Lemon Squeezy are answered by a small script. In your extension they go to the real APIs.</p><p class="note" id="demo-note" aria-live="polite"></p></div>
-            </div>
-          </div>
-        </section>
+        
 
-        <section class="feature reveal rev">
+        <section class="feature rev">
           <div class="fhead">
             <div class="frow">
               <h2>Gate a feature in one line</h2>
@@ -111,21 +120,8 @@
             </div>
           </div>
           <div class="fbody">
-            <div class="fmock stack">
+            <div class="fmock">
               <div class="shell code-shell">
-                <div class="bar"><span class="tab">App.tsx</span></div>
-                <div class="codewrap">
-                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
-                  <pre class="code"><span class="l">&lt;<mark>ProGate</mark>&gt;</span>
-<span class="l">  &lt;<mark>BulkExport</mark> /&gt;</span>
-<span class="l">&lt;/<mark>ProGate</mark>&gt;</span>
-<span class="l"> </span>
-<span class="l"><b>if</b> (<b>await</b> license.isPro()) {</span>
-<span class="l">  ...</span>
-<span class="l">}</span></pre>
-                </div>
-              </div>
-              <div class="shell code-shell over">
                 <div class="bar"><span class="tab">lib/config.ts</span></div>
                 <div class="codewrap">
                   <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
@@ -138,13 +134,13 @@
               </div>
             </div>
             <div class="fcards">
-              <div class="card"><h4>ProGate or isPro()</h4><p>Wrap a component in ProGate, or call license.isPro() in your own code.</p></div>
+              <div class="card"><h4>ProGate or isPro()</h4><p>Wrap a component in ProGate, as in the window above, or call license.isPro() in your own code.</p></div>
               <div class="card"><h4>One config file</h4><p>Set your store id and checkout link in lib/config.ts. The re-check interval and the offline grace days are there too.</p></div>
             </div>
           </div>
         </section>
 
-        <section class="fact reveal">
+        <section class="fact">
           <div class="fact-main">
             <p class="fact-text">The extension re-checks the key every 24 hours, so a key you disable after a refund stops working the next day. Pro keeps working for 7 days without a connection.</p>
             <div class="fact-foot">
@@ -154,7 +150,7 @@
           </div>
         </section>
 
-        <section class="feature reveal">
+        <section class="feature">
           <div class="fhead">
             <div class="frow">
               <h2>Clone it and run it</h2>
@@ -186,7 +182,7 @@
       <div class="gh"><hr><h2>Keyturn Kit Pro</h2><hr></div>
       <div class="blocks">
 
-        <section class="feature reveal">
+        <section class="feature">
           <div class="fhead">
             <div class="frow">
               <h2>More ways to charge</h2>
@@ -215,7 +211,7 @@
           </div>
         </section>
 
-        <section class="fact reveal">
+        <section class="fact">
           <div class="fact-main">
             <p class="fact-text">Pro comes with an AGENTS.md for Claude Code and Cursor, 28 tests, and every 1.x update.</p>
             <div class="fact-foot">
@@ -225,7 +221,7 @@
           </div>
         </section>
 
-        <section class="feature reveal rev">
+        <section class="feature rev">
           <div class="fhead">
             <div class="frow">
               <h2>Before you buy</h2>
@@ -246,7 +242,7 @@
     </div>
 
     <!-- Pricing -->
-    <div class="pricing reveal" id="pricing">
+    <div class="pricing" id="pricing">
       <div class="gh gh-s"><hr><h2>Pricing</h2><hr></div>
       <div class="plans">
         <div class="plan">
@@ -286,11 +282,11 @@
   </div>
 
   <section class="closer">
-    <h3>Charge for your extension without running a server</h3>
+    <h3><span class="tint">Charge</span> for your extension without running a server</h3>
     <a class="cta" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy"><span>Buy Pro, $59</span><svg><use href="#i-chevrons-right"/></svg></a>
   </section>
 
-  <section class="friends reveal" id="guides">
+  <section class="friends" id="guides">
     <div class="gh gh-s"><hr><h2>Guides</h2><hr></div>
     <div class="friends-body">
       <a class="dashed" href="/guides/license-keys-chrome-extension/"><h4>Selling a Chrome extension with license keys, no backend</h4><p>License keys checked from the extension, with no backend of yours.</p></a>
@@ -347,12 +343,6 @@
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
 
-  var els = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) { els.forEach(function (el) { el.classList.add('in'); }); return; }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
-  }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
-  els.forEach(function (el) { io.observe(el); });
 })();
 </script>
 </body>

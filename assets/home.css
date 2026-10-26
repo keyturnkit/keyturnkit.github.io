@@ -5,30 +5,15 @@
 @font-face { font-family: "Source Code Pro"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/assets/fonts/source-code-pro-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 :root {
+  /* Plasmo's own light values (mauve scale, red/yellow/green dots), accent swapped to deep green */
   --bg: #ffffff;
-  --m1: #fcfcfd; --m2: #f9f9fa; --m3: #f3f3f5; --m4: #eceef0;
-  --m7: #dcdee1; --m8: #c6c9ce; --m9: #8b8f96; --m10: #80848b; --m11: #656a71; --m12: #15181d;
-  --a9: #0a66c2; --a10: #095bb0; --a11: #0b5cad; --a-fg: #fdfdff;
-  --pill: rgba(236, 243, 251, 0.9); --pill-drop: #f1f6fc;
-  --grid: rgba(202, 212, 215, 0.2);
-  --code-key: #0a66c2;
-  --foot-a: #0a66c2; --foot-b: #0a4f9a;
-  --halo: rgba(10, 102, 194, 0.25);
-  --ink-h: #15181d;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0d1117;
-    --m1: #11161d; --m2: #151b23; --m3: #1b222c; --m4: #222a35;
-    --m7: #3a4350; --m8: #4a5462; --m9: #7d8590; --m10: #8b949e; --m11: #9aa4af; --m12: #e6edf3;
-    --a9: #0a66c2; --a10: #1a74d0; --a11: #58a6ff; --a-fg: #ffffff;
-    --pill: rgba(21, 27, 35, 0.9); --pill-drop: #151b23;
-    --grid: rgba(255, 255, 255, 0.05);
-    --code-key: #58a6ff;
-    --foot-a: #0a4f9a; --foot-b: #07335f;
-    --halo: rgba(88, 166, 255, 0.25);
-    --ink-h: #e6edf3;
-  }
+  --m1: #fdfcfd; --m2: #f9f8f9; --m3: #f4f2f4; --m4: #eeedef;
+  --m7: #dcdbdd; --m8: #c8c7cb; --m9: #908e96; --m10: #86848d; --m11: #6f6e77; --m12: #1a1523;
+  --a9: #0e7a5a; --a10: #0b6449; --a11: #0b6449; --a-fg: #ffffff;
+  --pill: rgba(232, 244, 239, 0.9); --pill-drop: #eef7f3;
+  --code-key: #0e7a5a;
+  --foot-a: #0e7a5a; --foot-b: #0b6449;
+  --ink-h: #1a1523;
 }
 
 * { box-sizing: border-box; border: 0 solid var(--m4); }
@@ -43,11 +28,6 @@ img { max-width: 100%; display: block; }
 code { font-family: "Source Code Pro", monospace; font-size: .9em; }
 
 main { position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; overflow-x: clip; }
-
-/* Hero grid background: 32px grid, faded out toward the lower right (Plasmo before-layer) */
-.grid-bg { position: absolute; z-index: 0; top: 0; left: 0; width: 100%; height: 100vh; pointer-events: none;
-  background-image: radial-gradient(100% 68% at 70% 15%, transparent 40%, var(--bg) 79%), conic-gradient(from 90deg at 1px 1px, transparent 90deg, var(--grid) 0deg);
-  background-size: auto, 32px 32px; }
 
 /* Header pill */
 .top { position: sticky; top: 16px; z-index: 470; display: flex; width: 100%; justify-content: center; padding: 8px 16px; flex-wrap: wrap; }
@@ -166,7 +146,6 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
 .shell { width: 100%; max-width: 448px; border: 1px solid var(--m2); border-radius: 6px; background: var(--m2); overflow: hidden; }
 .shell-popup { padding: 16px; display: flex; justify-content: center; }
 .popup-frame { display: block; width: 360px; max-width: 100%; height: 330px; border: 1px solid var(--m7); border-radius: 6px; background: #fff; }
-@media (prefers-color-scheme: dark) { .popup-frame { background: #1c1c1e; } }
 .popup-shot { width: 360px; max-width: 100%; height: auto; border: 1px solid var(--m7); border-radius: 6px; }
 .stack { display: flex; flex-direction: column; align-items: center; }
 .stack .over { margin-top: 0; transform: translateY(-32px); }
@@ -278,10 +257,6 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
   .foot-end { width: auto; align-items: flex-end; }
 }
 
-/* Reveal on scroll (Plasmo: transition-all duration-700, translate-y-64 until in view) */
-.js .reveal { transition: opacity .7s cubic-bezier(.4, 0, .2, 1), transform .7s cubic-bezier(.4, 0, .2, 1); will-change: transform; }
-.js .reveal:not(.in) { opacity: 0; transform: translateY(16rem); }
-@media (prefers-reduced-motion: reduce) { .js .reveal, .js .reveal:not(.in) { transition: none; opacity: 1; transform: none; } }
 
 .code.wrap .l { white-space: pre-wrap; overflow-wrap: anywhere; }
 .code.wrap { color: var(--m12); }
@@ -310,3 +285,46 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
   .works li { width: calc(50% - 8px); justify-content: flex-start; font-size: 20px; }
 }
 @media (max-width: 1023px) { .fmock.top { margin-bottom: 8px; } }
+
+
+/* Round 5 */
+.tint { display: block; padding: 8px 0; background-image: linear-gradient(var(--a10), var(--a9)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+.closer .tint { display: inline; padding: 0; }
+.frow h2 { color: #000; }
+
+/* Works with: official Polar logotype (unmodified black file), WXT mark (MIT repo), text where brand terms forbid recolouring */
+.works li { gap: 8px; }
+.works li img { height: 32px; width: auto; }
+.works li svg { width: 32px; height: 32px; stroke: currentColor; fill: none; stroke-width: 28; flex: none; }
+
+/* Browser window with the live popup (chrome numbers from Plasmo's mock: 30px bar, 12px dots, 24px address pill, radius 6) */
+.hero-mock { position: relative; z-index: 1; width: 100%; max-width: 1024px; padding: 0 24px; display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+.hm-code { width: 100%; }
+.hm-browser { width: 100%; }
+.win { border: 1px solid var(--m4); border-radius: 6px; background: var(--m2); overflow: hidden; position: relative; }
+.win-bar { display: flex; align-items: center; height: 30px; border-bottom: 2px solid var(--m4); }
+.dots { display: flex; gap: 8px; padding: 8px 12px 8px 8px; }
+.dots i { width: 12px; height: 12px; border-radius: 6px; display: block; }
+.dots i:nth-child(1) { background: #dc3d43; } .dots i:nth-child(2) { background: #f7ce00; } .dots i:nth-child(3) { background: #299764; }
+.win-tab { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 12px; line-height: 16px; font-weight: 600; background: var(--bg); color: var(--m12); }
+.win-addr { flex: 1; display: flex; align-items: center; gap: 8px; padding: 2px 8px; height: 100%; }
+.addr { flex: 1; height: 24px; border-radius: 6px; background: var(--m4); display: flex; align-items: center; justify-content: center; font-size: 12px; line-height: 16px; font-weight: 500; color: var(--m12); }
+.ext-btn { width: 18px; height: 18px; border-radius: 6px; background: var(--a9); flex: none; }
+.win-body { position: relative; padding: 8px; min-height: 0; }
+.skel { display: none; }
+.win-body .popup-frame { position: static; display: block; width: 100%; max-width: 360px; margin: 0 auto; }
+.hm-code .codewrap { font-size: 14px; }
+.hm-cap { max-width: 720px; margin: 8px auto 0; display: flex; flex-direction: column; gap: 12px; color: var(--m11); }
+.hm-cap .note { color: var(--m12); }
+@media (min-width: 640px) {
+  .win-body { min-height: 392px; }
+  .skel { display: flex; flex-direction: column; gap: 4px; padding-right: 384px; }
+  .skel b { display: block; height: 24px; border-radius: 6px; background: var(--m3); }
+  .skel b:first-child { height: 12px; width: 60%; }
+  .win-body .popup-frame { position: absolute; top: 8px; right: 8px; width: 360px; margin: 0; }
+}
+@media (min-width: 1024px) {
+  .hero-mock { flex-direction: row; align-items: flex-start; gap: 0; }
+  .hm-code { width: 432px; flex: none; margin-top: 56px; }
+  .hm-browser { flex: 1; margin-left: -40px; position: relative; z-index: 2; }
+}
