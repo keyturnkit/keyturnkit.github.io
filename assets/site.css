@@ -131,7 +131,7 @@ code, pre { font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Conso
 .note { margin-top: 28px; color: var(--muted); max-width: 46em; }
 
 /* Pricing */
-.plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 880px; }
+.plans { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .plan { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 32px; display: flex; flex-direction: column; }
 .plan-pro { border: 2px solid var(--accent); box-shadow: var(--shadow); }
 .plan h3 { font-size: 1.2rem; margin: 0; }

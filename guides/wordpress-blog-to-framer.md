@@ -43,9 +43,9 @@ Two catches:
 - *WP Sync* by 19.studio connects to the live site and can sync again later. It handles custom post types and WooCommerce products, with field mapping. It imports images and media. Pages are not imported. It is free.
 - *Sillyweb WP Sync* by Sillyweb connects to your WordPress site and imports posts, pages, custom post types, WooCommerce products, media and custom fields, and can sync again. Its listing calls it free and doesn't mention authors, drafts or redirects.
 - *PostPort* by Luke Sn reads the export file for $39 one-time. Every post arrives as a draft, authors and tags come in as text, and you pick image files from your computer to upload.
-- [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours) reads the export file or the live site. It brings drafts from the export file, turns authors, categories and tags into linked collections, copies images into Framer, and adds redirects on Framer Pro or higher. It is free for your newest 25 posts; a $29 per-project license for the rest is coming. It doesn't do custom post types or WooCommerce.
+- [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours) reads the export file or the live site. It brings drafts from the export file, turns authors, categories and tags into linked collections, copies images into Framer, and adds redirects on Framer Pro or higher. It is free for your newest 25 posts; a license for the rest is $29 per project or $59 for any number, paid once. It doesn't do custom post types or WooCommerce.
 
-![Blog Import reading a Squarespace export: 9 posts, 1 draft, 2 authors, 4 categories, 6 tags, with options for redirects and copying images](/guides/img/blog-import-review.jpg)
+![Blog Import reading a live WordPress site: 1112 posts, 15 authors, 10 categories and 20 tags, with options for redirects and copying images](/guides/img/blog-import-review-wp.jpg)
 
 ![The imported blog in Framer CMS: a Journal collection with linked Authors, Categories and Tags collections](/guides/img/blog-import-collections.jpg)
 

@@ -40,7 +40,7 @@
 
 <main>
   <article class="article">
-    <p class="crumbs"><a href="/">Home</a> / <a href="/#guides">Guides</a></p>
+    {% if page.url contains '/guides/' %}<p class="crumbs"><a href="/">Home</a> / <a href="/#guides">Guides</a></p>{% endif %}
     {{ content }}
   </article>
 
