@@ -328,3 +328,11 @@ main { position: relative; width: 100%; display: flex; flex-direction: column; a
   .hm-code { width: 432px; flex: none; margin-top: 56px; }
   .hm-browser { flex: 1; margin-left: -40px; position: relative; z-index: 2; }
 }
+
+/* Round 6: official Lemon Squeezy and Dodo Payments files, unmodified */
+.works li img.lg-ls { height: 30px; width: auto; }
+.works li img.lg-dodo { height: 30px; width: auto; }
+/* Lemon Squeezy's official light-background artwork sits on #f7f7f9, so the row carries that same light panel */
+.works ul { background: #f7f7f9; border-radius: 12px; padding: 8px 16px; align-items: center; justify-content: center; }
+.works li img.lg-dodo { height: 34px; }
+@media (max-width: 1023px) { .works ul { justify-content: flex-start; } .works li img.lg-dodo { margin-left: -10px; } }
