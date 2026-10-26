@@ -13,9 +13,6 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -31,17 +28,17 @@
   <div class="wrap">
     {% if framer %}<a class="brand" href="/blog-import/"><span class="brand-mark"><svg><use href="#i-import"/></svg></span>Blog Import for Framer</a>{% else %}<a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>{% endif %}
     <nav class="nav">
-      <a href="{% if framer %}/blog-import/#guides{% else %}/#guides{% endif %}">Guides</a>
-      {% unless framer %}<a href="/#pricing">Pricing</a>
+      {% if framer %}<a href="/blog-import/#guides">Guides</a>{% endif %}
+      {% unless framer %}<a href="/#pro">Pro</a>
       <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>{% endunless %}
-      {% if framer %}<a class="btn btn-primary btn-sm" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in Framer</a>{% else %}<a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro</a>{% endif %}
+      {% if framer %}<a class="btn" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in Framer</a>{% else %}<a class="btn" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a>{% endif %}
     </nav>
   </div>
 </header>
 
 <main>
   <article class="article">
-    {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a> / <a href="/#guides">Guides</a>{% endif %}</p>{% endif %}
+    {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a>{% endif %}</p>{% endif %}
     {{ content }}
   </article>
 
