@@ -3,6 +3,7 @@ layout: default
 title: "Moving a WordPress blog to Framer: export file, live site, and what breaks"
 description: "The two ways to get WordPress posts out, what the export file stores that WordPress normally cleans up, and how to bring posts, images and old URLs into Framer CMS."
 permalink: /guides/wordpress-blog-to-framer/
+og_image: /og-blog-import.png
 ---
 
 # Moving a WordPress blog to Framer: export file, live site, and what breaks
@@ -57,3 +58,9 @@ WordPress URLs usually look like `/2024/03/09/my-post/` or `/my-post/`, and your
 3. Add redirects, publish, and open a few old URLs to check them.
 4. Move the domain.
 5. Only then shut down WordPress.
+
+## More guides
+
+- [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)
+- [Moving a Blogger blog to Framer](/guides/blogger-blog-to-framer/)
+- [Moving a Medium blog to Framer](/guides/medium-blog-to-framer/)

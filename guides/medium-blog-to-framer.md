@@ -3,6 +3,7 @@ layout: default
 title: "Moving a Medium blog to Framer"
 description: "What Medium's export contains, how to tell stories from replies, and how to get posts, images and tags into Framer CMS."
 permalink: /guides/medium-blog-to-framer/
+og_image: /og-blog-import.png
 ---
 
 # Moving a Medium blog to Framer
@@ -40,3 +41,9 @@ We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-sq
 ## Check after the move
 
 Open a story with several images and check they are sharp, and look for any reply that slipped through as a post. Then add a link from your Medium profile to the new site, so readers who find the old stories can follow you.
+
+## More guides
+
+- [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)
+- [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
+- [Moving a Blogger blog to Framer](/guides/blogger-blog-to-framer/)

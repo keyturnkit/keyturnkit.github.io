@@ -3,6 +3,7 @@ layout: default
 title: "Moving a Blogger blog to Framer, with its images and old links"
 description: "How to export a Blogspot blog, what the file contains, and how to get posts, labels, images and the old .html addresses into Framer CMS."
 permalink: /guides/blogger-blog-to-framer/
+og_image: /og-blog-import.png
 ---
 
 # Moving a Blogger blog to Framer, with its images and old links
@@ -45,3 +46,9 @@ Comments and pages are not imported. Framer has no comments, and pages are worth
 ## Check after the move
 
 Open five old addresses, including one from the first year of the blog, and make sure each lands on the right post. Then look at a post with several photos and check they are sharp.
+
+## More guides
+
+- [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)
+- [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
+- [Moving a Medium blog to Framer](/guides/medium-blog-to-framer/)

@@ -3,6 +3,7 @@ layout: default
 title: "Moving a Squarespace blog to Framer without losing images or links"
 description: "What Squarespace's export file contains, what it leaves out, and how to get posts, images and old URLs into Framer CMS."
 permalink: /guides/squarespace-blog-to-framer/
+og_image: /og-blog-import.png
 ---
 
 # Moving a Squarespace blog to Framer without losing images or links
@@ -64,3 +65,9 @@ Framer lets you add redirects under Site Settings, Hosting, Redirects on the Pro
 4. Add redirects from the old post URLs.
 5. Publish, test a few old URLs, then move the domain.
 6. Only then cancel Squarespace.
+
+## More guides
+
+- [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
+- [Moving a Blogger blog to Framer](/guides/blogger-blog-to-framer/)
+- [Moving a Medium blog to Framer](/guides/medium-blog-to-framer/)
