@@ -31,8 +31,8 @@
     <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>
     <nav class="nav">
       <a href="/#guides">Guides</a>
-      <a href="/#pricing">Pricing</a>
-      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
+      {% unless framer %}<a href="/#pricing">Pricing</a>
+      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>{% endunless %}
       {% if framer %}<a class="btn btn-primary btn-sm" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Blog Import plugin</a>{% else %}<a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro</a>{% endif %}
     </nav>
   </div>
