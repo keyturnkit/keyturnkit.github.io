@@ -1,0 +1,7 @@
+How the popup stills and the GIF were made (round 7)
+- Real parts: the popup and options page are the built extension (`demo/` is the free edition's `.output/chrome-mv3` plus `shim.js`; options page from the same build). Playwright drove them: typed the key, clicked Activate, captured each state. Nothing in the popup is redrawn.
+- Drawn parts: the Chrome window (`stage.html`), the cursor arrow, the page skeleton behind the popup.
+- Chrome measurements, from https://chromium.googlesource.com/chromium/src/+/main/chrome/browser/ui/layout_constants.cc (fetched 2026-10-27): tab height 34 + overlap 1 + strip padding 6 = 41, toolbar button height 34, location bar height 34, toolbar element padding 4, toolbar corner radius 8. From ui/views/layout/layout_provider.cc: corner radius Emphasis::kHigh = 8.
+- Estimated, not verified: Chrome's light colours (#dee1e6 frame, #f1f3f4 omnibox, #5f6368 icons), popup radius 12 and the popup shadow, window radius 10 and the three dots (macOS look, as on the homepage window).
+- Pro state in the popup shows the Pro badge and "Only paying users see this." The lines "Pro is active (Pro)" and "Licensed to buyer@example.com" belong to the options page (LicenseForm only renders there once Pro is on), so they are in chrome-5-options-pro-active.png.
+- The popup's height in these shots is fitted to its content (main.offsetHeight). The homepage iframe keeps the previous height after Pro turns on (the postMessage only grows it), which leaves blank space.
