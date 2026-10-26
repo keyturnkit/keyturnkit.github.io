@@ -28,3 +28,16 @@
 | Pro mockup | browser mockup | free popup PNG | 2 stacked code cards, lib/config.ts lines verbatim from products/extkit | 13px font so comments wrap |
 | Pro plan rows | 1 feature per row, 64px | 5 rows, trial and uses merged | 6 rows, split | card taller than 550 |
 | page height 1280 | 10538 | 9590 | 9422 | content length |
+
+## Round 4 (measured on clone-r4)
+| item | target | clone r3 | clone r4 |
+|---|---|---|---|
+| Gate a feature, 2nd card right edge vs column edge (1280) | steps inward, inside column | +32 past 1088 | 1056, inside (steps left like Dedicated Runtime) |
+| FAQ grid 1280 | n/a | right column 25px higher | 4 cards, rows aligned (5989 / 6377), equal heights per row, 32px gaps |
+| FAQ order 390 | n/a | differed from desktop | same source order, 32px gaps |
+| FAQ button | 224x52, one line | 2 lines | "Compare", 52px tall |
+| closing CTA button bottom to Guides h2 box | 176 (1280 and 390) | 48 | 176 |
+| hero partner names 390 | inside 32px gutter | start at x 13 | start at x 32 and 203, 2 columns |
+| popup top vs first card top 1280 | +28 | +65 | +24 |
+| popup bottom to first card 390 | ~33 | 24 | 32 |
+| terminal 390 | no mid-word break | broke git URL | white-space pre, scrolls inside box (453 wide in 340) |
