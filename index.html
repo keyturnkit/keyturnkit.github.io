@@ -15,14 +15,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<!-- Icons: Lucide (ISC License), key-round, check, arrow-right. -->
+<!-- Icons: Lucide (ISC License), key-round, arrow-right. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
 </svg>
 
@@ -31,10 +30,9 @@
     <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>
     <nav class="nav">
       <a href="#how">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#guides">Guides</a>
+      <a href="#pricing">Free and Pro</a>
       <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
-      <a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro</a>
+      <a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59</a>
     </nav>
   </div>
 </header>
@@ -43,115 +41,113 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <h1>Charge for your Chrome extension <em>without running a server</em></h1>
-        <p class="lede">Keyturn Kit is a WXT + React starter that checks license keys from Lemon Squeezy, Polar or Dodo Payments straight from the extension. Your payment provider takes the money. The kit re-checks the key once a day and locks Pro when the key is disabled.</p>
+        <h1>Sell your Chrome extension with a license key</h1>
+        <p class="lede">Keyturn Kit is a WXT + React starter. <strong>Your payment provider sells the key, and the extension checks it</strong> with the provider's public API. No server of yours, and no secret key in the code.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59 one-time</a>
-          <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Clone the free edition</a>
+          <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59 once</a>
         </div>
-        <p class="fine">The free edition is MIT licensed and works with Lemon Squeezy on its own. Pro is sold through Polar, which handles payment and tax.</p>
+        <p class="fine">The free edition is MIT licensed and works with Lemon Squeezy. Pro adds Polar and Dodo Payments, a free trial and daily free uses.</p>
       </div>
 
-      <figure class="shot">
-        <picture>
-          <source srcset="/assets/popup-dark.png" media="(prefers-color-scheme: dark)">
-          <img src="/assets/popup-light.png" width="360" height="330" alt="The free edition's popup: a free feature, a Pro feature with an Upgrade link, and the license key box">
-        </picture>
-        <figcaption>The free edition's popup as it ships, before you add your own features.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <div class="providers">
-    <div class="wrap">
-      <span class="grp"><span>Works with</span><b>Lemon Squeezy</b><b>Polar</b><b>Dodo Payments</b></span><span class="grp"><span>Built on</span><b>WXT</b><b>React</b></span>
-    </div>
-  </div>
-
-  <section class="section">
-    <div class="wrap split">
-      <div>
-        <h2>Why this exists</h2>
-        <p>Google wound down Chrome Web Store payments between 2020 and early 2021. Since then every paid extension has needed its own checkout, its own way of knowing who paid, and some protection against one key being shared with a whole Discord server.</p>
-        <p>Most guides answer that with user accounts and a backend. For an extension that sells for $5 to $30, that is a database, auth and a privacy policy you didn't need. License keys skip all of it: the provider emails a key, the user pastes it once, the extension checks it against the provider's public API.</p>
-      </div>
-      <div class="code-window">
-        <div class="bar"><i></i><i></i><i></i><span>popup/App.tsx</span></div>
-<pre><code><span class="tok-c">// Hide a feature from free users</span>
-&lt;<span class="tok-t">ProGate</span>&gt;
-  &lt;<span class="tok-t">BulkExport</span> /&gt;
-&lt;/<span class="tok-t">ProGate</span>&gt;
-
-<span class="tok-c">// Or check in code</span>
-<span class="tok-k">if</span> (<span class="tok-k">await</span> license.<span class="tok-f">isPro</span>()) { ... }
-
-<span class="tok-c">// Pro: 7-day trial, then 3 free exports a day</span>
-<span class="tok-k">const</span> r = <span class="tok-k">await</span> access.<span class="tok-f">check</span>(<span class="tok-s">'export'</span>);
-<span class="tok-k">if</span> (!r.allowed) <span class="tok-k">return</span> <span class="tok-f">showUpgrade</span>(r.reason);
-<span class="tok-k">await</span> <span class="tok-f">doExport</span>();
-<span class="tok-k">await</span> access.<span class="tok-f">use</span>(<span class="tok-s">'export'</span>);</code></pre>
+      <div class="demo">
+        <div class="keytag" id="keytag">
+          <span class="mono" id="demo-key">KEYTURN-DEMO-2026</span>
+          <button type="button" id="copy-key">Copy</button>
+        </div>
+        <iframe class="popup-frame" id="popup" src="/demo/popup.html" title="The free edition's popup, running in this page"></iframe>
+        <p class="demo-note" id="demo-note" aria-live="polite">Paste the key into the popup and press <b>Activate</b>. This is the free edition's real popup, built from the GitHub repo; only its calls to Chrome and Lemon Squeezy are answered by this page.</p>
       </div>
     </div>
   </section>
 
-  <section class="section section-alt" id="how">
+  <section class="section" id="how">
     <div class="wrap">
       <h2>What happens after someone pays</h2>
-      <p class="intro">No accounts and no backend of yours. The provider sells the key, the extension checks it.</p>
-      <div class="steps">
-        <div class="step"><h3>They pay</h3><p>Upgrade opens your provider's hosted checkout.</p></div>
-        <div class="step"><h3>They get a key</h3><p>The provider emails them a license key.</p></div>
-        <div class="step"><h3>They paste it</h3><p>The extension activates it. No API key ships in the extension.</p></div>
-        <div class="step"><h3>It stays checked</h3><p>A daily re-check locks Pro once a key is disabled. Offline, Pro keeps working for 7 days.</p></div>
+      <p class="intro">Lemon Squeezy, Polar and Dodo are merchants of record: they take the payment and handle sales tax. The extension only ever talks to their license API.</p>
+      <ol class="timeline">
+        <li><span class="when">At checkout</span><p>Upgrade opens your provider's hosted checkout page. <strong>You never see a card number.</strong></p></li>
+        <li><span class="when">A minute later</span><p>The provider emails the buyer a license key.</p></li>
+        <li><span class="when">When they paste it</span><p>The extension checks the key belongs to your store, then activates it, which uses one of the activations you allow per key.</p></li>
+        <li><span class="when">Every 24 hours</span><p>The key is checked again. <strong>A key you disable stops working at the next check.</strong></p></li>
+        <li><span class="when">Without internet</span><p>Pro keeps working for 7 days after the last good check, so a train ride doesn't lock anyone out.</p></li>
+        <li><span class="when">After a refund</span><p>Disable the key in your provider's dashboard, and Pro locks at the next daily check.</p></li>
+      </ol>
+      <p class="note">Keys from other stores are rejected by store, organization or business id. Without that check, a key bought from any seller on the same provider would turn your Pro features on.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap config">
+      <div>
+        <h2>One file to edit</h2>
+        <p>Put in your store id and checkout link, wrap the paid part of your extension in <code>&lt;ProGate&gt;</code>, and build. Switching providers in Pro changes one line.</p>
+        <p>This is the free edition's config as it is on GitHub.</p>
       </div>
-      <p class="note">Keys from other stores are rejected by store, organization or business id. Without that check, any key bought from any seller on the same provider would turn your Pro features on.</p>
+      <div>
+        <p class="file-name">lib/config.ts</p>
+<pre class="file"><code><span class="c">// The only file you need to edit to sell your extension.</span>
+
+export const config = {
+  provider: <span class="s">'lemonsqueezy'</span> as const,
+
+  <span class="c">/** Where the Upgrade button sends people. */</span>
+  checkoutUrl: <span class="s">'https://YOUR-STORE.lemonsqueezy.com/buy/YOUR-VARIANT-ID'</span>,
+
+  lemonsqueezy: {
+    <span class="c">/** Settings > Stores in the Lemon Squeezy dashboard. */</span>
+    storeId: <span class="n">0</span>,
+    <span class="c">/** Leave empty to accept any product in your store. */</span>
+    productIds: [] as number[],
+  },
+
+  <span class="c">/** How often to re-check the key with Lemon Squeezy. */</span>
+  recheckHours: <span class="n">24</span>,
+  <span class="c">/** How long Pro keeps working when the license server can't be reached. */</span>
+  offlineGraceDays: <span class="n">7</span>,
+};</code></pre>
+      </div>
     </div>
   </section>
 
   <section class="section" id="pricing">
     <div class="wrap">
       <h2>Free and Pro</h2>
-      <p class="intro">Start with the free edition. Pro is for selling through Polar or Dodo, or giving a free trial before the paywall.</p>
-      <div class="plans">
-        <div class="plan">
-          <h3>Free</h3>
-          <div class="price">$0</div>
-          <p class="sub">MIT license, on GitHub</p>
-          <ul class="checks">
-            <li><svg><use href="#i-check"/></svg><span>Lemon Squeezy license keys</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Daily re-check and 7-day offline grace</span></li>
-            <li><svg><use href="#i-check"/></svg><span><code>ProGate</code>, license box and settings page</span></li>
-            <li><svg><use href="#i-check"/></svg><span>15 tests with mocked network calls</span></li>
-          </ul>
-          <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Get it on GitHub</a>
-        </div>
-        <div class="plan plan-pro">
-          <h3>Pro</h3>
-          <div class="price">$59 <small>one-time</small></div>
-          <p class="sub">For your own extensions, unlimited</p>
-          <ul class="checks">
-            <li><svg><use href="#i-check"/></svg><span>Everything in Free</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Polar and Dodo Payments, switched with one line</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Free trial counted from install</span></li>
-            <li><svg><use href="#i-check"/></svg><span>Daily free uses per feature before the paywall</span></li>
-            <li><svg><use href="#i-check"/></svg><span>AGENTS.md for Claude Code and Cursor</span></li>
-            <li><svg><use href="#i-check"/></svg><span>28 tests, and every 1.x update</span></li>
-          </ul>
-          <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59</a>
-        </div>
+      <p class="intro">Start with the free edition. Pro is for selling through Polar or Dodo, or for letting people try before the paywall.</p>
+      <div class="table-scroll">
+        <table class="compare">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col"><span class="tier">Free</span><span class="cost">MIT, on GitHub</span><a class="btn btn-ghost btn-sm" href="https://github.com/keyturnkit/keyturn-kit">Clone</a></th>
+              <th scope="col"><span class="tier">Pro</span><span class="cost">$59 once, all your extensions</span><a class="btn btn-primary btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Lemon Squeezy license keys</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row">Daily re-check, 7 days offline</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row"><code>ProGate</code>, license box, settings page</th><td class="yes">Yes</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row">Polar and Dodo Payments</th><td class="no">No</td><td class="yes">Yes, one line to switch</td></tr>
+            <tr><th scope="row">Free trial counted from install</th><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row">Free uses per day before the paywall</th><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row">AGENTS.md for Claude Code and Cursor</th><td class="no">No</td><td class="yes">Yes</td></tr>
+            <tr><th scope="row">Tests, network calls mocked</th><td>15</td><td>28</td></tr>
+            <tr><th scope="row">Updates</th><td>On GitHub</td><td>Every 1.x release</td></tr>
+          </tbody>
+        </table>
       </div>
-      <p class="plan-foot">Pro arrives as a zip download. If it doesn't work for you, email within 14 days for a full refund.</p>
+      <p class="note">Pro arrives as a zip download from Polar. If it doesn't work for you, email within 14 days for a full refund.</p>
     </div>
   </section>
 
-  <section class="section section-alt" id="guides">
+  <section class="section" id="guides">
     <div class="wrap">
       <h2>Guides</h2>
-      <ul class="guide-list guide-grid">
-        <li><a href="/guides/license-keys-chrome-extension/"><span><small>Chrome extensions</small>Selling a Chrome extension with license keys, no backend</span><svg><use href="#i-arrow"/></svg></a></li>
-        <li><a href="/guides/extensionpay-alternative/"><span><small>Chrome extensions</small>ExtensionPay or license keys: two ways to charge</span><svg><use href="#i-arrow"/></svg></a></li>
+      <ul class="guide-list">
+        <li><a href="/guides/license-keys-chrome-extension/"><span>Selling a Chrome extension with license keys, no backend<small>Step by step with WXT and Lemon Squeezy.</small></span><svg><use href="#i-arrow"/></svg></a></li>
+        <li><a href="/guides/extensionpay-alternative/"><span>ExtensionPay or license keys<small>How the two compare on fees, tax and what happens when someone reinstalls.</small></span><svg><use href="#i-arrow"/></svg></a></li>
       </ul>
-      <p class="note">We also make <a href="/blog-import/">Blog Import</a>, a Framer plugin for moving a blog. Its guides live on its own page.</p>
+      <p class="note">We also make <a href="/blog-import/">Blog Import</a>, a Framer plugin for moving a blog. Its guides are on its own page.</p>
     </div>
   </section>
 
@@ -182,29 +178,51 @@
       </div>
     </div>
   </section>
-
-  <section class="cta section-alt">
-    <div class="wrap">
-      <h2>Add a paid tier to your extension</h2>
-      <p>Clone the free edition and try it with a Lemon Squeezy test key. Get Pro if you sell through Polar or Dodo.</p>
-      <div class="actions">
-        <a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Get Pro, $59 one-time</a>
-        <a class="btn btn-ghost" href="https://github.com/keyturnkit/keyturn-kit">Free edition on GitHub</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
     <div>Keyturn Kit is made by Mam Studio, the name you'll see on Polar checkouts and receipts. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a><br>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</div>
     <nav>
-      <a href="#pricing">Pricing</a>
-      <a href="#guides">Guides</a>
       <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>
       <a href="/blog-import/">Blog Import for Framer</a>
     </nav>
   </div>
 </footer>
+
+<script>
+(function () {
+  var note = document.getElementById('demo-note');
+  var popup = document.getElementById('popup');
+  var tag = document.getElementById('keytag');
+  var said = {
+    'Upgrade': 'In your extension, <b>Upgrade</b> opens your Lemon Squeezy checkout. Here, use the demo key instead.',
+    'Get a key': 'In your extension, <b>Get a key</b> opens your Lemon Squeezy checkout. Here, use the demo key instead.',
+    'License settings': '<b>License settings</b> opens the extension\'s options page, where the buyer can see or remove their key.'
+  };
+  document.getElementById('copy-key').addEventListener('click', function (e) {
+    var key = document.getElementById('demo-key').textContent;
+    var done = function () { e.target.textContent = 'Copied'; tag.classList.remove('copied'); void tag.offsetWidth; tag.classList.add('copied'); };
+    if (navigator.clipboard) navigator.clipboard.writeText(key).then(done, function () {}); else done();
+  });
+  window.addEventListener('message', function (e) {
+    if (e.origin !== location.origin || !e.data || !e.data.keyturnDemo) return;
+    note.innerHTML = said[e.data.keyturnDemo] || note.innerHTML;
+  });
+  // When the popup shows the Pro badge, say what just happened.
+  popup.addEventListener('load', function () {
+    try {
+      var doc = popup.contentDocument;
+      new MutationObserver(function () {
+        if (doc.querySelector('.badge') && note.dataset.state !== 'pro') {
+          note.dataset.state = 'pro';
+          note.innerHTML = '<b>Pro is on.</b> The key was checked against your store and activated. In your extension it is checked again every 24 hours. <button type="button" class="demo-reset" id="demo-reset">Start over</button>';
+          document.getElementById('demo-reset').addEventListener('click', function () { delete note.dataset.state; popup.src = popup.src; note.innerHTML = 'Paste the key into the popup and press <b>Activate</b>.'; });
+        }
+      }).observe(doc.body, { childList: true, subtree: true });
+    } catch (err) {}
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+import{c as e,n as t,o as n,s as r,t as i}from"./style-BMerLHT_.js";var a=e(r(),1),o=e(n(),1),s=t();o.createRoot(document.getElementById(`root`)).render((0,s.jsx)(a.StrictMode,{children:(0,s.jsxs)(`main`,{style:{maxWidth:420},children:[(0,s.jsx)(`h1`,{children:`License settings`}),(0,s.jsx)(i,{})]})}));
