@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* Chrome frame, drawn. Heights from chromium layout_constants.cc: tab strip 41 (34 tab + 1 overlap + 6 padding), toolbar button 34, omnibox 34, toolbar element padding 4. Colours estimated from Chrome's light theme. */
+*{box-sizing:border-box;margin:0}
+body{background:#f4f2f4;font-family:Inter,-apple-system,"Segoe UI",sans-serif;width:760px;height:520px;position:relative;overflow:hidden}
+.win{position:absolute;left:20px;top:20px;width:720px;height:480px;border-radius:10px;background:#fff;border:1px solid #c8c7cb;overflow:hidden}
+.strip{height:41px;background:#dee1e6;display:flex;align-items:flex-end;padding:0 8px 0 0}
+.dots{display:flex;gap:8px;padding:0 12px 14px 12px;align-self:center;margin-top:0}
+.dots i{width:12px;height:12px;border-radius:6px;display:block}
+.dots i:nth-child(1){background:#dc3d43}.dots i:nth-child(2){background:#f7ce00}.dots i:nth-child(3){background:#299764}
+.tab{height:35px;width:200px;background:#fff;border-radius:8px 8px 0 0;display:flex;align-items:center;padding:0 12px;font-size:12px;color:#202124;margin-bottom:0}
+.toolbar{height:40px;background:#fff;display:flex;align-items:center;padding:0 8px;gap:4px;border-bottom:1px solid #dadce0}
+.tb{width:34px;height:34px;border-radius:17px;display:flex;align-items:center;justify-content:center;color:#5f6368;flex:none}
+.tb.active{background:rgba(0,0,0,.1)}
+.omni{flex:1;height:34px;border-radius:17px;background:#f1f3f4;display:flex;align-items:center;gap:8px;padding:0 12px;font-size:14px;color:#202124;margin:0 4px}
+.omni svg{color:#5f6368}
+.page{position:absolute;left:0;right:0;top:82px;bottom:0;background:#f9f8f9;padding:24px;display:flex;flex-direction:column;gap:8px}
+.page b{display:block;height:24px;border-radius:6px;background:#f0eff1}
+.page b:first-child{height:12px;width:30%}
+.pop{position:absolute;right:76px;top:83px;width:360px;border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.1),0 6px 20px rgba(0,0,0,.22);z-index:5}
+.pop iframe{display:block;width:360px;height:330px;border:0}
+#cur{position:absolute;left:0;top:0;z-index:9;pointer-events:none;display:none}
+</style></head><body>
+<div class="win">
+ <div class="strip"><div class="dots"><i></i><i></i><i></i></div><div class="tab">Your extension</div></div>
+ <div class="toolbar">
+  <span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7" /> <path d="M19 12H5" /></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /></svg></span>
+  <div class="omni"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2" /> <path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg><span>your-extension.example</span></div>
+  <span class="tb active" id="ext"><img src="/ext32.png" width="20" height="20" alt=""></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" /></svg></span><span class="tb"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1" /> <circle cx="12" cy="5" r="1" /> <circle cx="12" cy="19" r="1" /></svg></span>
+ </div>
+ <div class="page"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+ <div class="pop" id="pop"><iframe id="popup" src="/demo/popup.html?v=5" scrolling="no"></iframe></div>
+</div>
+<svg id="cur" width="20" height="24" viewBox="0 0 20 24"><path d="M2 1v18l5-4.5 3.5 7.5 3-1.5-3.5-7.2H18z" fill="#000" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
+<script>window.addEventListener('message',function(e){if(e.data&&e.data.keyturnDemoHeight)document.getElementById('popup').style.height=(e.data.keyturnDemoHeight+2)+'px'})</script>
+</body></html>
