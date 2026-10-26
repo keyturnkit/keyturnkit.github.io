@@ -1,0 +1,62 @@
+/* Guide and Blog Import pages. Tokens and chrome come from home.css.
+   Article rhythm measured on plasmo.com/blog/posts/debugging-browser-extensions (column 864, body 20/36, h2 36/40 mt56 mb32, h3 30/40 mt48 mb20)
+   and docs.plasmo.com (code block radius 12 with a tinted fill, inline code with a faint fill and 6px radius).
+   Plasmo's blog h1 is Georgia serif; here it stays Inter. */
+:root { --body: #3d3a44; --line: var(--m4); }
+.page .top { margin-bottom: 0; }
+.doc { width: 100%; max-width: 912px; padding: 0 24px; margin: 64px auto 0; color: var(--body); font-size: 18px; line-height: 30px; }
+.doc.more { margin-top: 64px; }
+.doc > :first-child { margin-top: 0; }
+.crumbs { margin: 0 0 24px; font-size: 14px; line-height: 20px; color: var(--m10); }
+.crumbs a { color: var(--m10); text-decoration: none; }
+.crumbs a:hover { color: var(--m12); }
+.doc h1 { margin: 0 0 24px; font-size: 36px; line-height: 40px; font-weight: 700; color: var(--m12); text-wrap: balance; }
+.doc h2 { margin: 56px 0 24px; font-size: 28px; line-height: 36px; font-weight: 700; color: var(--m12); scroll-margin-top: 112px; }
+.doc h3 { margin: 40px 0 16px; font-size: 24px; line-height: 32px; font-weight: 600; color: var(--m12); }
+.doc h4 { margin: 32px 0 12px; font-size: 20px; line-height: 28px; font-weight: 600; color: var(--m12); }
+.doc p, .doc ul, .doc ol { margin: 0 0 24px; }
+.doc ul, .doc ol { padding-left: 28px; }
+.doc ul { list-style: disc; }
+.doc li { margin-bottom: 8px; padding-left: 4px; }
+.doc li > p { margin-bottom: 8px; }
+.doc strong { font-weight: 600; color: var(--m12); }
+.doc a { color: var(--a11); text-decoration: underline; text-decoration-color: rgba(14, 122, 90, .35); text-underline-offset: 3px; text-decoration-thickness: 1px; transition: text-decoration-color .15s; }
+.doc a:hover { text-decoration-color: var(--a11); }
+.doc :not(pre) > code { padding: 2px 4px; border: 1px solid rgba(0, 0, 0, .04); border-radius: 6px; background: rgba(0, 0, 0, .03); font-size: .8em; color: var(--m12); overflow-wrap: anywhere; }
+.doc pre { margin: 0 0 24px; padding: 16px; border-radius: 12px; background: rgba(14, 122, 90, .05); overflow-x: auto; font-family: "Source Code Pro", monospace; font-size: 14.4px; line-height: 21.6px; font-weight: 500; color: var(--m12); tab-size: 2; }
+.doc pre code { font: inherit; background: none; border: 0; padding: 0; }
+.doc hr { margin: 48px 0; border-top: 1px solid var(--m7); }
+.doc blockquote { margin: 0 0 24px; padding: 0 0 0 24px; color: var(--m11); }
+.doc blockquote p:last-child { margin-bottom: 0; }
+.doc img, .doc video { display: block; width: 100%; height: auto; margin: 0 0 24px; border-radius: 12px; border: 1px solid var(--m4); }
+.doc table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 0 0 24px; font-size: 16px; line-height: 24px; }
+.doc th, .doc td { padding: 12px 16px 12px 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--m4); }
+.doc th { font-weight: 600; color: var(--m12); border-bottom: 2px solid var(--m7); white-space: nowrap; }
+.doc td code { white-space: nowrap; }
+
+/* Buttons used inside pages */
+.doc a.btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; font-size: 18px; line-height: 28px; font-weight: 500; text-decoration: none; }
+.doc a.btn-primary { background: var(--a9); color: var(--a-fg); transition: background-color .15s; }
+.doc a.btn-primary:hover { background: var(--a10); }
+
+/* Guide lists use the dashed cards from the homepage */
+.guide-list { list-style: none; margin: 0; padding: 0 !important; display: flex; flex-direction: column; gap: 16px; }
+.doc .guide-list li { margin: 0; padding: 0; }
+.guide-list a, .doc .guide-list a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 24px 32px; border: 2px dashed var(--m9); border-radius: 24px; color: var(--m12); font-weight: 600; text-decoration: none; transition: border-style .15s; }
+.guide-list a:hover { border-style: solid; }
+.guide-list svg { width: 20px; height: 20px; flex: none; stroke: currentColor; fill: none; }
+.doc.more h2 { margin: 0 0 24px; font-size: 28px; }
+
+@media (min-width: 768px) {
+  .doc { font-size: 20px; line-height: 36px; margin-top: 96px; }
+  .doc h1 { font-size: 48px; line-height: 52px; margin-bottom: 32px; }
+  .doc h2 { font-size: 36px; line-height: 40px; margin: 56px 0 32px; }
+  .doc h3 { font-size: 30px; line-height: 40px; margin: 48px 0 20px; }
+  .doc pre { font-size: 14.4px; }
+  .doc.more { margin-top: 96px; }
+}
+.page .foot { margin-top: 128px; }
+.doc .crumbs a { color: var(--m10); text-decoration: none; }
+.doc .crumbs a:hover { color: var(--m12); }
+.doc .guide-list, .doc ul.guide-list { list-style: none; padding-left: 0 !important; }
+@media (max-width: 639px) { .page .top .logo span { font-size: 20px; line-height: 24px; white-space: nowrap; } .page .top .logo { min-width: 0; } }

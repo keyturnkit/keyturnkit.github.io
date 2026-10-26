@@ -13,57 +13,86 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/site.css?v=3">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/home.css?v=3">
+<link rel="stylesheet" href="/assets/article.css?v=1">
 </head>
 <body>
 {% assign framer = false %}{% if page.og_image == '/og-blog-import.png' %}{% assign framer = true %}{% endif %}
-<!-- Icons: Lucide (ISC License), key-round, import, arrow-right. -->
+<!-- Icons: Lucide (ISC License). -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5"/></symbol>
-  <symbol id="i-import" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m8 11 4 4 4-4"/><path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-key-round" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z" /> <circle cx="16.5" cy="7.5" r=".5" /></symbol>
+  <symbol id="i-import" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12" /> <path d="m8 11 4 4 4-4" /> <path d="M8 5H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-4" /></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol>
+  <symbol id="i-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" /> <path d="M14 2v5a1 1 0 0 0 1 1h5" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></symbol>
 </svg>
 
-<header class="site-header">
-  <div class="wrap">
-    {% if framer %}<a class="brand" href="/blog-import/"><span class="brand-mark"><svg><use href="#i-import"/></svg></span>Blog Import for Framer</a>{% else %}<a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-key"/></svg></span>Keyturn Kit</a>{% endif %}
-    <nav class="nav">
-      {% if framer %}<a href="/blog-import/#guides">Guides</a>{% endif %}
-      {% unless framer %}      <a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>{% endunless %}
-      {% if framer %}<a class="btn" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in Framer</a>{% else %}<a class="btn" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a>{% endif %}
-    </nav>
-  </div>
-</header>
+<main class="page">
+  <header class="top">
+    <div class="pill">
+      {% if framer %}<a class="logo" href="/blog-import/"><svg class="logo-mark"><use href="#i-import"/></svg><span>Blog Import for Framer</span></a>{% else %}<a class="logo" href="/"><svg class="logo-mark"><use href="#i-key-round"/></svg><span>Keyturn Kit</span></a>{% endif %}
+      <nav class="menu" id="menu" aria-label="Main">
+        <div class="menu-links">
+          {% if framer %}<a href="/blog-import/#guides">Guides</a>{% else %}<a href="/#guides">Guides</a><a href="/#pricing">Pricing</a>{% endif %}
+        </div>
+        <div class="menu-end">
+          {% if framer %}<a class="btn-sm" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in Framer</a>{% else %}<a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a><a class="btn-sm" href="https://buy.polar.sh/polar_cl_lbYlQnZT7FFPBcNrAdcwK1gqzx45xyNy3anEs3twjGy">Buy Pro, $59</a>{% endif %}
+        </div>
+      </nav>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg class="i-open"><use href="#i-menu"/></svg><svg class="i-close"><use href="#i-x"/></svg></button>
+    </div>
+  </header>
 
-<main>
-  <article class="article">
-    {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a>{% endif %}</p>{% endif %}
+  <article class="doc">
+    {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a> / <a href="/#guides">Guides</a>{% endif %}</p>{% endif %}
     {{ content }}
   </article>
 
   {% if page.url contains '/guides/' %}
-  <div class="article-end">
-    <div class="box">
-      <h2>More guides</h2>
-      <ul class="guide-list">
-        {% assign guides = site.pages | where_exp: "p", "p.url contains '/guides/'" | sort: "title" %}
-        {% for g in guides %}{% if g.url != page.url %}{% assign gframer = false %}{% if g.og_image == '/og-blog-import.png' %}{% assign gframer = true %}{% endif %}{% if gframer == framer %}
-        <li><a href="{{ g.url }}"><span>{{ g.title }}</span><svg><use href="#i-arrow"/></svg></a></li>
-        {% endif %}{% endif %}{% endfor %}
-      </ul>
-    </div>
+  <div class="doc more">
+    <h2>More guides</h2>
+    <ul class="guide-list">
+      {% assign guides = site.pages | where_exp: "p", "p.url contains '/guides/'" | sort: "title" %}
+      {% for g in guides %}{% if g.url != page.url %}{% assign gframer = false %}{% if g.og_image == '/og-blog-import.png' %}{% assign gframer = true %}{% endif %}{% if gframer == framer %}
+      <li><a href="{{ g.url }}"><span>{{ g.title }}</span><svg><use href="#i-arrow-right"/></svg></a></li>
+      {% endif %}{% endif %}{% endfor %}
+    </ul>
   </div>
   {% endif %}
-</main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div>Keyturn Kit and Blog Import for Framer are made by Mam Studio, the name you'll see on Polar checkouts and receipts. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a><br>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</div>
-    <nav>
-      <a href="/">Keyturn Kit</a>
-      <a href="/blog-import/">Blog Import for Framer</a>
-    </nav>
-  </div>
-</footer>
+  <footer class="foot">
+    <div class="foot-top">
+      <div class="foot-brand">{% if framer %}<a class="logo" href="/blog-import/"><svg class="logo-mark"><use href="#i-import"/></svg><span>Blog Import for Framer</span></a>{% else %}<a class="logo" href="/"><svg class="logo-mark"><use href="#i-key-round"/></svg><span>Keyturn Kit</span></a>{% endif %}</div>
+      <div class="foot-col">
+        <h3>Guides</h3>
+        <div class="foot-links">
+          {% assign fguides = site.pages | where_exp: "p", "p.url contains '/guides/'" | sort: "title" %}
+          {% for g in fguides %}{% assign gframer = false %}{% if g.og_image == '/og-blog-import.png' %}{% assign gframer = true %}{% endif %}{% if gframer == framer %}<a href="{{ g.url }}"><svg><use href="#i-file-text"/></svg>{{ g.title }}</a>{% endif %}{% endfor %}
+        </div>
+      </div>
+      <div class="foot-col foot-end">
+        <h3>Links</h3>
+        <div class="foot-links">
+          {% if framer %}<a href="/blog-import/">Blog Import for Framer</a><a href="/">Keyturn Kit</a>{% else %}<a href="/">Keyturn Kit</a><a href="/blog-import/">Blog Import for Framer</a><a href="https://github.com/keyturnkit/keyturn-kit">GitHub</a>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Keyturn Kit and Blog Import for Framer are made by Mam Studio, the name you'll see on Polar checkouts and receipts. Questions or problems: <a href="mailto:proj.seedsmesh@gmail.com">proj.seedsmesh@gmail.com</a></span>
+      <span>Icons from <a href="https://lucide.dev">Lucide</a> (ISC License).</span>
+    </div>
+  </footer>
+</main>
+<script>
+(function () {
+  var top = document.querySelector('header.top'), burger = document.querySelector('.burger');
+  burger.addEventListener('click', function () {
+    var open = top.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+})();
+</script>
 </body>
 </html>
