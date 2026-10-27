@@ -28,7 +28,7 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 ## What you get in Framer
 
-Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks. On Framer Pro or higher, each old post address gets a redirect to the new one.
+Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
 Run it again later and existing posts are updated, not duplicated.
 
@@ -41,6 +41,8 @@ The newest 25 posts import free, so you can see the result on your own blog firs
 [Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
 
 Rather not run it yourself? We move the blog into your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
+The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## Guides {#guides}
 

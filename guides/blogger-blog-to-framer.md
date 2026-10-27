@@ -39,7 +39,7 @@ Redirects only help if your blog uses your own domain, which moves to Framer wit
 
 Framer's CMS imports CSV, so one route is converting the XML to CSV with a script. You get the post text, but not the labels as linked items, the full-size images or the redirects.
 
-We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), a Framer plugin that reads the Blogger file directly. It keeps drafts as drafts and skips deleted posts. Labels become a tags collection linked to each post. It copies the full-size images into Framer, so they don't depend on Google's hosting, and adds a redirect from every old .html address on Framer Pro or higher. It also reads Squarespace and WordPress exports. The newest 25 posts import for free.
+We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), a Framer plugin that reads the Blogger file directly. It keeps drafts as drafts and skips deleted posts. Labels become a tags collection linked to each post. It copies the full-size images into Framer, so they don't depend on Google's hosting, and adds a redirect from every old .html address on [Framer Pro](https://framer.link/rVPBVzf) or higher. It also reads Squarespace and WordPress exports. The newest 25 posts import for free.
 
 Comments and pages are not imported. Framer has no comments, and pages are worth rebuilding in Framer anyway.
 
@@ -48,6 +48,8 @@ Comments and pages are not imported. Framer has no comments, and pages are worth
 Open five old addresses, including one from the first year of the blog, and make sure each lands on the right post. Then look at a post with several photos and check they are sharp.
 
 Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
+The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides
 

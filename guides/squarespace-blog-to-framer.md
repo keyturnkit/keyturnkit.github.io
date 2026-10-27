@@ -40,7 +40,7 @@ We found these in real exports, not in Squarespace's documentation:
 
 ## Your options
 
-**By hand.** For a handful of posts, copy each one into a Framer CMS collection. Download the images first and upload them in Framer. Add redirects in Framer under Site Settings, Hosting, Redirects (Framer Pro plan or higher). A wildcard rule such as `/blog/*` can cover many old addresses at once.
+**By hand.** For a handful of posts, copy each one into a Framer CMS collection. Download the images first and upload them in Framer. Add redirects in Framer under Site Settings, Hosting, Redirects ([Framer Pro](https://framer.link/rVPBVzf) plan or higher). A wildcard rule such as `/blog/*` can cover many old addresses at once.
 
 **CSV.** Framer's own guide for WordPress describes converting the XML export to CSV with a tool or script and importing that into a collection. The same works for a Squarespace file, but images still point at Squarespace.
 
@@ -71,6 +71,8 @@ Framer lets you add redirects under Site Settings, Hosting, Redirects on the Pro
 6. Only then cancel Squarespace.
 
 Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
+The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides
 

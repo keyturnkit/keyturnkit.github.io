@@ -43,7 +43,9 @@ If you switch the domain first, there's a gap where every old link is a 404.
 
 ## Doing it in one step
 
-[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads each post's old address from the export file (Squarespace, WordPress, Blogger, Ghost) or the live WordPress site, and adds one redirect per post to your Framer blog path when it imports. It skips redirects that already exist, so importing again doesn't create duplicates, and if two posts want the same new address, the second one gets `-2` and its redirect follows it. For Ghost it uses the default `/my-post/` address, because the export file doesn't include custom routes, so check a few redirects if you changed them. Redirects need Framer Pro or higher; on other plans the plugin imports the posts and tells you redirects weren't added. The newest 25 posts import for free.
+[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads each post's old address from the export file (Squarespace, WordPress, Blogger, Ghost) or the live WordPress site, and adds one redirect per post to your Framer blog path when it imports. It skips redirects that already exist, so importing again doesn't create duplicates, and if two posts want the same new address, the second one gets `-2` and its redirect follows it. For Ghost it uses the default `/my-post/` address, because the export file doesn't include custom routes, so check a few redirects if you changed them. Redirects need [Framer Pro](https://framer.link/rVPBVzf) or higher; on other plans the plugin imports the posts and tells you redirects weren't added. The newest 25 posts import for free.
+
+The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides
 

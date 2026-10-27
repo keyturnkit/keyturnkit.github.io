@@ -34,7 +34,7 @@ Two catches:
 
 ## Your options in Framer
 
-**By hand.** Fine for ten posts. Copy each into a Framer CMS collection, re-upload the images, and add redirects under Site Settings, Hosting, Redirects (Framer Pro plan or higher).
+**By hand.** Fine for ten posts. Copy each into a Framer CMS collection, re-upload the images, and add redirects under Site Settings, Hosting, Redirects ([Framer Pro](https://framer.link/rVPBVzf) plan or higher).
 
 **CSV.** Framer's own WordPress guide converts the export file to CSV with a tool or script, then imports the CSV into a collection. You get the raw content described above. Framer fetches the images from their WordPress addresses during the import, so the old site has to be online while you do it.
 
@@ -64,6 +64,8 @@ WordPress URLs usually look like `/2024/03/09/my-post/` or `/my-post/`, and your
 5. Only then shut down WordPress.
 
 Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
+The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides
 
