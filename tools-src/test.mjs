@@ -122,6 +122,122 @@ eq('medium counts', [m.kind, m.published, m.drafts, m.replies], ['medium', 3, 1,
   eq('substack with nothing to move', [none.kind, none.published, none.drafts, none.substack.threads, none.substack.draftsWithoutText], ['substack', 0, 0, 1, 1]);
   try { await inspect('bad.zip', z({ 'posts.csv': 'a,b\n1,2\n' })); eq('bad posts.csv throws', false, true); } catch (e) { eq('bad posts.csv throws', true, true); console.log('   ', e.message); }
 }
+// Hashnode and Webflow: HAND-MADE fixtures in the shape each service writes, not anybody's real blog.
+// These run against a build with every BLOG_IMPORT_READS_* constant forced to true (FORCE_ON), because the
+// committed build has them off. The committed build is checked for the opposite below.
+{
+  const { execFileSync } = await import('node:child_process');
+  const { mkdtempSync } = await import('node:fs');
+  const { tmpdir } = await import('node:os');
+  const tmp = mkdtempSync(path.join(tmpdir(), 'inspector-on-'));
+  const onPath = path.join(tmp, 'inspector.js');
+  execFileSync('sh', ['tools-src/build.sh'], { env: { ...process.env, FORCE_ON: '1', OUT: onPath }, stdio: 'ignore' });
+  const on = await import(pathToFileURL(onPath).href);
+  const off = await import(pathToFileURL(path.resolve('assets/tools/inspector.js')).href);
+  const u = (s) => new Uint8Array(strToU8(s));
+  const text = (v) => [v.summary, ...v.rows.flat(), v.imageNote, v.pathNote, ...v.meaning, ...v.parserNotes, ...v.links.map((l) => l.title)].join('\n');
+
+  // Hashnode
+  const front = (title, slug, date, tags, body) => `---\ntitle: "${title}"\nseoDescription: "About ${title}"\ndatePublished: ${date}\ncuid: c${slug.replace(/-/g, '').padEnd(24, 'x').slice(0, 24)}\nslug: ${slug}\ncover: https://cdn.hashnode.com/res/hashnode/image/upload/v1/cover-${slug}.png\ntags: ${tags}\n---\n\n${body}\n`;
+  const hn = {
+    'cfirstpostxxxxxxxxxxxxxx.md': front('First post', 'first-post', 'Mon Jan 01 2024 20:18:08 GMT+0000 (Coordinated Universal Time)', 'web, css', '![a](https://cdn.hashnode.com/res/hashnode/image/upload/v1/a.png align="center")\n\nText.\n\n![b](https://cdn.hashnode.com/res/hashnode/image/upload/v1/b.png)'),
+    'csecondpostxxxxxxxxxxxxx.md': front('Second post', 'second-post', 'Tue Mar 05 2024 09:00:00 GMT+0000 (Coordinated Universal Time)', 'web', '![c](https://cdn.hashnode.com/res/hashnode/image/upload/v1/c.png)\n\nMore.'),
+    // Older shape: no front matter, so no date and no slug
+    'colderpostxxxxxxxxxxxxxx.md': '# Old post\n\n![d](https://example.org/d.png)\n\nOld text.\n',
+    'README.md': '# My backups\n',
+    'notes.md': 'just a note, no heading\n',
+  };
+  const h = await on.inspect('hashnode.zip', zipSync(Object.fromEntries(Object.entries({ ...hn }).map(([k, v]) => [`hashnode-backups-main/${k}`, u(v)]))));
+  console.log('hashnode', JSON.stringify(h));
+  eq('hashnode kind routed from zip', h.kind, 'hashnode');
+  eq('hashnode published/drafts', [h.published, h.drafts], [3, 0]);
+  eq('hashnode tags/authors/categories', [h.tags, h.authors, h.categories], [2, 0, 0]);
+  eq('hashnode images + hosts', [h.images.total, h.images.hosts], [4, [['cdn.hashnode.com', 3], ['example.org', 1]]]);
+  eq('hashnode paths are /slug, older shape has none', [h.paths.total, h.paths.sample.sort()], [2, ['/first-post', '/second-post']]);
+  eq('hashnode dates ignore the undated post', [h.dates.first.slice(0, 10), h.dates.last.slice(0, 10)], ['2024-01-01', '2024-03-05']);
+  eq('hashnode pages/comments/replies null', [h.pages, h.comments, h.replies], [null, null, null]);
+  eq('hashnode notes say undated, skipped file, old addresses', [/1 post has no publish date/.test(h.notes.join('\n')), /1 file is not a Hashnode post/.test(h.notes.join('\n')), h.notes.some((x) => /domain/.test(x))], [true, true, true]);
+  // The same files chosen one by one
+  const many = await on.inspectFiles(Object.entries(hn).map(([name, v]) => ({ name, bytes: u(v) })));
+  eq('hashnode several .md files', [many.kind, many.published, many.fileName], ['hashnode', 3, '5 files']);
+  const one = await on.inspectFiles([{ name: 'cfirstpostxxxxxxxxxxxxxx.md', bytes: u(hn['cfirstpostxxxxxxxxxxxxxx.md']) }]);
+  eq('hashnode single .md file', [one.kind, one.published, one.images.total], ['hashnode', 1, 2]);
+  try { await on.inspectFiles([{ name: 'a.md', bytes: u('# x') }, { name: 'b.xml', bytes: u('<a/>') }]); eq('mixed files throw', false, true); } catch { eq('mixed files throw', true, true); }
+  try { await on.inspect('README.md', u('# Readme\n')); eq('md without posts throws', false, true); } catch (e) { eq('md without posts throws', /No Hashnode posts/.test(e.message), true); }
+  eq('medium zip still goes to medium with the new routing', (await on.inspect('medium.zip', zip)).kind, 'medium');
+
+  // Webflow
+  const wfHead = 'Name,Slug,Collection ID,Item ID,Created On,Updated On,Published On,Post Body,Post Summary,Main Image,Date,Category,Draft,Archived';
+  const D = (s) => `${s} GMT+0000 (Coordinated Universal Time)`;
+  const row = (name, slug, id, pub, body, date, cat, draft, arch) => [name, slug, 'col1', id, D('Mon Jan 01 2024 10:00:00'), D('Mon Jan 01 2024 10:00:00'), pub ? D(pub) : '', body, `About ${name}`, 'https://cdn.prod.website-files.com/abc/cover.png', date ? D(date) : '', cat, draft, arch].map((v) => `"${v.replace(/"/g, '""')}"`).join(',');
+  const wf = [
+    wfHead,
+    row('One, the first', 'one', 'i1', 'Mon Jan 15 2024 10:00:00', '<p>Hello, "world"</p><img src="https://cdn.prod.website-files.com/abc/a.png"><img src="https://cdn.prod.website-files.com/abc/b.png">', 'Tue Jan 16 2024 00:00:00', 'News;Guides', 'false', 'false'),
+    row('Two', 'two', 'i2', 'Fri Mar 01 2024 10:00:00', '<p>Second\nline</p><img src="https://example.org/c.png">', '', 'News', 'false', 'false'),
+    row('Three draft', 'three', 'i3', '', '<p>Draft</p>', 'Mon Dec 01 2031 00:00:00', 'Guides', 'true', 'false'),
+    row('Four archived', 'four', 'i4', 'Sat Feb 03 2024 10:00:00', '<p>Gone</p>', '', 'News', 'false', 'true'),
+  ].join('\r\n');
+  const w = await on.inspect('blog.csv', u('﻿' + wf));
+  console.log('webflow', JSON.stringify(w));
+  eq('webflow kind', w.kind, 'webflow');
+  eq('webflow published/drafts (archived left out)', [w.published, w.drafts], [2, 1]);
+  eq('webflow authors/categories/tags', [w.authors, w.categories, w.tags], [0, 2, 0]);
+  eq('webflow images + hosts', [w.images.total, w.images.hosts], [3, [['cdn.prod.website-files.com', 2], ['example.org', 1]]]);
+  eq('webflow paths /blog/slug', [w.paths.total, w.paths.sample.every((x) => /^\/blog\/[a-z]+$/.test(x))], [3, true]);
+  eq('webflow dates ignore the draft in 2031', [w.dates.first.slice(0, 10), w.dates.last.slice(0, 10)], ['2024-01-16', '2024-03-01']);
+  eq('webflow guessed columns note', w.notes[0], 'Guessed from the column names: body "Post Body", excerpt "Post Summary", cover "Main Image", date "Date", categories "Category". If one is wrong, rename that column in the CSV and choose the file again.');
+  eq('webflow note about posts using Published On', w.notes.some((x) => /1 post has no value in "Date"/.test(x)), true);
+  eq('webflow note about archived', w.notes.some((x) => /1 archived item was left out/.test(x)), true);
+  try { await on.inspect('x.csv', u('a,b\n1,2\n')); eq('other csv throws', false, true); } catch { eq('other csv throws', true, true); }
+
+  // Page text with the constants on
+  for (const [label, rep] of [['hashnode', h], ['webflow', w]]) {
+    const v = on.describe(rep);
+    const t = text(v);
+    eq(`${label} on: closing line points to the plugin`, [v.links[0].href.includes('framer.com/marketplace/plugins/blog-import'), /Blog Import (adds|copies|brings)/.test(t)], [true, true]);
+    eq(`${label} on: parser notes shown`, v.parserNotes.length, rep.notes.length);
+    eq(`${label} on: no em dash, no label colons`, [/—/.test(t), /^[A-Z][^.\n]{0,30}:\s/m.test(v.summary + '\n' + v.meaning.join('\n'))], [false, false]);
+  }
+  eq('webflow on: rows', on.describe(w).rows, [['Published posts', '2'], ['Drafts', '1'], ['Authors', '0'], ['Categories', '2'], ['Tags', '0']]);
+  eq('hashnode on: rows (no drafts, authors, categories)', on.describe(h).rows, [['Published posts', '3'], ['Tags', '2']]);
+  eq('hashnode on: dates line', /Published posts run from 1 Jan 2024 to 5 Mar 2024\./.test(on.describe(h).summary + ' ' + on.describe(h).dateNote), true);
+  eq('on: accept list', [on.accepted().accept.includes('.csv'), on.accepted().accept.includes('.md'), on.accepted().label], [true, true, 'Export file (.xml, .json, .zip, .csv or .md)']);
+
+  // Constants off: the same results make no claim about Blog Import, and the page does not offer the types
+  for (const [label, rep] of [['hashnode', h], ['webflow', w]]) {
+    const v = off.describe(rep);
+    eq(`${label} off: no claim about Blog Import, no marketplace link, no notes`, [/Blog Import|Framer Pro|free \d+/.test(text(v)), v.links.some((l) => /marketplace/.test(l.href)), v.parserNotes.length], [false, false, 0]);
+  }
+  eq('off: accept list has no .csv or .md', [off.accepted().accept.includes('.csv'), off.accepted().accept.includes('.md'), off.accepted().label], [false, false, 'Export file (.xml, .json or .zip)']);
+  eq('off: error text does not mention Webflow or Hashnode', /Webflow|Hashnode/.test(off.accepted().error), false);
+
+  // The page itself in jsdom: what the input accepts, and what a .csv or .md does when chosen anyway
+  const page = (mod) => {
+    const d = new JSDOM('<!doctype html><body><label for="export-file">Export file (.xml, .json or .zip)</label><input type="file" id="export-file" accept=".xml,.json,.zip"><div id="result"></div></body>');
+    d.window.HTMLElement.prototype.scrollIntoView = () => {};
+    mod.mount(d.window.document, mod.inspect);
+    return d.window;
+  };
+  const choose = async (win, files) => {
+    const input = win.document.getElementById('export-file');
+    Object.defineProperty(input, 'files', { configurable: true, value: files.map(([name, s]) => ({ name, arrayBuffer: async () => u(s).buffer })) });
+    input.dispatchEvent(new win.Event('change'));
+    await new Promise((r) => setTimeout(r, 50));
+    return win.document.getElementById('result').textContent;
+  };
+  const won = page(on), woff = page(off);
+  const inOn = won.document.getElementById('export-file'), inOff = woff.document.getElementById('export-file');
+  eq('page on: input accepts .csv and .md, several files', [inOn.accept.includes('.csv'), inOn.accept.includes('.md'), inOn.hasAttribute('multiple'), won.document.querySelector('label').textContent], [true, true, true, 'Export file (.xml, .json, .zip, .csv or .md)']);
+  eq('page off: input unchanged, single file', [inOff.accept, inOff.hasAttribute('multiple'), woff.document.querySelector('label').textContent], ['.xml,.json,.zip', false, 'Export file (.xml, .json or .zip)']);
+  const outCsv = await choose(woff, [['blog.csv', wf]]);
+  eq('page off: a .csv chosen anyway is refused', /can't be read as a blog export/.test(outCsv) && !/Webflow/.test(outCsv), true);
+  const outMd = await choose(woff, Object.entries(hn));
+  eq('page off: .md files chosen anyway are refused', /can't be read as a blog export/.test(outMd) && !/Hashnode/.test(outMd), true);
+  const onCsv = await choose(won, [['blog.csv', wf]]);
+  eq('page on: .csv result shows counts, notes and the plugin line', [/This looks like a Webflow export/.test(onCsv), /Guessed from the column names/.test(onCsv), /Open Blog Import in the Framer Marketplace/.test(onCsv)], [true, true, true]);
+  const onMd = await choose(won, Object.entries(hn));
+  eq('page on: several .md files give a Hashnode result', [/This looks like a Hashnode export/.test(onMd), /Open Blog Import in the Framer Marketplace/.test(onMd)], [true, true]);
+}
 // Errors
 for (const [label, data] of [['not xml', new Uint8Array(strToU8('hello'))], ['plain xml', new Uint8Array(strToU8('<a/>'))]]) {
   try { await inspect('x', data); eq(label + ' throws', false, true); } catch (e) { eq(label + ' throws', true, true); console.log('   ', e.message); }

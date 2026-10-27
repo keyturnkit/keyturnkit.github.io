@@ -1,15 +1,18 @@
 // Reads a blog export file and reports what is in it. Everything runs in the browser; nothing is sent anywhere.
-// Parsing is done by the Blog Import plugin's own parsers (wxr.ts, blogger.ts, medium.ts, ghost.ts, substack.ts).
+// Parsing is done by the Blog Import plugin's own parsers (wxr.ts, blogger.ts, medium.ts, ghost.ts, substack.ts, hashnode.ts, webflow.ts).
 import { strFromU8 } from 'fflate';
 import { isBloggerExport, parseBlogger } from '@parsers/blogger';
 import { isGhostExport, parseGhost } from '@parsers/ghost';
+import { hashnodeFilesFromZip, parseHashnode } from '@parsers/hashnode';
+import type { HashnodeFile } from '@parsers/hashnode';
 import { mediumFilesFromZip, parseMediumFiles } from '@parsers/medium';
 import { parseCsv, parseSubstack, substackExportFromZip } from '@parsers/substack';
 import type { SubstackExport } from '@parsers/substack';
+import { isWebflowCsv, parseWebflow } from '@parsers/webflow';
 import { parseWxr, parseXml, WxrError } from '@parsers/wxr';
 import type { Post, SiteContent } from '@parsers/types';
 
-export type Kind = 'squarespace' | 'wordpress' | 'blogger' | 'medium' | 'ghost' | 'substack';
+export type Kind = 'squarespace' | 'wordpress' | 'blogger' | 'medium' | 'ghost' | 'substack' | 'hashnode' | 'webflow';
 
 export interface Report {
   kind: Kind;
@@ -29,6 +32,8 @@ export interface Report {
   images: { total: number; hosts: [string, number][] };
   paths: { total: number; withDates: number; example: string | null; sample: string[] };
   dates: { first: string; last: string } | null;
+  /** Hashnode and Webflow: the parser's own notes (guessed columns, undated posts, skipped files), shown as they are. */
+  notes?: string[];
   /** Ghost only, counted from the raw JSON because the plugin skips pages and drops these images. */
   ghost?: {
     /** Posts the plugin brings in as drafts, by Ghost status. */
@@ -223,8 +228,41 @@ function substackExtras(exp: SubstackExport, posts: Post[]) {
 
 const isZip = (b: Uint8Array) => b.length > 3 && b[0] === 0x50 && b[1] === 0x4b;
 
+/** Hashnode and Webflow: only published posts set the date range, and the plugin's notes come along. */
+function reportFromContent(kind: 'hashnode' | 'webflow', content: SiteContent, common: { fileName: string; bytes: number }): Report {
+  return {
+    ...common,
+    kind,
+    ...base(content),
+    dates: dateRange(content.posts.filter((p) => !p.draft)),
+    pages: null,
+    attachments: null,
+    replies: null,
+    comments: null,
+    notes: content.notes ?? [],
+  };
+}
+
+async function hashnodeReport(files: HashnodeFile[], common: { fileName: string; bytes: number }): Promise<Report> {
+  return reportFromContent('hashnode', await parseHashnode(files), common);
+}
+
+/** Several files chosen together can only be the .md files of a Hashnode backup. One file goes the usual way. */
+export async function inspectFiles(files: { name: string; bytes: Uint8Array }[]): Promise<Report> {
+  if (files.length === 1) return inspect(files[0]!.name, files[0]!.bytes);
+  if (!files.length || files.some((f) => !/\.md$/i.test(f.name) || isZip(f.bytes))) {
+    throw new WxrError('Choose one export file, or several .md files from a Hashnode backup.');
+  }
+  const total = files.reduce((sum, f) => sum + f.bytes.length, 0);
+  return hashnodeReport(
+    files.map((f) => ({ name: f.name, text: strFromU8(f.bytes) })),
+    { fileName: `${files.length} files`, bytes: total },
+  );
+}
+
 export async function inspect(fileName: string, bytes: Uint8Array): Promise<Report> {
   const common = { fileName, bytes: bytes.length };
+  if (!isZip(bytes) && /\.md$/i.test(fileName)) return hashnodeReport([{ name: fileName, text: strFromU8(bytes) }], common);
   if (isZip(bytes)) {
     // A zip with posts.csv is Substack's export. Any other zip goes the Medium way.
     const substack = substackExportFromZip(bytes);
@@ -251,6 +289,9 @@ export async function inspect(fileName: string, bytes: Uint8Array): Promise<Repo
         substack: substackExtras(substack, content.posts),
       };
     }
+    // A zip of .md files named like posts is Hashnode's GitHub backup.
+    const hashnode = hashnodeFilesFromZip(bytes);
+    if (hashnode) return hashnodeReport(hashnode, common);
     const files = await mediumFilesFromZip(bytes);
     let content: SiteContent;
     try {
@@ -271,6 +312,7 @@ export async function inspect(fileName: string, bytes: Uint8Array): Promise<Repo
     };
   }
   const xml = strFromU8(bytes).replace(/^\uFEFF/, '');
+  if (isWebflowCsv(xml)) return reportFromContent('webflow', await parseWebflow(xml), common);
   if (isGhostExport(xml)) {
     const content = await parseGhost(xml);
     const { pages, bodies, ghost } = ghostExtras(xml);

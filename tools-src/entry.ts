@@ -1,5 +1,5 @@
-import { inspect } from './inspect';
-import { mount } from './render';
+import { inspect, inspectFiles } from './inspect';
+import { accepted, describe, mount } from './render';
 
-export { inspect };
+export { accepted, describe, inspect, inspectFiles, mount };
 if (typeof document !== 'undefined') mount(document, inspect);
