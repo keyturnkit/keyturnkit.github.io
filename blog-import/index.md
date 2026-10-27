@@ -32,7 +32,7 @@ Each post arrives with its title, slug, date, cover image, excerpt and body. Aut
 
 Run it again later and existing posts are updated, not duplicated.
 
-It doesn't import comments, WordPress custom post types or WooCommerce products, and it doesn't read Ghost (Specter does).
+It doesn't import comments, pages, WordPress custom post types or WooCommerce products.
 
 ## Price
 
