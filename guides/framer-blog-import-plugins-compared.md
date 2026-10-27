@@ -12,6 +12,8 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 
 ## At a glance
 
+Prices and features below were checked against each plugin's Marketplace listing on 27 October 2026.
+
 | Plugin | Reads | Price | Images | Old links |
 |---|---|---|---|---|
 | CSV Import (by Framer) | A CSV you prepare | Free | Cover images by address; images inside posts stay as links to the old host | No redirects |
