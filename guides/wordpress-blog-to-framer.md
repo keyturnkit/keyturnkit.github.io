@@ -63,6 +63,8 @@ WordPress URLs usually look like `/2024/03/09/my-post/` or `/my-post/`, and your
 4. Move the domain.
 5. Only then shut down WordPress.
 
+Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
 ## More guides
 
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)

@@ -47,6 +47,8 @@ Comments and pages are not imported. Framer has no comments, and pages are worth
 
 Open five old addresses, including one from the first year of the blog, and make sure each lands on the right post. Then look at a post with several photos and check they are sharp.
 
+Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
 ## More guides
 
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)

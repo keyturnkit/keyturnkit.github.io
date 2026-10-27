@@ -43,6 +43,8 @@ That last step is the one that takes days by hand, so we built it into [Blog Imp
 
 Open the post with the most images, and the oldest post you have. Check the cover, every body image, and that each image address is a Framer one. Then you can switch off the old site.
 
+Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
+
 ## More guides
 
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)
