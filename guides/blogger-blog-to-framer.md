@@ -47,8 +47,6 @@ Comments and pages are not imported. Framer has no comments, and pages are worth
 
 Open five old addresses, including one from the first year of the blog, and make sure each lands on the right post. Then look at a post with several photos and check they are sharp.
 
-Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
-
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides

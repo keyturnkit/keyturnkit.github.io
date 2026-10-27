@@ -70,8 +70,6 @@ Framer lets you add redirects under Site Settings, Hosting, Redirects on the Pro
 5. Publish, test a few old URLs, then move the domain.
 6. Only then cancel Squarespace.
 
-Rather not do the move yourself? We run it in your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
-
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
 ## More guides

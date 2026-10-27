@@ -25,4 +25,4 @@ Whichever you pick, add a redirect from each old Wix address to the new Framer o
 
 ## What about Blog Import?
 
-Our plugin, [Blog Import](/blog-import/), reads export files from Squarespace, WordPress, Blogger, Medium and Ghost. Since Wix has no export, Blog Import can't read a Wix blog. If you'd like us to look at yours anyway, email [proj.seedsmesh@gmail.com](mailto:proj.seedsmesh@gmail.com) with the blog's address and roughly how many posts it has, and we'll say plainly whether we can move it and what it would cost.
+Our plugin, [Blog Import](/blog-import/), reads export files from Squarespace, WordPress, Blogger, Medium and Ghost. Since Wix has no export, Blog Import can't read a Wix blog.
