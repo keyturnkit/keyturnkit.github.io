@@ -24,4 +24,4 @@ The file is read in your browser and is never uploaded or sent anywhere.
 
 Not sure where to find the file? See the guides for [Squarespace](/guides/squarespace-export-xml/) and [Medium](/guides/medium-export/).
 
-<script type="module" src="/assets/tools/inspector.js?v=1"></script>
+<script type="module" src="/assets/tools/inspector.js?v=2"></script>

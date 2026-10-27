@@ -24,7 +24,7 @@ export interface Report {
   categories: number;
   tags: number;
   images: { total: number; hosts: [string, number][] };
-  paths: { total: number; withDates: number; sample: string[] };
+  paths: { total: number; withDates: number; example: string | null; sample: string[] };
   dates: { first: string; last: string } | null;
 }
 
@@ -60,15 +60,19 @@ function imageHosts(bodies: string[]): Report['images'] {
   return { total, hosts: [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])) };
 }
 
-const DATED_PATH = /\/(?:19|20)\d\d\/\d{1,2}(?:\/|$)/;
+const DATED_PATH = /\/(?:19|20)\d\d\/\d{1,2}(?:\/\d{1,2})?(?=\/|$)/;
 
 function pathFacts(posts: Post[]): Report['paths'] {
   // Published posts first: a draft's address is not one anybody has linked to.
   const withPath = [...posts.filter((p) => !p.draft), ...posts.filter((p) => p.draft)].filter((p) => p.oldPath);
+  const dated = withPath.filter((p) => DATED_PATH.test(p.oldPath!));
+  // Dated addresses first in the sample, so the example shown matches what is listed.
+  const ordered = [...dated, ...withPath.filter((p) => !DATED_PATH.test(p.oldPath!))];
   return {
     total: withPath.length,
-    withDates: withPath.filter((p) => DATED_PATH.test(p.oldPath!)).length,
-    sample: withPath.slice(0, 5).map((p) => p.oldPath!),
+    withDates: dated.length,
+    example: dated.length ? `${dated[0]!.oldPath!.match(DATED_PATH)![0]}/` : null,
+    sample: ordered.slice(0, 5).map((p) => p.oldPath!),
   };
 }
 

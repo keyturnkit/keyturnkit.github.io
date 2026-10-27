@@ -56,7 +56,9 @@ export function describe(r: Report): View {
     ? 'No post carries an old address.'
     : r.kind === 'medium'
       ? `${n(p.total, 'story', 'stories')} carry a Medium address. None has a date in it.`
-      : `${p.withDates} of ${n(p.total, 'old post address', 'old post addresses')} carry a date, like /2014/6/15/. The first ${Math.min(5, p.total)} are below.`;
+      : p.withDates
+        ? `${p.withDates} of ${n(p.total, 'old post address', 'old post addresses')} carry a date, like ${p.example}. ${Math.min(5, p.total)} are below, dated ones first.`
+        : `None of the ${n(p.total, 'old post address', 'old post addresses')} carries a date. The first ${Math.min(5, p.total)} are below.`;
   const dateNote = r.dates ? `Posts run from ${day(r.dates.first)} to ${day(r.dates.last)}.` : null;
 
   const meaning: string[] = [];

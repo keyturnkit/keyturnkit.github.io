@@ -32,6 +32,8 @@ for (const f of ['squarespace-sample.xml', 'theme-unit-test.xml', 'demo-blog.xml
     eq('wp published+drafts', [r.published, r.drafts], [56, 2]);
     eq('wp pages/attachments/comments', [r.pages, r.attachments, r.comments.total], [21, 37, 33]);
     eq('wp comment email count', r.comments.withEmail, 29);
+    eq('wp example from file', r.paths.example, r.paths.sample[0].match(/\/\d{4}\/\d{1,2}(\/\d{1,2})?\//)[0]);
+    eq('wp sample all dated', r.paths.sample.every((x) => /\/\d{4}\/\d{1,2}\//.test(x)), r.paths.withDates >= 5);
     eq('wp images = img tags in post bodies', r.images.total <= 147, true);
   }
 }
