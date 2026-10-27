@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Moving a Medium blog to Framer"
+title: "Medium to Framer: moving your stories into Framer CMS"
 description: "What Medium's export contains, how to tell stories from replies, and how to get posts, images and tags into Framer CMS."
 permalink: /guides/medium-blog-to-framer/
 og_image: /og-blog-import.png

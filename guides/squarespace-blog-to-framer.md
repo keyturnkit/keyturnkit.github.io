@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Moving a Squarespace blog to Framer without losing images or links"
-description: "What Squarespace's export file contains, what it leaves out, and how to get posts, images and old URLs into Framer CMS."
+title: "Squarespace to Framer: moving a blog without losing images or links"
+description: "How to import a Squarespace blog into Framer CMS: what Squarespace's export file contains, what it leaves out, and how posts, images and old URLs come across."
 permalink: /guides/squarespace-blog-to-framer/
 og_image: /og-blog-import.png
 ---

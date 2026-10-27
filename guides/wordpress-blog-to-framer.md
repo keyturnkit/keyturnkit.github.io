@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Moving a WordPress blog to Framer: export file, live site, and what breaks"
-description: "The two ways to get WordPress posts out, what the export file stores that WordPress normally cleans up, and how to bring posts, images and old URLs into Framer CMS."
+title: "WordPress to Framer: moving a blog, with its images and old links"
+description: "How to import a WordPress blog into Framer CMS: the export file or the live site, what WordPress stores that it normally cleans up, and how posts, images and old URLs come across."
 permalink: /guides/wordpress-blog-to-framer/
 og_image: /og-blog-import.png
 ---

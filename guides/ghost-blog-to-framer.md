@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Moving a Ghost blog to Framer"
+title: "Ghost to Framer: moving a blog from the export file"
 description: "How to export a Ghost blog, what comes across into Framer CMS from the export file, and what doesn't, including images and custom routes."
 permalink: /guides/ghost-blog-to-framer/
 og_image: /og-blog-import.png

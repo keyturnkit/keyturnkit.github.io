@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Moving a Blogger blog to Framer, with its images and old links"
+title: "Blogger to Framer: moving a Blogspot blog with its images and old links"
 description: "How to export a Blogspot blog, what the file contains, and how to get posts, labels, images and the old .html addresses into Framer CMS."
 permalink: /guides/blogger-blog-to-framer/
 og_image: /og-blog-import.png
