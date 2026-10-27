@@ -42,6 +42,12 @@ The newest 25 posts import free, so you can see the result on your own blog firs
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
+## A template made for it
+
+[Back Issue](BACK_ISSUE_MARKETPLACE_URL) is our magazine-style blog template for Framer, built around what Blog Import writes. Import your posts with "2 collections, Blog and categories" and the home page, post pages and category pages fill in with your own years, covers and categories. It runs on Framer Basic. $69 once, with a full refund within 14 days.
+
+<img src="/blog-import/back-issue.jpg" alt="Back Issue home page in Framer, filled with imported posts" width="1200" height="900" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
+
 ## Guides {#guides}
 
 <ul class="guide-list" style="padding-left:0">
