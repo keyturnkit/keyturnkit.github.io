@@ -64,7 +64,7 @@ Network errors, 429 and 5xx responses aren't an answer about the key. Keep the l
 
 ## Doing it with Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Gumroad, Polar and Dodo Payments come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Gumroad, Payhip, Polar and Dodo Payments come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
 
 ```ts
 provider: 'gumroad',
