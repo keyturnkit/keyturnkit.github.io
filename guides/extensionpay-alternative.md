@@ -46,3 +46,5 @@ What you give up: the provider takes its own fee, which varies by provider (chec
 ## Doing it with Keyturn Kit
 
 [Keyturn Kit](/) is a WXT + React starter that does the license-key side. The free edition (MIT, on GitHub) checks Lemon Squeezy keys, re-checks them daily, and keeps working offline for 7 days after the last good check. Pro ($59 once) adds Polar, Dodo Payments, Gumroad and Payhip, a free trial counted from install, and a number of free uses per day before the paywall. The step-by-step guide is [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/).
+
+If you want buyers to pay on your own page before they install, see [Let buyers pay before they install your Chrome extension](/guides/pay-before-install-chrome-extension/).
