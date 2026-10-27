@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Keeping old blog links working after moving to Framer"
-description: "What old post addresses look like on Squarespace, WordPress, Blogger and Medium, and how to redirect them to your new Framer blog."
+description: "What old post addresses look like on Squarespace, WordPress, Blogger, Medium and Ghost, and how to redirect them to your new Framer blog."
 permalink: /guides/framer-blog-redirects/
 og_image: /og-blog-import.png
 ---
@@ -20,6 +20,7 @@ Each platform has its own pattern, and your Framer post will live somewhere like
 | WordPress | `/2024/03/09/my-post/` or `/my-post/`, depending on the permalink setting |
 | Blogger | `/2024/03/my-post.html` |
 | Medium | `medium.com/@you/my-post-4ce83a7e81d0` |
+| Ghost | `/my-post/` by default; custom routes in `routes.yaml` can change it |
 
 Two cases can't be redirected from Framer, because the old address isn't on your domain: a blog on `yourname.blogspot.com`, and stories on `medium.com`. For those, keep the old blog online with a note pointing to the new site. Redirects work when your blog used your own domain, which moves to Framer with you.
 
@@ -42,7 +43,7 @@ If you switch the domain first, there's a gap where every old link is a 404.
 
 ## Doing it in one step
 
-[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads each post's old address from the export file (Squarespace, WordPress, Blogger) or the live WordPress site, and adds one redirect per post to your Framer blog path when it imports. It skips redirects that already exist, so importing again doesn't create duplicates, and if two posts want the same new address, the second one gets `-2` and its redirect follows it. Redirects need Framer Pro or higher; on other plans the plugin imports the posts and tells you redirects weren't added. The newest 25 posts import for free.
+[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads each post's old address from the export file (Squarespace, WordPress, Blogger, Ghost) or the live WordPress site, and adds one redirect per post to your Framer blog path when it imports. It skips redirects that already exist, so importing again doesn't create duplicates, and if two posts want the same new address, the second one gets `-2` and its redirect follows it. For Ghost it uses the default `/my-post/` address, because the export file doesn't include custom routes, so check a few redirects if you changed them. Redirects need Framer Pro or higher; on other plans the plugin imports the posts and tells you redirects weren't added. The newest 25 posts import for free.
 
 ## More guides
 
