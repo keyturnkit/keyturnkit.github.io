@@ -18,6 +18,8 @@ In this 34-second run the plugin reads wordpress.org/news, imports the newest 25
 
 ## What it reads
 
+Not sure what your export holds? The free [blog export inspector](/tools/blog-export-inspector/) reads it in your browser and shows the posts, drafts, images and old addresses inside.
+
 - A Squarespace export file, from Import & export (Squarespace writes it in WordPress format)
 - A WordPress export file, or just the address of a live WordPress site
 - A Blogger backup file
