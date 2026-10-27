@@ -16,6 +16,8 @@
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/home.css?v=3">
 <link rel="stylesheet" href="/assets/article.css?v=1">
+{% if page.extra_css %}<link rel="stylesheet" href="{{ page.extra_css }}">
+{% endif %}
 </head>
 <body>
 {% assign framer = false %}{% if page.og_image == '/og-blog-import.png' %}{% assign framer = true %}{% endif %}
