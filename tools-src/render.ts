@@ -2,12 +2,13 @@
 import type { Kind, Report } from './inspect';
 
 const MARKETPLACE = 'https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/';
-const SOURCE_NAME: Record<Kind, string> = { squarespace: 'Squarespace', wordpress: 'WordPress', blogger: 'Blogger', medium: 'Medium' };
+const SOURCE_NAME: Record<Kind, string> = { squarespace: 'Squarespace', wordpress: 'WordPress', blogger: 'Blogger', medium: 'Medium', ghost: 'Ghost' };
 const GUIDE: Record<Kind, { href: string; title: string }> = {
   squarespace: { href: '/guides/squarespace-export-xml/', title: "What's inside a Squarespace blog export" },
   wordpress: { href: '/guides/wordpress-blog-to-framer/', title: 'Move a WordPress blog to Framer' },
   blogger: { href: '/guides/blogger-blog-to-framer/', title: 'Move a Blogger blog to Framer' },
   medium: { href: '/guides/medium-export/', title: "What's inside a Medium export" },
+  ghost: { href: '/guides/ghost-blog-to-framer/', title: 'Move a Ghost blog to Framer' },
 };
 const FREE_POSTS = 25;
 
@@ -21,6 +22,8 @@ export interface View {
   commentNote: string | null;
   imageRows: [string, string][];
   imageNote: string;
+  ghostImageNote: string | null;
+  ghostNotes: string[];
   pathNote: string;
   pathSample: string[];
   dateNote: string | null;
@@ -31,13 +34,13 @@ export interface View {
 export function describe(r: Report): View {
   const rows: [string, string][] = [];
   rows.push([r.kind === 'medium' ? 'Stories' : 'Published posts', String(r.published)]);
-  rows.push(['Drafts', String(r.drafts)]);
+  rows.push([r.kind === 'ghost' ? 'Drafts, scheduled and sent' : 'Drafts', String(r.drafts)]);
   if (r.replies !== null) rows.push(['Replies to other stories', String(r.replies)]);
   if (r.pages !== null) rows.push(['Pages', String(r.pages)]);
   if (r.attachments !== null) rows.push(['Attachment entries', String(r.attachments)]);
   if (r.comments) rows.push(['Comments', String(r.comments.total)]);
   rows.push(['Authors', String(r.authors)]);
-  if (r.kind !== 'medium') rows.push(['Categories', String(r.categories)]);
+  if (r.kind !== 'medium' && r.kind !== 'ghost') rows.push(['Categories', String(r.categories)]);
   rows.push(['Tags', String(r.tags)]);
 
   const c = r.comments;
@@ -47,20 +50,35 @@ export function describe(r: Report): View {
       : null;
 
   const imageRows = r.images.hosts.map(([h, count]): [string, string] => [h, String(count)]);
+  const g = r.ghost;
   const imageNote = r.images.total
     ? `${n(r.images.total, 'image')} in post bodies, from ${n(r.images.hosts.length, 'host')}.`
     : 'No images with a full web address were found in post bodies.';
+  const ghostImages = g ? g.ghostUrlImages + g.ghostUrlCovers : 0;
+  const ghostImageNote = !g
+    ? null
+    : ghostImages
+      ? `${n(ghostImages, 'image')} use${ghostImages === 1 ? 's' : ''} __GHOST_URL__ instead of a web address (${g.ghostUrlImages} in post bodies, ${n(g.ghostUrlCovers, 'cover image')}). Blog Import can't copy ${ghostImages === 1 ? 'it' : 'them'}.`
+      : 'No image uses __GHOST_URL__.';
 
   const p = r.paths;
   const pathNote = !p.total
     ? 'No post carries an old address.'
+    : r.kind === 'ghost'
+      ? `${n(p.total, 'old post address', 'old post addresses')} assume Ghost's default /slug/ form. Custom routes are not in the file, so a site that used them has different addresses. ${Math.min(5, p.total)} are below.`
     : r.kind === 'medium'
       ? `${n(p.total, 'story', 'stories')} carry a Medium address. None has a date in it.`
       : p.withDates
         ? `${p.withDates} of ${n(p.total, 'old post address', 'old post addresses')} carry a date, like ${p.example}. ${Math.min(5, p.total)} are below, dated ones first.`
         : `None of the ${n(p.total, 'old post address', 'old post addresses')} carries a date. The first ${Math.min(5, p.total)} are below.`;
-  const dateNote = r.dates ? `Posts run from ${day(r.dates.first)} to ${day(r.dates.last)}.` : null;
+  const dateNote = r.dates ? `${r.kind === 'ghost' ? 'Published posts run' : 'Posts run'} from ${day(r.dates.first)} to ${day(r.dates.last)}.` : null;
 
+  const ghostNotes: string[] = [];
+  if (g) {
+    const d = g.drafts;
+    ghostNotes.push(`Of the ${n(r.drafts, 'draft')}, ${d.draft} ${d.draft === 1 ? 'is' : 'are'} unpublished, ${d.scheduled} scheduled and ${d.sent} sent as email only${d.other ? `, and ${d.other} have another status` : ''}. Scheduled and sent posts count as drafts here.`);
+    ghostNotes.push(`Pages are counted from the file. Blog Import skips them.${g.internalTags ? ` ${n(g.internalTags, 'internal tag')} (names starting with #) ${g.internalTags === 1 ? 'is' : 'are'} not counted in Tags.` : " Internal tags (names starting with #) aren't counted in Tags."}`);
+  }
   const meaning: string[] = [];
   const name = SOURCE_NAME[r.kind];
   for (const [host, count] of r.images.hosts.slice(0, 3)) {
@@ -70,9 +88,11 @@ export function describe(r: Report): View {
   if (r.images.hosts.length > 3) meaning.push(`${n(r.images.hosts.length - 3, 'more image host')} ${r.images.hosts.length - 3 === 1 ? 'is' : 'are'} listed above.`);
   if (p.withDates) meaning.push(`${n(p.withDates, 'old address', 'old addresses')} ${p.withDates === 1 ? 'has' : 'have'} dates in ${p.withDates === 1 ? 'it' : 'them'}. Your Framer posts get shorter addresses, so each one needs a redirect. Blog Import adds them on Framer Pro or higher.`);
   else if (p.total && r.kind !== 'medium') meaning.push(`${n(p.total, 'old address', 'old addresses')} will change in Framer, so each one needs a redirect. Blog Import adds them on Framer Pro or higher.`);
+  if (g && ghostImages) meaning.push(`${n(ghostImages, 'image')} use${ghostImages === 1 ? 's' : ''} __GHOST_URL__ and won't be copied. Keep the Ghost site until you've saved ${ghostImages === 1 ? 'it' : 'them'}, then add ${ghostImages === 1 ? 'it' : 'them'} in Framer.`);
+  if (g && p.total) meaning.push("Redirects assume Ghost's default /slug/ addresses. If your site used custom routes, check them before you publish.");
   if (r.published > FREE_POSTS) meaning.push(`Blog Import brings in the newest ${FREE_POSTS} posts free. A license covers all ${r.published}.`);
   else if (r.published > 0) meaning.push(`${n(r.published, 'published post')} ${r.published === 1 ? 'fits' : 'fit'} within the free ${FREE_POSTS}.`);
-  if (r.drafts) meaning.push(`${n(r.drafts, 'draft')} stay${r.drafts === 1 ? 's' : ''} as ${r.drafts === 1 ? 'a draft' : 'drafts'} in Framer.`);
+  if (r.drafts) meaning.push(`${n(r.drafts, 'draft')} stay${r.drafts === 1 ? 's' : ''} as ${r.drafts === 1 ? 'a draft' : 'drafts'} in Framer.${g ? ' Scheduled and sent posts count as drafts.' : ''}`);
   if (r.replies) meaning.push(`${n(r.replies, 'reply', 'replies')} to other people's stories ${r.replies === 1 ? 'is' : 'are'} skipped.`);
   if (r.pages) meaning.push(`${n(r.pages, 'page')} ${r.pages === 1 ? 'is' : 'are'} not imported. Rebuild ${r.pages === 1 ? 'it' : 'them'} in Framer.`);
   if (r.comments?.total) {
@@ -81,7 +101,7 @@ export function describe(r: Report): View {
     );
   }
   const taxonomy = r.authors + r.categories + r.tags;
-  if (taxonomy) meaning.push(`Authors, categories and tags become their own Framer collections. On Framer Basic they can stay inside each post instead.`);
+  if (taxonomy) meaning.push(`${g ? 'Authors and tags' : 'Authors, categories and tags'} become their own Framer collections. On Framer Basic they can stay inside each post instead.`);
   if (!r.published && !r.drafts) meaning.push('There are no posts here to move.');
 
   const links = [{ href: MARKETPLACE, title: 'Open Blog Import in the Framer Marketplace' }, GUIDE[r.kind]];
@@ -92,6 +112,8 @@ export function describe(r: Report): View {
     commentNote,
     imageRows,
     imageNote,
+    ghostImageNote,
+    ghostNotes,
     pathNote,
     pathSample: p.sample,
     dateNote,
@@ -130,8 +152,10 @@ export function renderInto(doc: Document, out: HTMLElement, r: Report): void {
   nodes.push(el(doc, 'p', {}, v.summary + (v.dateNote ? ` ${v.dateNote}` : '')));
   nodes.push(table(doc, ['What', 'Count'], v.rows));
   if (v.commentNote) nodes.push(el(doc, 'p', {}, v.commentNote));
+  for (const note of v.ghostNotes) nodes.push(el(doc, 'p', {}, note));
   nodes.push(el(doc, 'h2', {}, 'Images'));
   nodes.push(el(doc, 'p', {}, v.imageNote));
+  if (v.ghostImageNote) nodes.push(el(doc, 'p', {}, v.ghostImageNote));
   if (v.imageRows.length) nodes.push(table(doc, ['Host', 'Images'], v.imageRows, true));
   nodes.push(el(doc, 'h2', {}, 'Old post addresses'));
   nodes.push(el(doc, 'p', {}, v.pathNote));
@@ -158,7 +182,7 @@ export function mount(doc: Document, inspect: (name: string, bytes: Uint8Array) 
       out.scrollIntoView({ block: 'start' });
     } catch (e) {
       const known = e instanceof Error && e.constructor.name === 'WxrError';
-      say(known ? (e as Error).message : "This file can't be read as a blog export. Choose the .xml file from Squarespace, WordPress or Blogger, or the .zip file from Medium.");
+      say(known ? (e as Error).message : "This file can't be read as a blog export. Choose the .xml file from Squarespace, WordPress or Blogger, the .json file from Ghost, or the .zip file from Medium.");
     }
   });
 }

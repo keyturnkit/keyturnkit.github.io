@@ -52,6 +52,33 @@ const zip = zipSync({
 const m = await inspect('medium.zip', zip);
 console.log('medium', JSON.stringify(m));
 eq('medium counts', [m.kind, m.published, m.drafts, m.replies], ['medium', 3, 1, 2]);
+// Ghost: the plugin's own fixture. Expected values from parseGhost and from a raw count of the JSON.
+{
+  const gp = `${fixtures}/ghost-export-sample.json`;
+  const text = readFileSync(gp, 'utf8');
+  const raw = JSON.parse(text).db[0].data;
+  const live = raw.posts.filter((p) => p.type === 'post' && p.status !== 'deleted');
+  const g = await inspect('ghost.json', bytes(gp));
+  console.log('ghost', JSON.stringify(g));
+  eq('ghost kind', g.kind, 'ghost');
+  eq('ghost published (raw)', g.published, live.filter((p) => p.status === 'published').length);
+  eq('ghost drafts (raw)', g.drafts, live.filter((p) => p.status !== 'published').length);
+  eq('ghost published+drafts literal', [g.published, g.drafts], [3, 2]);
+  eq('ghost drafts split', g.ghost.drafts, { draft: 1, scheduled: 1, sent: 0, other: 0 });
+  eq('ghost pages (raw)', g.pages, raw.posts.filter((p) => p.type === 'page').length);
+  eq('ghost pages literal', g.pages, 1);
+  eq('ghost authors/tags (parseGhost: used only, no # tags)', [g.authors, g.tags], [2, 2]);
+  eq('ghost internal tags', g.ghost.internalTags, 1);
+  eq('ghost __GHOST_URL__ body images (raw grep)', g.ghost.ghostUrlImages, (text.match(/<img src=\\"__GHOST_URL__/g) ?? []).length);
+  eq('ghost __GHOST_URL__ literal body/cover', [g.ghost.ghostUrlImages, g.ghost.ghostUrlCovers], [1, 1]);
+  eq('ghost image hosts', g.images.hosts, [['images.example.org', 1]]);
+  eq('ghost dates ignore scheduled 2099', [g.dates.first.slice(0, 10), g.dates.last.slice(0, 10)], ['2024-01-05', '2024-02-01']);
+  eq('ghost paths default /slug/', g.paths.sample.every((x) => /^\/[^/]+\/$/.test(x)) && g.paths.total === 5, true);
+  // BOM and bare (unwrapped) shape
+  const bare = JSON.stringify(JSON.parse(text).db[0]);
+  const g2 = await inspect('bare.json', new Uint8Array(strToU8('\uFEFF' + bare)));
+  eq('ghost bare shape + BOM', [g2.kind, g2.published, g2.drafts], ['ghost', 3, 2]);
+}
 // Errors
 for (const [label, data] of [['not xml', new Uint8Array(strToU8('hello'))], ['plain xml', new Uint8Array(strToU8('<a/>'))]]) {
   try { await inspect('x', data); eq(label + ' throws', false, true); } catch (e) { eq(label + ' throws', true, true); console.log('   ', e.message); }
