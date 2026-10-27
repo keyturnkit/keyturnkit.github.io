@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Moving a blog to Framer: the import plugins compared"
-description: "Six Framer plugins for importing a blog, side by side, with prices and what happens to images and old links."
+description: "Eight Framer plugins for importing a blog, side by side, with prices and what happens to images and old links."
 permalink: /guides/framer-blog-import-plugins-compared/
 og_image: /og-blog-import.png
 ---
@@ -18,6 +18,8 @@ Prices and features below were checked against each plugin's Marketplace listing
 |---|---|---|---|---|
 | CSV Import (by Framer) | A CSV you prepare | Free | Cover images by address; images inside posts stay as links to the old host | No redirects |
 | Squarespace Import | Squarespace export file | First 25 posts free, then $49 one project or $99 unlimited | Copied into Framer, including images inside posts | Adds redirects (Framer plan with redirects needed) |
+| Webflow Import | Webflow CSV exports, every collection | First 25 items per collection free, then $49 one project or $99 unlimited | Copied into Framer, including files such as PDFs | Imports your Webflow 301 redirects (Framer plan with redirects needed) |
+| Substack Sync | A live Substack publication | 3 newest posts free, then $29 once per project | Cover image as a field; the listing doesn't say whether it's copied | Not mentioned |
 | PostPort | WordPress export file | $39 once | You pick image files from your computer | Not mentioned |
 | WP Sync | A live WordPress site | Not shown on the listing | Imported with the content | Not mentioned |
 | Specter | A Ghost site, with your Content API key | Not shown on the listing | Featured images | Not mentioned |
@@ -34,6 +36,10 @@ Prices and features below were checked against each plugin's Marketplace listing
 **A WordPress blog with a lot of images.** PostPort asks you to choose image files from your computer, which works for a handful of posts. Blog Import fetches the images from the old site and copies them into Framer for you.
 
 **Ghost.** Specter reads a Ghost site that is still running, through its Content API with a key you create. Blog Import reads Ghost's export file instead, so it also works after the site is gone, but it can't copy images whose address the file writes as `__GHOST_URL__`. Our [Ghost guide](/guides/ghost-blog-to-framer/) has the details.
+
+**A Webflow site.** Webflow Import reads the CSV of every collection at once, keeps the links between them and brings over Webflow's own redirects, which matters for a site with more than a blog. Blog Import doesn't read Webflow exports today.
+
+**A Substack you keep running.** Substack Sync reads the live publication and can sync again later. It's the simpler choice while the newsletter stays on Substack.
 
 **Blogger or Medium.** Of the plugins on this list, only Blog Import reads their exports: Blogger's backup file and Medium's "Download your information" zip.
 
