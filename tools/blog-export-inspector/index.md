@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Blog export inspector"
-description: "Choose a Squarespace, WordPress, Blogger, Ghost or Medium export file and see what is inside it, in your browser, before you move to Framer."
+description: "Choose a Squarespace, WordPress, Blogger, Ghost, Substack or Medium export file and see what is inside it, in your browser, before you move to Framer."
 permalink: /tools/blog-export-inspector/
 og_image: /og-blog-import.png
 extra_css: /assets/tools.css?v=1
@@ -9,7 +9,7 @@ extra_css: /assets/tools.css?v=1
 
 # Blog export inspector
 
-Choose the export file from your Squarespace, WordPress, Blogger, Ghost or Medium blog and see what is inside it before you move. It counts posts, drafts, images, comments and old addresses, and says what each means for a move to Framer.
+Choose the export file from your Squarespace, WordPress, Blogger, Ghost, Substack or Medium blog and see what is inside it before you move. It counts posts, drafts, images, comments and old addresses, and says what each means for a move to Framer.
 
 The file is read in your browser and is never uploaded or sent anywhere.
 
@@ -24,4 +24,4 @@ The file is read in your browser and is never uploaded or sent anywhere.
 
 Not sure where to find the file? See the guides for [Squarespace](/guides/squarespace-export-xml/), [Ghost](/guides/ghost-blog-to-framer/) and [Medium](/guides/medium-export/).
 
-<script type="module" src="/assets/tools/inspector.js?v=3"></script>
+<script type="module" src="/assets/tools/inspector.js?v=4"></script>

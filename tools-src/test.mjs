@@ -79,6 +79,49 @@ eq('medium counts', [m.kind, m.published, m.drafts, m.replies], ['medium', 3, 1,
   const g2 = await inspect('bare.json', new Uint8Array(strToU8('\uFEFF' + bare)));
   eq('ghost bare shape + BOM', [g2.kind, g2.published, g2.drafts], ['ghost', 3, 2]);
 }
+// Substack: HAND-MADE zip in the structure Substack writes (posts.csv + posts/<post_id>.html), not a real publication's.
+// Expected numbers counted by hand from the rows below.
+{
+  const csv = [
+    'post_id,post_date,is_published,email_sent_at,inbox_sent_at,type,audience,title,subtitle,podcast_url',
+    '101.first-issue,2024-03-01T15:00:00.000Z,true,,,newsletter,everyone,First Issue,Welcome,',
+    '102.paid-deep-dive,2024-04-01T15:00:00.000Z,true,,,newsletter,only_paid,"Paid, deep ""dive""",For supporters,',
+    '103.founders-note,2024-05-01T15:00:00.000Z,true,,,newsletter,founding,Founders note,,',
+    '104.draft-idea,,false,,,newsletter,everyone,Draft Idea,,',
+    '105.episode-one,2024-06-01T15:00:00.000Z,true,,,podcast,everyone,Episode One,,https://example.com/ep1.mp3',
+    '106.a-thread,2024-06-02T15:00:00.000Z,true,,,thread,everyone,A Thread,,',
+    '107.half-written,2099-01-01T00:00:00.000Z,false,,,newsletter,everyone,Half written,,',
+    '108.lost-post,2024-07-01T15:00:00.000Z,true,,,newsletter,everyone,Lost post,,',
+  ].join('\n');
+  const cdn = 'https://substackcdn.com/image/fetch/w_1456,c_limit/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F';
+  const im = (f) => `<img src="${cdn}${f}">`;
+  const z = (files) => zipSync(Object.fromEntries(Object.entries(files).map(([k, v]) => [k, new Uint8Array(strToU8(v))])));
+  const sub = await inspect('substack.zip', z({
+    'posts.csv': csv,
+    'posts/101.first-issue.html': `<p>Hi</p>${im('one.jpeg')}${im('photo.heic')}`,
+    'posts/102.paid-deep-dive.html': `<p>Paid</p>${im('two.png')}`,
+    'posts/103.founders-note.html': '<p>Founders</p>',
+    'posts/105.episode-one.html': '<p>Show notes</p>',
+    'posts/107.half-written.html': `<p>Draft with text</p>${im('three.jpeg')}`,
+    'email_list.example.csv': 'email\nreader@example.com\n',
+  }));
+  console.log('substack', JSON.stringify(sub));
+  eq('substack kind routed from zip', sub.kind, 'substack');
+  eq('substack published/drafts with text', [sub.published, sub.drafts], [4, 1]);
+  eq('substack extras', sub.substack, { threads: 1, podcasts: 1, paid: 2, draftsWithoutText: 1, publishedWithoutText: 1, heic: 1 });
+  eq('substack images total + heic', [sub.images.total, sub.substack.heic], [4, 1]);
+  eq('substack paths total + sample size', [sub.paths.total, sub.paths.sample.length], [5, 5]);
+  eq('substack paths are /p/slug', sub.paths.sample.every((x) => /^\/p\/[a-z-]+$/.test(x)), true);
+  eq('substack published paths come before the draft', sub.paths.sample[4], '/p/half-written');
+  eq('substack dates ignore draft in 2099', [sub.dates.first.slice(0, 10), sub.dates.last.slice(0, 10)], ['2024-03-01', '2024-06-01']);
+  eq('substack no pages/comments/replies/authors/tags', [sub.pages, sub.comments, sub.replies, sub.authors, sub.tags], [null, null, null, 0, 0]);
+  const wrapped = await inspect('w.zip', z({ 'export/posts.csv': csv, 'export/posts/101.first-issue.html': '<p>Hi</p>' }));
+  eq('substack zip in a folder', [wrapped.kind, wrapped.published], ['substack', 1]);
+  // Only a thread and a text-less draft: still a Substack export with nothing to move
+  const none = await inspect('n.zip', z({ 'posts.csv': csv.split('\n').filter((l, i) => i === 0 || /104|106/.test(l)).join('\n') }));
+  eq('substack with nothing to move', [none.kind, none.published, none.drafts, none.substack.threads, none.substack.draftsWithoutText], ['substack', 0, 0, 1, 1]);
+  try { await inspect('bad.zip', z({ 'posts.csv': 'a,b\n1,2\n' })); eq('bad posts.csv throws', false, true); } catch (e) { eq('bad posts.csv throws', true, true); console.log('   ', e.message); }
+}
 // Errors
 for (const [label, data] of [['not xml', new Uint8Array(strToU8('hello'))], ['plain xml', new Uint8Array(strToU8('<a/>'))]]) {
   try { await inspect('x', data); eq(label + ' throws', false, true); } catch (e) { eq(label + ' throws', true, true); console.log('   ', e.message); }

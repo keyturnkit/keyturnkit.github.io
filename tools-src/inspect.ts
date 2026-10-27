@@ -1,13 +1,15 @@
 // Reads a blog export file and reports what is in it. Everything runs in the browser; nothing is sent anywhere.
-// Parsing is done by the Blog Import plugin's own parsers (wxr.ts, blogger.ts, medium.ts, ghost.ts).
+// Parsing is done by the Blog Import plugin's own parsers (wxr.ts, blogger.ts, medium.ts, ghost.ts, substack.ts).
 import { strFromU8 } from 'fflate';
 import { isBloggerExport, parseBlogger } from '@parsers/blogger';
 import { isGhostExport, parseGhost } from '@parsers/ghost';
 import { mediumFilesFromZip, parseMediumFiles } from '@parsers/medium';
+import { parseCsv, parseSubstack, substackExportFromZip } from '@parsers/substack';
+import type { SubstackExport } from '@parsers/substack';
 import { parseWxr, parseXml, WxrError } from '@parsers/wxr';
 import type { Post, SiteContent } from '@parsers/types';
 
-export type Kind = 'squarespace' | 'wordpress' | 'blogger' | 'medium' | 'ghost';
+export type Kind = 'squarespace' | 'wordpress' | 'blogger' | 'medium' | 'ghost' | 'substack';
 
 export interface Report {
   kind: Kind;
@@ -36,6 +38,21 @@ export interface Report {
     ghostUrlCovers: number;
     /** Tags Ghost keeps private (name starts with "#" or visibility internal). Not counted in Tags. */
     internalTags: number;
+  };
+  /** Substack only, counted from posts.csv and the post HTML because the plugin reports these only as notes. */
+  substack?: {
+    /** Rows of type thread (chat posts). Not imported. */
+    threads: number;
+    /** Rows with text, of type podcast. Only the show notes are in the export. */
+    podcasts: number;
+    /** Published posts with text whose audience is only_paid or founding. They become public in Framer. */
+    paid: number;
+    /** Unpublished rows with no HTML file. Not imported. */
+    draftsWithoutText: number;
+    /** Published rows with no HTML file. Not imported. */
+    publishedWithoutText: number;
+    /** Images the plugin rewrites to a JPEG because the original is .heic or .heif. */
+    heic: number;
   };
 }
 
@@ -173,11 +190,67 @@ function ghostExtras(json: string) {
   return { pages, bodies, ghost: { drafts, ghostUrlImages, ghostUrlCovers, internalTags } };
 }
 
+/** Counts that come from posts.csv and the HTML files themselves. Mirrors parseSubstack: threads skipped, rows without HTML skipped. */
+function substackExtras(exp: SubstackExport, posts: Post[]) {
+  const truthy = (v: string | undefined) => /^(true|t|1|yes)$/i.test((v ?? '').trim());
+  const out = { threads: 0, podcasts: 0, paid: 0, draftsWithoutText: 0, publishedWithoutText: 0, heic: 0 };
+  for (const r of parseCsv(exp.csv)) {
+    const id = (r.post_id ?? '').trim();
+    if (!id) continue;
+    const type = (r.type ?? '').trim();
+    if (type === 'thread') {
+      out.threads++;
+      continue;
+    }
+    const published = truthy(r.is_published);
+    if (!exp.bodies.has(id)) {
+      if (published) out.publishedWithoutText++;
+      else out.draftsWithoutText++;
+      continue;
+    }
+    if (type === 'podcast') out.podcasts++;
+    if (published && /^(only_paid|founding)$/.test((r.audience ?? '').trim())) out.paid++;
+  }
+  // The plugin turns .heic/.heif originals into a substackcdn.com/image/fetch/f_jpg/<original> address.
+  for (const p of posts) {
+    for (const tag of p.html.match(/<img\b[^>]*>/gi) ?? []) {
+      const m = tag.match(/\ssrc\s*=\s*["']https:\/\/substackcdn\.com\/image\/fetch\/f_jpg\/([^"']+)["']/i);
+      if (m && /\.(heic|heif)$/i.test(decodeURIComponent(m[1]!).split(/[?#]/)[0]!)) out.heic++;
+    }
+  }
+  return out;
+}
+
 const isZip = (b: Uint8Array) => b.length > 3 && b[0] === 0x50 && b[1] === 0x4b;
 
 export async function inspect(fileName: string, bytes: Uint8Array): Promise<Report> {
   const common = { fileName, bytes: bytes.length };
   if (isZip(bytes)) {
+    // A zip with posts.csv is Substack's export. Any other zip goes the Medium way.
+    const substack = substackExportFromZip(bytes);
+    if (substack) {
+      let content: SiteContent;
+      try {
+        content = await parseSubstack(substack);
+      } catch (e) {
+        // posts.csv that is not Substack's own is an error. A CSV with only threads or text-less drafts is still a Substack export.
+        if (!(e instanceof WxrError) || !('post_id' in (parseCsv(substack.csv)[0] ?? {}))) throw e;
+        content = { source: 'substack-file', siteUrl: null, posts: [], authors: [], categories: [], tags: [] };
+      }
+      const published = content.posts.filter((p) => !p.draft);
+      return {
+        ...common,
+        kind: 'substack',
+        ...base(content),
+        // Only published posts set the date range: a draft's date is unset or a plan.
+        dates: dateRange(published),
+        pages: null,
+        attachments: null,
+        replies: null,
+        comments: null,
+        substack: substackExtras(substack, content.posts),
+      };
+    }
     const files = await mediumFilesFromZip(bytes);
     let content: SiteContent;
     try {
