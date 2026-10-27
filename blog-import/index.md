@@ -38,7 +38,9 @@ It doesn't import comments, pages, WordPress custom post types or WooCommerce pr
 
 The newest 25 posts import free, so you can see the result on your own blog first. To import all of them, a license is $29 for one Framer project or $59 for any number, paid once through Polar. After paying you get a key; [this page](/thanks/) shows how to turn it into the license code the plugin asks for.
 
-[Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd): choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
+[Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
+
+Rather not run it yourself? We move the blog into your Framer project for $149, license included, and check every post. [How that works](/blog-import/done-for-you/).
 
 ## Guides {#guides}
 
