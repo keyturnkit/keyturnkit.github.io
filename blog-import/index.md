@@ -8,7 +8,9 @@ og_image: /og-blog-import.png
 
 # Blog Import for Framer
 
-A Framer plugin that moves a Squarespace, WordPress, Blogger, Medium or Ghost blog into Framer CMS. It copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site.
+A Framer plugin for leaving Squarespace, Blogger, Medium, Ghost or WordPress. It reads the export file, moves the blog into Framer CMS, copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site. Run it while the old site is still up, so the images can be fetched.
+
+Keeping a WordPress site online and syncing from it? A live-sync plugin may suit you better; [the comparison](/guides/framer-blog-import-plugins-compared/) shows which.
 
 <video src="/blog-import/demo.mp4" poster="/blog-import/demo-poster.jpg" controls muted playsinline preload="none" width="1600" height="1200" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></video>
 
