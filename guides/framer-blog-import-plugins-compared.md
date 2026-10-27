@@ -19,7 +19,7 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 | PostPort | WordPress export file | $39 once | You pick image files from your computer | Not mentioned |
 | WP Sync | A live WordPress site | Not shown on the listing | Imported with the content | Not mentioned |
 | Specter | A Ghost site, with your Content API key | Not shown on the listing | Featured images | Not mentioned |
-| Blog Import | Squarespace, WordPress (file or live site), Blogger and Medium exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
+| Blog Import | Squarespace, WordPress (file or live site), Blogger, Medium and Ghost exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
 
 ## Which one fits
 
@@ -31,7 +31,7 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 
 **A WordPress blog with a lot of images.** PostPort asks you to choose image files from your computer, which works for a handful of posts. Blog Import fetches the images from the old site and copies them into Framer for you.
 
-**Ghost.** Specter is the one built for it. The other plugins here don't read Ghost.
+**Ghost.** Specter reads a Ghost site that is still running, through its Content API with a key you create. Blog Import reads Ghost's export file instead, so it also works after the site is gone, but it can't copy images whose address the file writes as `__GHOST_URL__`. Our [Ghost guide](/guides/ghost-blog-to-framer/) has the details.
 
 **Blogger or Medium.** Of the plugins on this list, only Blog Import reads their exports: Blogger's backup file and Medium's "Download your information" zip.
 

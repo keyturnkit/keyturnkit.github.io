@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Blog Import for Framer"
-description: "A Framer plugin that moves a Squarespace, WordPress, Blogger or Medium blog into Framer CMS, with its images and old links. The newest 25 posts import free."
+description: "A Framer plugin that moves a Squarespace, WordPress, Blogger, Medium or Ghost blog into Framer CMS, with its images and old links. The newest 25 posts import free."
 permalink: /blog-import/
 og_image: /og-blog-import.png
 ---
 
 # Blog Import for Framer
 
-A Framer plugin that moves a Squarespace, WordPress, Blogger or Medium blog into Framer CMS. It copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site.
+A Framer plugin that moves a Squarespace, WordPress, Blogger, Medium or Ghost blog into Framer CMS. It copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site.
 
 <video src="/blog-import/demo.mp4" poster="/blog-import/demo-poster.jpg" controls muted playsinline preload="none" width="1600" height="1200" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></video>
 
@@ -24,6 +24,7 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 - A WordPress export file, or just the address of a live WordPress site
 - A Blogger backup file
 - The zip Medium sends from "Download your information"
+- A Ghost export file, from Settings, Migration tools, Export (images whose address the file writes as `__GHOST_URL__` can't be copied; see the [Ghost guide](/guides/ghost-blog-to-framer/))
 
 ## What you get in Framer
 

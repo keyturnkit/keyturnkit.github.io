@@ -37,7 +37,7 @@ To check, open a few imported posts in Framer, right-click an image in the body 
 - **Use full addresses** in image cells. Add the domain to any that start with a slash.
 - **Copy body images into Framer**, not just the covers. With a CSV that means downloading each image, uploading it to Framer and replacing the address in the HTML, post by post.
 
-That last step is the one that takes days by hand, so we built it into [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/). It reads a Squarespace, WordPress, Blogger or Medium export directly, copies cover and body images into Framer at a steady pace so the old host doesn't refuse, writes a post without its cover rather than dropping it when a cover can't be fetched, and tells you which images it couldn't copy. The newest 25 posts import for free.
+That last step is the one that takes days by hand, so we built it into [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/). It reads a Squarespace, WordPress, Blogger, Medium or Ghost export directly, copies cover and body images into Framer at a steady pace so the old host doesn't refuse, writes a post without its cover rather than dropping it when a cover can't be fetched, and tells you which images it couldn't copy. The newest 25 posts import for free.
 
 ## Check after any import
 
