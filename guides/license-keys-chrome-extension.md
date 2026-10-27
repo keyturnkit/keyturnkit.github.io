@@ -184,4 +184,4 @@ Test mode and live mode are separate in Lemon Squeezy. When you go live, the pro
 
 Keyturn Kit's free edition (MIT) is this same approach with React components, a settings page and tests with a mocked `fetch`: https://github.com/keyturnkit/keyturn-kit
 
-There's also a paid edition that adds Polar and Dodo Payments, a free trial and per-day free usage. You don't need it to follow this post. The code above covers the basic flow.
+There's also a paid edition that adds Polar, Dodo Payments and Gumroad, a free trial and per-day free usage. You don't need it to follow this post. The code above covers the basic flow.

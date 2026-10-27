@@ -56,4 +56,4 @@ trialDays: 7,
 freeUsesPerDay: { export: 3 },
 ```
 
-Pro also adds Polar and Dodo Payments next to Lemon Squeezy. The free edition (MIT, on GitHub) has the license key side without the trial; its step-by-step guide is [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/).
+Pro also adds Polar, Dodo Payments and Gumroad next to Lemon Squeezy. The free edition (MIT, on GitHub) has the license key side without the trial; its step-by-step guide is [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/).

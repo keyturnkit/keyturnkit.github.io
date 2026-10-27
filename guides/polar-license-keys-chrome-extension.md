@@ -53,7 +53,7 @@ Revoke or disable the key in Polar after a refund. The next daily validate retur
 
 ## Doing it with Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Polar and Dodo Payments come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Polar, Dodo Payments and Gumroad come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
 
 ```ts
 provider: 'polar',
