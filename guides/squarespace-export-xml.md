@@ -55,3 +55,5 @@ Each post keeps its Squarespace address, with the date in it: `/a-blog/2014/6/15
 ## Moving it into Framer
 
 [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), the Framer plugin we make, reads this file as it is: it skips the attachment entries, keeps drafts as drafts, turns authors and categories into linked collections, copies images from `static1.squarespace.com` into Framer and adds a redirect for each old address. It doesn't import comments. The newest 25 posts import for free. The step-by-step version is in [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/).
+
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.

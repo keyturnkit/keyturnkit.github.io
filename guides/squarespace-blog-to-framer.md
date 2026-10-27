@@ -72,6 +72,8 @@ Framer lets you add redirects under Site Settings, Hosting, Redirects on the Pro
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
+
 ## More guides
 
 - [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)

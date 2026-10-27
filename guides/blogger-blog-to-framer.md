@@ -49,6 +49,8 @@ Open five old addresses, including one from the first year of the blog, and make
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
+
 ## More guides
 
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)

@@ -42,6 +42,8 @@ We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-sq
 
 Open a story with several images and check they are sharp, and look for any reply that slipped through as a post. Then add a link from your Medium profile to the new site, so readers who find the old stories can follow you.
 
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
+
 ## More guides
 
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)

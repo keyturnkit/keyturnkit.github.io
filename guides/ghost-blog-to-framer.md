@@ -36,3 +36,5 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 If your Ghost site is still live, Specter is a Framer plugin that reads it through Ghost's Content API with a key you create. Blog Import works from the export file instead, so it also works after the Ghost site is gone, apart from the images above.
 
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
+
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
