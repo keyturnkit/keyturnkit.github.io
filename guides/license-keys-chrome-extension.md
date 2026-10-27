@@ -3,11 +3,14 @@ layout: default
 title: "Selling a Chrome extension with license keys, no backend"
 description: "Lemon Squeezy license keys in a Chrome MV3 extension: store check, daily re-check, offline grace, deactivation. About 80 lines, no server."
 permalink: /guides/license-keys-chrome-extension/
+og_image: /guides/img/license-keys-chrome-extension-cover.png
 ---
 
 # Selling a Chrome extension with license keys, no backend
 
 Google wound down Chrome Web Store payments between 2020 and early 2021. To charge for an extension now, you need a checkout and a way to know who paid, and you want to make sharing one key with everyone at least inconvenient.
+
+![Keyturn Kit popup with Pro active, next to the Lemon Squeezy lines of its config file](/guides/img/license-keys-chrome-extension-cover.png)
 
 This post walks through a small setup that covers that without running a server: Lemon Squeezy for the checkout, its License API for the "who paid" part, and about 80 lines of TypeScript in the extension.
 

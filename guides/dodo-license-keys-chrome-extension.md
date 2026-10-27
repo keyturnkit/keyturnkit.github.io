@@ -3,11 +3,14 @@ layout: default
 title: "Dodo Payments license keys in a Chrome extension"
 description: "Activate and validate Dodo Payments license keys straight from a Chrome extension, with no API key in the code, and the one check Dodo leaves to you. Endpoints checked against Dodo's docs on 27 October 2026."
 permalink: /guides/dodo-license-keys-chrome-extension/
+og_image: /guides/img/dodo-license-keys-chrome-extension-cover.png
 ---
 
 # Dodo Payments license keys in a Chrome extension
 
 Dodo Payments can sell your extension, collect the tax and email the buyer a license key. Its license endpoints are public: Dodo's docs say they need no API key and can be called from client apps, so the extension can check the key itself and nothing secret ships with it. Below is how they work, with the code we use in Keyturn Kit. The endpoint details come from Dodo's API reference on 27 October 2026.
+
+![Keyturn Kit popup with a license key typed in, next to the Dodo Payments lines of its config file](/guides/img/dodo-license-keys-chrome-extension-cover.png)
 
 ## Hosts
 

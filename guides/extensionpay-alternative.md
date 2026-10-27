@@ -3,11 +3,14 @@ layout: default
 title: "ExtensionPay or license keys: two ways to charge for a Chrome extension"
 description: "How ExtensionPay works, what it costs, and when license keys from a merchant of record fit better. Written by the makers of Keyturn Kit, so read with that in mind."
 permalink: /guides/extensionpay-alternative/
+og_image: /guides/img/extensionpay-alternative-cover.png
 ---
 
 # ExtensionPay or license keys: two ways to charge for a Chrome extension
 
 Since the Chrome Web Store stopped handling payments, most paid extensions use one of two setups: a hosted service such as ExtensionPay, or license keys sold by a payment provider and checked by the extension. We make Keyturn Kit, which does the second, so we have a stake in this. The ExtensionPay details below come from its own homepage on 26 October 2026.
+
+![Keyturn Kit popup before and after a license key is activated](/guides/img/extensionpay-alternative-cover.png)
 
 ## How ExtensionPay works
 

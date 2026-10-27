@@ -3,11 +3,14 @@ layout: default
 title: "Gumroad license keys in a Chrome extension"
 description: "Verify Gumroad license keys from a Chrome extension with no access token and no server, and what Gumroad leaves to you. Checked against Gumroad's help article and source code on 27 October 2026."
 permalink: /guides/gumroad-license-keys-chrome-extension/
+og_image: /guides/img/gumroad-license-keys-chrome-extension-cover.png
 ---
 
 # Gumroad license keys in a Chrome extension
 
 Gumroad can sell your extension and give each buyer a license key. Its verify endpoint needs no access token, and Gumroad's own help says you can call it from the browser, so the extension can check the key itself. Below is how it behaves, with the code we use in Keyturn Kit. The details come from Gumroad's license keys help article and from Gumroad's source code (it's open source), read on 27 October 2026.
+
+![Keyturn Kit popup with a license key typed in, next to the Gumroad lines of its config file](/guides/img/gumroad-license-keys-chrome-extension-cover.png)
 
 ## Turn license keys on
 

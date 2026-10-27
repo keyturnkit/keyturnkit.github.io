@@ -3,11 +3,14 @@ layout: default
 title: "Polar license keys in a Chrome extension"
 description: "Activate and validate Polar license keys straight from a Chrome extension with Polar's customer-portal endpoints: no access token, no server. Endpoints checked against Polar's docs on 27 October 2026."
 permalink: /guides/polar-license-keys-chrome-extension/
+og_image: /guides/img/polar-license-keys-chrome-extension-cover.png
 ---
 
 # Polar license keys in a Chrome extension
 
 Polar can sell your extension and email the buyer a license key. The extension can then check that key itself, because Polar has license endpoints meant for public clients: they need no access token, so nothing secret ships in the extension. Below is how they work, with the code we use in Keyturn Kit. The endpoint details come from Polar's API reference on 27 October 2026.
+
+![Keyturn Kit popup with a license key typed in, next to the Polar lines of its config file](/guides/img/polar-license-keys-chrome-extension-cover.png)
 
 ## Two sets of endpoints, use the customer-portal ones
 

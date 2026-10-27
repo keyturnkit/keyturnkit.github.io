@@ -3,11 +3,14 @@ layout: default
 title: "Adding a free trial to a paid Chrome extension"
 description: "A trial counted from install, a few free uses a day after it ends, and the ways people get around both, with the code we ship in Keyturn Kit Pro."
 permalink: /guides/chrome-extension-free-trial/
+og_image: /guides/img/chrome-extension-free-trial-cover.png
 ---
 
 # Adding a free trial to a paid Chrome extension
 
 A trial lets people see what they'd be paying for. For an extension without accounts or a server, it comes down to two numbers kept in extension storage: when the extension was installed, and how many times a feature was used today. Here's how we do it in Keyturn Kit Pro, and where it can be got around.
+
+![Keyturn Kit Pro popup showing an export button and 5 trial days left, next to the trial lines of its config file](/guides/img/chrome-extension-free-trial-cover.png)
 
 ## Start the clock at install
 
