@@ -18,3 +18,8 @@ The row therefore mixes two logos and two text names. Plasmo's logos and text we
 - Dodo Payments: `Logo - Black.svg` from the official kit https://dodopayments.com/brand-assets.zip (linked from https://dodopayments.com/brand), copied byte for byte to `assets/logos/dodo-payments.svg`. It is the light-background version and keeps its lime mark. Terms: do not alter colours, proportions or add effects; no low-contrast backgrounds.
 - Both are shown at their native proportions, 30px (Lemon Squeezy) and 34px (Dodo) tall, next to Polar at 32px and the WXT mark at 32px.
 - Neither brand page says whether "works with" use needs permission. If you want the vector Lemon Squeezy file, the kit needs someone to complete their form.
+
+# Round 12: monochrome check
+- Dodo Payments: every logo file in brand-assets.zip was checked (Logo - Black, Logo - White, Brandmark, each as SVG and PNG, plus the colour palette). All of them carry the lime #C6FE1E mark, and the brand page shows no other variant. No official one-colour file exists, so the Dodo logo stays as published.
+- Lemon Squeezy: the brand page shows the yellow mark with a dark or white wordmark only, and its kit sits behind a form. No official one-colour file found, so it stays as published.
+- Polar: the official file is already black, and its terms forbid recolouring, so it stays black. The WXT mark and name use the page's near-black ink.

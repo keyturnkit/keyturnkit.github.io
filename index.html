@@ -92,7 +92,7 @@
       <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><div class="win-addr"><div class="addr">your-extension.example</div><span class="ext-btn"></span></div></div>
       <div class="win-body">
         <div class="skel" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
-        <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=4" scrolling="no" title="The free edition's popup, running in this page"></iframe>
+        <iframe class="popup-frame" id="popup" src="/demo/popup.html?v=5" scrolling="no" title="The free edition's popup, running in this page"></iframe>
       </div>
     </div>
   </div>
@@ -156,15 +156,15 @@
             <div class="fmock">
               <div class="shell code-shell">
                 <div class="bar"><span class="tab">Terminal</span></div>
-                <pre class="term"><span>git clone https://github.com/keyturnkit/keyturn-kit</span>
+                <pre class="term"><span>git clone https://github.com/<wbr>keyturnkit/<wbr>keyturn-kit</span>
 <span>cd keyturn-kit</span>
 <span>npm install</span>
-<span>npm run dev   # opens Chrome with the extension loaded</span></pre>
+<span>npm run dev</span>
+<span class="cm"># opens Chrome with the extension loaded</span></pre>
               </div>
             </div>
             <div class="fcards">
-              <div class="card"><h4>MIT license</h4><p>The free edition is on GitHub. Clone it, install it, and npm run dev opens Chrome with the extension loaded.</p></div>
-              <div class="card"><h4>15 tests</h4><p>They run with the network mocked.</p></div>
+              <div class="card"><h4>MIT license, 15 tests</h4><p>The free edition is on GitHub. Clone it, install it, and npm run dev opens Chrome with the extension loaded. The tests run with the network mocked.</p></div>
             </div>
           </div>
         </section>
@@ -185,18 +185,30 @@
             </div>
           </div>
           <div class="fbody">
-            <div class="fmock stack flat">
-              <div class="shell code-shell">
-                <div class="bar"><span class="tab">lib/config.ts</span></div>
-                <pre class="code wrap"><span class="l">/** 'lemonsqueezy', 'polar' or 'dodo'. Switching later only changes this line and the matching block below. */</span>
-<span class="l">provider: 'lemonsqueezy' as 'lemonsqueezy' | 'polar' | 'dodo',</span></pre>
-              </div>
-              <div class="shell code-shell over">
-                <div class="bar"><span class="tab">lib/config.ts</span></div>
-                <pre class="code wrap"><span class="l">/** Days of full access from install, no key needed. 0 turns the trial off. */</span>
-<span class="l">trialDays: 7,</span>
-<span class="l">/** After the trial: free uses per day for each feature name you pass to access.check(). Features not listed are Pro-only. */</span>
-<span class="l">freeUsesPerDay: { export: 3 } as Record&lt;string, number&gt;,</span></pre>
+            <div class="fmock">
+              <div class="win cfg">
+                <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><span class="win-tab">lib/config.ts</span></div>
+                <div class="codewrap">
+                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span></div>
+                  <pre class="code"><span class="l"><i>/** 'lemonsqueezy', 'polar' or</i></span>
+<span class="l"><i> *  'dodo'. Switching later only</i></span>
+<span class="l"><i> *  changes this line and the</i></span>
+<span class="l"><i> *  matching block below. */</i></span>
+<span class="l">provider: <mark>'lemonsqueezy'</mark> <b>as</b></span>
+<span class="l">  <mark>'lemonsqueezy'</mark> | <mark>'polar'</mark></span>
+<span class="l">  | <mark>'dodo'</mark>,</span>
+<span class="l"><i>/** Days of full access from</i></span>
+<span class="l"><i> *  install, no key needed. 0</i></span>
+<span class="l"><i> *  turns the trial off. */</i></span>
+<span class="l">trialDays: <mark>7</mark>,</span>
+<span class="l"><i>/** After the trial: free uses</i></span>
+<span class="l"><i> *  per day for each feature</i></span>
+<span class="l"><i> *  name you pass to</i></span>
+<span class="l"><i> *  access.check(). Features not</i></span>
+<span class="l"><i> *  listed are Pro-only. */</i></span>
+<span class="l">freeUsesPerDay: { export: <mark>3</mark> } <b>as</b></span>
+<span class="l">  Record&lt;string, number&gt;,</span></pre>
+                </div>
               </div>
             </div>
             <div class="fcards">
@@ -227,8 +239,7 @@
             <div class="faq-grid">
               <div class="card"><h4>Can someone crack it?</h4><p>Yes. Anything checked inside an extension can be patched by a determined person. The kit stops a key being shared past the activation limit you set, and a disabled key from carrying on. If you need more, put the valuable part on a server and gate that.</p></div>
               <div class="card"><h4>Why not ExtensionPay?</h4><p>ExtensionPay is a hosted service on Stripe with its own login and a 5% fee on top of Stripe's, and you handle sales tax yourself. Keyturn Kit is code you own with no extra fee, and Lemon Squeezy, Polar and Dodo collect and pay the tax. If you'd rather not touch code, ExtensionPay is easier.</p></div>
-              <div class="card"><h4>Firefox?</h4><p>WXT builds it with <code>npm run zip:firefox</code>. We have only tested Chrome.</p></div>
-              <div class="card"><h4>Can I get a refund?</h4><p>Email within 14 days if Pro doesn't work for you and you get a full refund.</p></div>
+              <div class="card wide"><div class="pair"><div><h4>Firefox?</h4><p>WXT builds it with <code>npm run zip:firefox</code>. We have only tested Chrome.</p></div><div><h4>Can I get a refund?</h4><p>Email within 14 days if Pro doesn't work for you and you get a full refund.</p></div></div></div>
             </div>
           </div>
         </section>
