@@ -71,4 +71,4 @@ provider: 'gumroad',
 gumroad: { productId: 'YOUR-GUMROAD-PRODUCT-ID', maxUses: 3 },
 ```
 
-Pro also adds a free trial counted from install and a number of free uses per day before the paywall. The step-by-step guide for the free edition is [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/).
+Pro also adds a free trial counted from install and a number of free uses per day before the paywall. The step-by-step guide for the free edition is [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/). If you would rather pay through Gumroad, [Pro is on Gumroad too](https://mamstudiohq.gumroad.com/l/hhecqu).
