@@ -22,7 +22,7 @@ Each platform has its own pattern, and your Framer post will live somewhere like
 | Medium | `medium.com/@you/my-post-4ce83a7e81d0` |
 | Ghost | `/my-post/` by default; custom routes in `routes.yaml` can change it |
 
-Two cases can't be redirected from Framer, because the old address isn't on your domain: a blog on `yourname.blogspot.com`, and stories on `medium.com`. For those, keep the old blog online with a note pointing to the new site. Redirects work when your blog used your own domain, which moves to Framer with you.
+Some old addresses can't be redirected from Framer, because they aren't on your domain. That covers a blog on `yourname.blogspot.com` or `yoursite.ghost.io`, and stories on `medium.com`. For those, keep the old blog online with a note pointing to the new site. Redirects work when your blog used your own domain, which moves to Framer with you.
 
 ## Where redirects live in Framer
 
