@@ -65,9 +65,9 @@
     <div class="works">
       <label>Works with</label>
       <ul>
-        <li><img class="lg-ls" src="/assets/logos/lemonsqueezy.png" alt="Lemon Squeezy" width="161" height="30"></li>
-        <li><img src="/assets/logos/polar.svg" alt="Polar" width="91" height="32"></li>
-        <li><img class="lg-dodo" src="/assets/logos/dodo-payments.svg" alt="Dodo Payments" width="146" height="30"></li>
+        <li><img class="lg-ls" src="/assets/logos/lemonsqueezy-grey.png" alt="Lemon Squeezy" width="161" height="30"></li>
+        <li><img class="lg-polar" src="/assets/logos/polar.svg" alt="Polar" width="91" height="32"></li>
+        <li><img class="lg-dodo" src="/assets/logos/dodo-payments-grey.svg" alt="Dodo Payments" width="146" height="30"></li>
         <li><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M354.435 418.141C383.217 418.141 406.55 394.808 406.55 366.026V313.91H416.026C444.808 313.91 468.141 290.578 468.141 261.795C468.141 233.013 444.808 209.68 416.026 209.68H406.55V157.565C406.55 128.783 383.217 105.45 354.435 105.45H302.32V95.9745C302.32 67.1921 278.987 43.8594 250.205 43.8594C221.422 43.8594 198.09 67.1921 198.09 95.9745V105.45H145.974C117.192 105.45 93.8594 128.783 93.8594 157.565V209.68H103.335C132.117 209.68 155.45 233.013 155.45 261.795C155.45 290.578 132.117 313.91 103.335 313.91H93.8594V418.141H198.09V408.665C198.09 379.883 221.422 356.55 250.205 356.55C278.987 356.55 302.32 379.883 302.32 408.665V418.141H354.435Z"/></svg>WXT</li>
       </ul>
     </div>
@@ -189,25 +189,13 @@
               <div class="win cfg">
                 <div class="win-bar"><div class="dots"><i></i><i></i><i></i></div><span class="win-tab">lib/config.ts</span></div>
                 <div class="codewrap">
-                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span></div>
-                  <pre class="code"><span class="l"><i>/** 'lemonsqueezy', 'polar' or</i></span>
-<span class="l"><i> *  'dodo'. Switching later only</i></span>
-<span class="l"><i> *  changes this line and the</i></span>
-<span class="l"><i> *  matching block below. */</i></span>
-<span class="l">provider: <mark>'lemonsqueezy'</mark> <b>as</b></span>
-<span class="l">  <mark>'lemonsqueezy'</mark> | <mark>'polar'</mark></span>
-<span class="l">  | <mark>'dodo'</mark>,</span>
-<span class="l"><i>/** Days of full access from</i></span>
-<span class="l"><i> *  install, no key needed. 0</i></span>
-<span class="l"><i> *  turns the trial off. */</i></span>
-<span class="l">trialDays: <mark>7</mark>,</span>
-<span class="l"><i>/** After the trial: free uses</i></span>
-<span class="l"><i> *  per day for each feature</i></span>
-<span class="l"><i> *  name you pass to</i></span>
-<span class="l"><i> *  access.check(). Features not</i></span>
-<span class="l"><i> *  listed are Pro-only. */</i></span>
-<span class="l">freeUsesPerDay: { export: <mark>3</mark> } <b>as</b></span>
-<span class="l">  Record&lt;string, number&gt;,</span></pre>
+                  <div class="gutter"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></div>
+                  <pre class="code"><span class="l"><i>// lemonsqueezy, polar or dodo</i></span>
+<span class="l"><b>provider</b>: <mark>'lemonsqueezy'</mark>,</span>
+<span class="l"><i>// days of access from install</i></span>
+<span class="l"><b>trialDays</b>: <mark>7</mark>,</span>
+<span class="l"><i>// free uses a day after trial</i></span>
+<span class="l"><b>freeUsesPerDay</b>: { export: <mark>3</mark> },</span></pre>
                 </div>
               </div>
             </div>
