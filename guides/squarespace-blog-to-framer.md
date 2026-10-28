@@ -14,6 +14,8 @@ This is what we learned building an importer and testing it on real Squarespace 
 
 ## What Squarespace gives you
 
+If you're here because your renewal went up, [check whether Core is enough first](/guides/squarespace-renewal-price-increase/).
+
 Squarespace has one export format, and it is WordPress's. Open the Import & export panel, click Export, pick WordPress, and download an `.xml` file. The site has to be published and public; a trial site can't export.
 
 According to Squarespace's own help page, the file contains:
