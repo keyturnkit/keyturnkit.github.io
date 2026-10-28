@@ -8,7 +8,7 @@ og_image: /guides/img/license-keys-chrome-extension-cover.png
 
 # We add license keys to your Chrome extension
 
-If you'd rather not wire up payments yourself, we'll add a paid tier to your existing extension with the same code that's in [Keyturn Kit](/), and hand it back as a pull request. PRICE_LINE
+If you'd rather not wire up payments yourself, we'll add a paid tier to your existing extension with the same code that's in [Keyturn Kit](/), and hand it back as a pull request. $149, paid once.
 
 ## What you get
 
@@ -31,6 +31,6 @@ Setting up your seller account or products (we tell you exactly what to create),
 
 If we can't add it to your extension, for example the build doesn't run, you get a full refund.
 
-CHECKOUT_BUTTON
+<p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_aEJWvlJ8DcwezmbbOmlpYTJAupLXBfZbwvCac2MGFeG">Add license keys to my extension, $149</a></p>
 
 Prefer to do it yourself? [Keyturn Kit](/) is the same code as a starter, and the guides cover each seller.

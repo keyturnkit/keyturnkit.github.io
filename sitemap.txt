@@ -10,6 +10,7 @@ https://keyturnkit.github.io/guides/ghost-blog-to-framer/
 https://keyturnkit.github.io/guides/gumroad-license-keys-chrome-extension/
 https://keyturnkit.github.io/blog-import/
 https://keyturnkit.github.io/blog-move/
+https://keyturnkit.github.io/license-setup/
 https://keyturnkit.github.io/tools/blog-export-inspector/
 https://keyturnkit.github.io/guides/license-keys-chrome-extension/
 https://keyturnkit.github.io/guides/medium-blog-to-framer/
