@@ -16,6 +16,7 @@ https://keyturnkit.github.io/guides/medium-export/
 https://keyturnkit.github.io/guides/move-license-keys-off-lemon-squeezy/
 https://keyturnkit.github.io/guides/payhip-license-keys-chrome-extension/
 https://keyturnkit.github.io/guides/pay-before-install-chrome-extension/
+https://keyturnkit.github.io/guides/sign-in-chrome-extension/
 https://keyturnkit.github.io/guides/polar-license-keys-chrome-extension/
 https://keyturnkit.github.io/guides/squarespace-blog-to-framer/
 https://keyturnkit.github.io/guides/squarespace-export-xml/
