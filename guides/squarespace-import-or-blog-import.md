@@ -13,7 +13,7 @@ Two Framer plugins are built for moving a Squarespace blog into Framer CMS: Squa
 
 ## What both do
 
-Both read the file Squarespace exports in WordPress format (Settings, Advanced, Import & Export). Both bring each post with its title, date, body, excerpt and cover, keep drafts as drafts, make authors, categories and tags their own linked collections, copy the images inside posts into Framer so nothing breaks when you cancel Squarespace, and add a redirect from each dated Squarespace address (/blog/2024/3/9/my-post) to the new one on a Framer plan that includes redirects. Running either again updates the same collections instead of duplicating them. Both import the first 25 posts free.
+Both read the file Squarespace exports in WordPress format (Settings, Advanced, Import & Export). Both bring each post with its title, date, body, excerpt and cover, keep drafts as drafts, make authors, categories and tags their own linked collections, copy the images inside posts into Framer so nothing breaks when you cancel Squarespace, carry YouTube and Vimeo over, and add a redirect from each dated Squarespace address (/blog/2024/3/9/my-post) to the new one on a Framer plan that includes redirects. Running either again updates the same collections instead of duplicating them. Both import the first 25 posts free.
 
 ## Where they differ
 
