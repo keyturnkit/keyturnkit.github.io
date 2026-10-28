@@ -9,6 +9,8 @@ permalink: /guides/payhip-license-keys-chrome-extension/
 
 Payhip can sell your extension and issue a license key with each order. Its current license API (v2) doesn't use your account API key. Each product has its own secret key, and Payhip's help center says that's meant for public apps, where an account key must never go. Below is how the endpoints behave and how we use them in Keyturn Kit. The details come from Payhip's help article on software license keys, read on 27 October 2026.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ## Turn license keys on
 
 In Payhip, turn on license keys for the product. Its license settings show the product secret key. That's the value the extension sends; your account API key stays out of it.

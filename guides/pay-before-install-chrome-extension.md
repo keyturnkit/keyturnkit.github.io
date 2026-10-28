@@ -10,6 +10,8 @@ og_image: /guides/img/license-keys-chrome-extension-cover.png
 
 A common wish: put a Buy button on your landing page, take the money there, and only then send people to the Chrome Web Store. Setups that track paying users from inside the extension usually start with the extension already installed. With license keys the order can be the other way round, because the key is the proof of purchase and it can arrive before the extension does. We make Keyturn Kit, which works this way, so read with that in mind.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ## The flow
 
 1. The Buy button on your page links to your checkout (Lemon Squeezy here; Polar, Dodo Payments, Gumroad and Payhip work the same way).

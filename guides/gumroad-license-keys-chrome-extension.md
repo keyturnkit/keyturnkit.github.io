@@ -10,6 +10,8 @@ og_image: /guides/img/gumroad-license-keys-chrome-extension-cover.png
 
 Gumroad can sell your extension and give each buyer a license key. Its verify endpoint needs no access token, and Gumroad's own help says you can call it from the browser, so the extension can check the key itself. Below is how it behaves, with the code we use in Keyturn Kit. The details come from Gumroad's license keys help article and from Gumroad's source code (it's open source), read on 27 October 2026.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ![Keyturn Kit popup with a license key typed in, next to the Gumroad lines of its config file](/guides/img/gumroad-license-keys-chrome-extension-cover.png)
 
 ## Turn license keys on

@@ -10,6 +10,8 @@ og_image: /guides/img/chrome-extension-free-trial-cover.png
 
 A trial lets people see what they'd be paying for. For an extension without accounts or a server, it comes down to two numbers kept in extension storage: when the extension was installed, and how many times a feature was used today. Here's how we do it in Keyturn Kit Pro, and where it can be got around.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ![Keyturn Kit Pro popup showing an export button and 5 trial days left, next to the trial lines of its config file](/guides/img/chrome-extension-free-trial-cover.png)
 
 ## Start the clock at install

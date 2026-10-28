@@ -10,6 +10,8 @@ og_image: /guides/img/polar-license-keys-chrome-extension-cover.png
 
 Polar can sell your extension and email the buyer a license key. The extension can then check that key itself, because Polar has license endpoints meant for public clients: they need no access token, so nothing secret ships in the extension. Below is how they work, with the code we use in Keyturn Kit. The endpoint details come from Polar's API reference on 27 October 2026.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ![Keyturn Kit popup with a license key typed in, next to the Polar lines of its config file](/guides/img/polar-license-keys-chrome-extension-cover.png)
 
 ## Two sets of endpoints, use the customer-portal ones

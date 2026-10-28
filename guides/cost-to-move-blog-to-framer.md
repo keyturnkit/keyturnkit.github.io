@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 There are three ways to get an existing blog into Framer, and the price runs from nothing to five figures. All prices below come from each provider's own page, read between 26 and 28 October 2026. We make Blog Import, so weigh that.
 
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+
 First, the cost you pay whichever way you go: Framer itself, $10 a month on Basic (2 CMS collections, no redirects) or $30 on Pro (10 collections and redirects).
 
 | Way | Price | What you do | What you get |

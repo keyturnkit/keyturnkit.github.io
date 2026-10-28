@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 Framer's Agent can now move content into Framer: its Agents page says it "recreates pages, structure, and CMS content in Framer from a live site, export, or reference", and one of Framer's own sample prompts is moving WordPress blog posts into a CMS collection. We make Blog Import, an import plugin, so we have a stake in this; here is what Framer's own pages say and where each one fits. All quotes are from framer.com, read on 28 October 2026.
 
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+
 ## What Framer says about the Agent
 
 - Framer's migration guide (27 October 2026) ends with "Treat the Agent's result as a first build pass, not a finished migration", and asks you to "review dates, options, references, images, and formatted text after import."

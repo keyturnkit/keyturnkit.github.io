@@ -10,6 +10,8 @@ og_image: /guides/img/dodo-license-keys-chrome-extension-cover.png
 
 Dodo Payments can sell your extension, collect the tax and email the buyer a license key. Its license endpoints are public: Dodo's docs say they need no API key and can be called from client apps, so the extension can check the key itself and nothing secret ships with it. Below is how they work, with the code we use in Keyturn Kit. The endpoint details come from Dodo's API reference on 27 October 2026.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ![Keyturn Kit popup with a license key typed in, next to the Dodo Payments lines of its config file](/guides/img/dodo-license-keys-chrome-extension-cover.png)
 
 ## Hosts

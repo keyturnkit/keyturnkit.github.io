@@ -10,6 +10,8 @@ og_image: /guides/img/license-keys-chrome-extension-cover.png
 
 Google wound down Chrome Web Store payments between 2020 and early 2021. To charge for an extension now, you need a checkout and a way to know who paid, and you want to make sharing one key with everyone at least inconvenient.
 
+The code on this page comes from [Keyturn Kit](https://github.com/keyturnkit/keyturn-kit), a WXT + React starter: the free edition is MIT on GitHub, and [Pro](/#pricing) ($59 once) adds Polar, Dodo Payments, Gumroad, Payhip and trials.
+
 ![Keyturn Kit popup with Pro active, next to the Lemon Squeezy lines of its config file](/guides/img/license-keys-chrome-extension-cover.png)
 
 This post walks through a small setup that covers that without running a server: Lemon Squeezy for the checkout, its License API for the "who paid" part, and about 80 lines of TypeScript in the extension.

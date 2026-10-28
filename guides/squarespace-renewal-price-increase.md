@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 Squarespace raised prices for existing sites from 1 August 2026, and each site sees the new price at its renewal, so notices are still arriving. In the Squarespace forum thread about it, renewal notices of $276 and $348 a year are quoted, and Squarespace staff said on 3 August that "an internal error that misapplied prices on certain plans" had sent some people a higher figure than intended. We make Blog Import, a Framer plugin for moving blogs, so we have a stake in you leaving; read the next section first anyway.
 
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+
 ## The cheap fix: check the plan, not the platform
 
 The same forum thread points out that a legacy Business plan renewing at $348 a year can switch to Core and stay at $276. If your site doesn't use the features of the higher plan, downgrading is less work than moving. If your notice looks higher than the plans on Squarespace's pricing page, ask their support whether it's one of the misapplied prices.
