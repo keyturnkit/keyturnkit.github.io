@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "What's inside a Squarespace blog export"
 description: "Squarespace exports a blog as a WordPress .xml file. Here is what we found inside a real one, what it leaves out, and what to check before you cancel."
 permalink: /guides/squarespace-export-xml/

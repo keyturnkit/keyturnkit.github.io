@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "WordPress to Framer: moving a blog, with its images and old links"
 description: "How to import a WordPress blog into Framer CMS: the export file or the live site, what WordPress stores that it normally cleans up, and how posts, images and old URLs come across."
 permalink: /guides/wordpress-blog-to-framer/

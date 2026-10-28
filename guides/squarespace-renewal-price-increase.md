@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Squarespace renewal went up? Check Core first, then how a blog moves to Framer"
 description: "Squarespace renewals rose from 1 August 2026. The cheap fix the Squarespace forum points to, and if you'd rather leave, how to move a Squarespace blog to Framer with its images and old links. Written by the makers of Blog Import."
 permalink: /guides/squarespace-renewal-price-increase/

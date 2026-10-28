@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Polar license keys in a Chrome extension"
 description: "Activate and validate Polar license keys straight from a Chrome extension with Polar's customer-portal endpoints: no access token, no server. Endpoints checked against Polar's docs on 27 October 2026."
 permalink: /guides/polar-license-keys-chrome-extension/

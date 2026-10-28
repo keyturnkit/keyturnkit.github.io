@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Signing users in to a Chrome extension"
 description: "Sign-in from your own website with launchWebAuthFlow, where to keep the token, why the real check belongs on your server, and when a license key is all you need. Written by the makers of Keyturn Kit."
 permalink: /guides/sign-in-chrome-extension/

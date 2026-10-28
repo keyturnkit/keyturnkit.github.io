@@ -4,6 +4,18 @@ title: "Blog Import for Framer"
 description: "A Framer plugin that moves a Squarespace, WordPress, Blogger, Medium or Ghost blog into Framer CMS, with its images and old links. The newest 25 posts import free."
 permalink: /blog-import/
 og_image: /og-blog-import.png
+schema: software
+app_name: "Blog Import"
+app_category: "BusinessApplication"
+app_os: "Framer"
+app_url: "https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/"
+offers:
+  - name: "License for one Framer project"
+    price: "29"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd"
+  - name: "License for any number of Framer projects"
+    price: "59"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd"
 ---
 
 # Blog Import for Framer

@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Squarespace Import or Blog Import: moving a Squarespace blog to Framer"
 description: "Two Framer plugins read the Squarespace export and copy the images. What each does, what each costs, and when to pick which. Written by the makers of Blog Import."
 permalink: /guides/squarespace-import-or-blog-import/

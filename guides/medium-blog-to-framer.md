@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "Medium to Framer: moving your stories into Framer CMS"
 description: "What Medium's export contains, how to tell stories from replies, and how to get posts, images and tags into Framer CMS."
 permalink: /guides/medium-blog-to-framer/

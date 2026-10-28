@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Gumroad license keys in a Chrome extension"
 description: "Verify Gumroad license keys from a Chrome extension with no access token and no server, and what Gumroad leaves to you. Checked against Gumroad's help article and source code on 27 October 2026."
 permalink: /guides/gumroad-license-keys-chrome-extension/

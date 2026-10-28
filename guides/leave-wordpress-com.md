@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Leaving WordPress.com after the Automattic shake-up: export your blog and keep your links"
 description: "Nothing about WordPress.com's prices changed this autumn, but if the news has you thinking about leaving, here is how to export the blog, what the file holds, and how to move it to Framer without breaking old links. Written by the makers of Blog Import."
 permalink: /guides/leave-wordpress-com/

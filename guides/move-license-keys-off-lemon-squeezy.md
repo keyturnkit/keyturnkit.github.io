@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Moving Chrome extension license keys off Lemon Squeezy"
 description: "Lemon Squeezy is steering sellers toward Stripe Managed Payments, which has no license keys. Four providers whose license API an extension can call directly, compared. Checked on 27 October 2026."
 permalink: /guides/move-license-keys-off-lemon-squeezy/

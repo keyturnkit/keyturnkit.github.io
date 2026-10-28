@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "Moving a blog to Framer: the import plugins compared"
 description: "Nine Framer plugins, and Framer's own Agent, for importing a blog, side by side, with prices and what happens to images and old links."
 permalink: /guides/framer-blog-import-plugins-compared/

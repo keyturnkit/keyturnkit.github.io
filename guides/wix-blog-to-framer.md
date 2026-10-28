@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Moving a Wix blog to Framer"
 description: "Wix doesn't export blog posts to other platforms. What that leaves you with when you move a Wix blog to Framer CMS, from the RSS feed to copying by hand. Checked against Wix's help center on 27 October 2026."
 permalink: /guides/wix-blog-to-framer/

@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "Keeping old blog links working after moving to Framer"
 description: "What old post addresses look like on Squarespace, WordPress, Blogger, Medium and Ghost, and how to redirect them to your new Framer blog."
 permalink: /guides/framer-blog-redirects/

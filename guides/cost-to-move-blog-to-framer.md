@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "What it costs to move a blog to Framer"
 description: "Three ways to get an existing blog into Framer, from free to agency, with the prices on each provider's own page in late October 2026. Written by the makers of Blog Import, which is one of them."
 permalink: /guides/cost-to-move-blog-to-framer/

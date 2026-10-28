@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "Framer CMS CSV import: when images don't come across"
 description: "Why images go missing when you import a blog into Framer CMS from CSV, how to check, and how to keep them working after the old site is gone."
 permalink: /guides/framer-cms-csv-import-images/

@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Exporting your Medium posts: what the zip contains"
 description: "How to download your Medium posts, what's inside the zip, what stays on Medium, and how to move the posts to another site."
 permalink: /guides/medium-export/

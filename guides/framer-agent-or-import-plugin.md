@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Framer's AI Agent or an import plugin for your blog?"
 description: "Framer's Agent can bring CMS content into Framer, and Framer calls the result a first build pass. When that's enough for a blog, and when an import plugin that copies every post and image the same way fits better. Written by the makers of Blog Import."
 permalink: /guides/framer-agent-or-import-plugin/

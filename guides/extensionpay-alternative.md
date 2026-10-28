@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-26
 title: "ExtensionPay or license keys: two ways to charge for a Chrome extension"
 description: "How ExtensionPay works, what it costs, and when license keys from a merchant of record fit better. Written by the makers of Keyturn Kit, so read with that in mind."
 permalink: /guides/extensionpay-alternative/

@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Framer CMS limits for a blog: which plan fits how many posts"
 description: "CMS items, collections and redirects on Framer's Basic and Pro plans, read from Framer's pricing page on 27 October 2026, worked out for a blog you're moving in."
 permalink: /guides/framer-cms-limits-blog/

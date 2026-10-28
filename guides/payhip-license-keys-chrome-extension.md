@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Payhip license keys in a Chrome extension"
 description: "Check Payhip license keys from a Chrome extension with the product's secret key, count browsers with uses, and what that secret can and can't do. Checked against Payhip's help center on 27 October 2026."
 permalink: /guides/payhip-license-keys-chrome-extension/

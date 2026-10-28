@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Adding a free trial to a paid Chrome extension"
 description: "A trial counted from install, a few free uses a day after it ends, and the ways people get around both, with the code we ship in Keyturn Kit Pro."
 permalink: /guides/chrome-extension-free-trial/

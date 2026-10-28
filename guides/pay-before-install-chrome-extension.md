@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "Let buyers pay before they install your Chrome extension"
 description: "Sell from your own landing page first, then have the buyer install and paste a license key. The checkout, receipt and first-run steps, with code. Written by the makers of Keyturn Kit."
 permalink: /guides/pay-before-install-chrome-extension/

@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-25
 title: "Selling a Chrome extension with license keys, no backend"
 description: "Lemon Squeezy license keys in a Chrome MV3 extension: store check, daily re-check, offline grace, deactivation. About 80 lines, no server."
 permalink: /guides/license-keys-chrome-extension/

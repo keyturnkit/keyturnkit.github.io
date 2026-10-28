@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-27
 title: "Dodo Payments license keys in a Chrome extension"
 description: "Activate and validate Dodo Payments license keys straight from a Chrome extension, with no API key in the code, and the one check Dodo leaves to you. Endpoints checked against Dodo's docs on 27 October 2026."
 permalink: /guides/dodo-license-keys-chrome-extension/

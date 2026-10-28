@@ -1,5 +1,6 @@
 ---
 layout: default
+date_published: 2026-10-28
 title: "What it costs to add payments to a Chrome extension"
 description: "The ways to charge for a Chrome extension since the Chrome Web Store stopped handling payments, with what each costs: a free starter, a paid starter, or a hosted service. Written by the makers of Keyturn Kit."
 permalink: /guides/cost-to-add-payments-chrome-extension/
