@@ -20,7 +20,9 @@ export function describeCsv(c: Conversion, includeDrafts: boolean): { summary: s
   return {
     summary: `This is a ${source} export with ${n(c.published, 'published post')}${draftPart}. The CSV has ${n(c.rows, 'row')}, one per post. Cover image address found for ${c.withCover} of them.`,
     limits: [
-      `Images inside the posts still point at your old site. ${n(c.bodyImages, 'image')} in these posts will break when the old site goes away.`,
+      c.bodyImages
+        ? `Images inside the posts still point at your old site. ${n(c.bodyImages, 'image')} in these posts will break when the old site goes away.`
+        : 'These posts have no images inside the text, so nothing in the post bodies depends on your old site.',
       'Old addresses get no redirects. Links to your old posts will not lead to the new ones.',
       'Authors, categories and tags come as plain text. They are not linked collections in Framer.',
     ],
