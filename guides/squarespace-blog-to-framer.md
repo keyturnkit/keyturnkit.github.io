@@ -29,7 +29,7 @@ and leaves out:
 
 - every blog after the first (each one needs its own export)
 - drafts
-- audio, video and product blocks
+- audio and product blocks (video blocks are in the file as YouTube or Vimeo links, and Blog Import turns them back into video blocks)
 - the image files themselves
 
 The last point is the one that bites. The file holds links to images on Squarespace's servers, not the images. Squarespace warns that those links can stop working once you cancel. If you import the file and then close your Squarespace account, your posts can end up with broken images.
