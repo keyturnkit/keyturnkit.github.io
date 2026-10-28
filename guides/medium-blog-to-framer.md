@@ -11,7 +11,7 @@ og_image: /og-blog-import.png
 
 Medium is an easy place to start writing and a hard place to own. When the writing becomes part of a business, people want it on their own site, under their own domain and design. If that site is in Framer, the stories need to move into Framer's CMS.
 
-The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Medium export, copies the images and adds the redirects. Your newest 25 posts import free. The rest of this page explains each step.
+The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Medium export and copies the images into Framer. Your newest 25 posts import free. The rest of this page explains each step.
 
 ## Export from Medium
 

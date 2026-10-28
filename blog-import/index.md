@@ -30,7 +30,7 @@ In this 34-second run the plugin reads wordpress.org/news, imports the newest 25
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
-Blog Import is on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) today, 28 October. Questions there get an answer the same day.
+Blog Import launched on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) on 28 October. Questions there get an answer the same day.
 
 ## What it reads
 
@@ -47,7 +47,7 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 ## What you get in Framer
 
-Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
+Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks (for Squarespace exports, from the version coming at the end of October). If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
 Run it again later and existing posts are updated, not duplicated.
 
@@ -59,9 +59,45 @@ The newest 25 posts import free, so you can see the result on your own blog firs
 
 [Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
 
+Prefer Gumroad? The same licenses are there: [$29 for one project](https://mamstudiohq.gumroad.com/l/xuebp) or [$59 for any number](https://mamstudiohq.gumroad.com/l/ufpxd). The key from Gumroad goes on the same [code page](https://blog-import-license.mam-studio.workers.dev/code).
+
 Rather not run it yourself? [Email us](/blog-move/) and we'll see how we can help.
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
+
+## Questions
+
+### Does it work on Framer Basic?
+
+Yes. Framer Basic allows 2 collections, and the plugin can keep authors, categories and tags inside each post so the whole blog fits in one collection. You choose that on the review screen before importing.
+
+### Does it copy my images?
+
+Yes. The plugin copies the images in your posts and each cover image into Framer, so they stay when the old site is gone. Run it while the old site is still online, because that is where the images are fetched from.
+
+### What if my old site is already gone?
+
+The posts still import from your export file, but the images can't be fetched. Any image that can't be copied keeps its old address and only shows while that site is online. The result screen says how many there were.
+
+### Do I need Framer Pro?
+
+Not to import. Redirects from your old post addresses need Framer Pro or higher; on other plans the posts import without them.
+
+### What happens if I run it again?
+
+Existing posts are updated, not duplicated. You can import again after you publish more on the old site.
+
+### What does a license cover?
+
+The newest 25 posts import free. A license imports all of them. $29 covers one Framer project; its key can make 3 license codes, so you can set it up again after reinstalling. $59 covers any number of projects.
+
+### Where do I buy, and how do I get my code?
+
+You can buy on Polar or on Gumroad at the same prices. Either way you get a key, paste it on the [license code page](https://blog-import-license.mam-studio.workers.dev/code), and paste the code it gives you into the plugin. The [thanks page](/thanks/) has the steps.
+
+### Does it import comments or pages?
+
+No. It imports blog posts with their authors, categories and tags. Comments, pages, WordPress custom post types and WooCommerce products are not imported.
 
 ## Guides {#guides}
 

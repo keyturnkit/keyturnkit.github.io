@@ -23,7 +23,7 @@ Do this first even if you're not sure you'll leave. It costs nothing and it's yo
 
 - Your design is rebuilt in Framer, from a template or by a designer. WordPress themes and plugins don't come across.
 - The posts can be moved. [Blog Import](/blog-import/) reads that export file inside Framer and puts each post into Framer CMS with its date, author, categories, tags and cover, and copies the images into Framer so they stay after the WordPress.com site is gone. Your newest 25 posts import free; a license for the rest is $29.
-- Old links: WordPress.com addresses often look like /2024/03/09/my-post/. On Framer Pro or higher, the plugin adds a redirect from each old address to the new one. Framer Basic has no redirects; the plugin gives you the list as a file for later.
+- Old links: WordPress.com addresses often look like /2024/03/09/my-post/. On Framer Pro or higher, the plugin adds a redirect from each old address to the new one. Framer Basic has no redirects, so add them after you upgrade; each post keeps its old address in the Old URL field.
 - Comments, forms, shop and membership features don't move this way.
 
 Framer costs $10 a month on Basic (2 CMS collections) and $30 on Pro (redirects, 10 collections), on framer.com/pricing in late October 2026. [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/) has the steps in detail, and if you'd rather have help, [email us](/blog-move/).
