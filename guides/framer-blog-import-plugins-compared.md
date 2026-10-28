@@ -23,13 +23,13 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 | WP Sync (19.studio) | A live WordPress site | 12 posts free, then $12.99 up to 1,000 posts or $29.99 unlimited (the maker's site doesn't say one-time or monthly) | Imported with the content; copied or linked isn't stated | Not mentioned |
 | Sillyweb Wp Sync | A live WordPress site, including pages, custom post types, WooCommerce and ACF fields | No price on the listing; the maker calls it free | Featured images, galleries and media; copied or linked isn't stated | Not mentioned |
 | Specter | A Ghost site, with your Content API key | Not shown on the listing | Featured images | Not mentioned |
-| Blog Import | Squarespace, WordPress (file or live site), Blogger, Medium and Ghost exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
+| Blog Import | Squarespace, WordPress (file or live site), Blogger, Medium, Ghost, Substack, Hashnode backups and Webflow CSV exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
 
 ## Which one fits
 
 **A few posts, or data you already have in a spreadsheet.** Use Framer's own CSV Import. It's free and does text well. Before you cancel the old site, check the images: our guide on [CSV imports and missing images](/guides/framer-cms-csv-import-images/) shows how.
 
-**A Squarespace blog.** Squarespace Import and Blog Import both read the Squarespace export, copy the images, and add redirects. Squarespace Import also carries YouTube and Vimeo videos over; Blog Import does from the version coming at the end of October. Blog Import costs less, and also reads WordPress, Blogger and Medium if you have more than one blog. Try both on your 25 newest posts, which are free in each. [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) goes through the two side by side.
+**A Squarespace blog.** Squarespace Import and Blog Import both read the Squarespace export, copy the images, carry YouTube and Vimeo videos over, and add redirects. Blog Import costs less, and also reads WordPress, Blogger and Medium if you have more than one blog. Try both on your 25 newest posts, which are free in each. [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) goes through the two side by side.
 
 **A WordPress site you want to keep in sync.** WP Sync and Sillyweb Wp Sync connect to the live site and can import again later. Sillyweb also brings pages, custom post types, WooCommerce products and ACF fields, at no cost, which none of the export-based plugins do. If you're leaving WordPress for good, an export file is enough: PostPort, Blog Import and CSV Import all work from one.
 
