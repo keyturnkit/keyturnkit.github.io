@@ -66,7 +66,7 @@ The Framer pricing link on this page is our referral link. If you start a new Fr
 
 ### Does it work on Framer Basic?
 
-Yes. Framer Basic allows 2 collections, so the plugin offers a layout with 2 collections (the blog and its categories) and one with a single collection that keeps authors, categories and tags inside each post. You choose the layout on the review screen before importing.
+Yes. Framer Basic allows 2 collections, and the plugin can keep authors, categories and tags inside each post so the whole blog fits in one collection. You choose that on the review screen before importing.
 
 ### Does it copy my images?
 
@@ -74,11 +74,11 @@ Yes. The plugin copies the images in your posts and each cover image into Framer
 
 ### What if my old site is already gone?
 
-The posts still import from your export file, but the images can't be fetched. Any image that can't be copied keeps its old address and only shows while that site is online. The result screen lists them so you know which ones to replace.
+The posts still import from your export file, but the images can't be fetched. Any image that can't be copied keeps its old address and only shows while that site is online. The result screen says how many there were.
 
 ### Do I need Framer Pro?
 
-Not to import. Redirects from your old post addresses need Framer Pro or higher. On a plan without them, the plugin offers the list of old and new addresses as a CSV you can use after you upgrade.
+Not to import. Redirects from your old post addresses need Framer Pro or higher; on other plans the posts import without them.
 
 ### What happens if I run it again?
 
