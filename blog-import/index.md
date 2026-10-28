@@ -18,7 +18,7 @@ In this 34-second run the plugin reads wordpress.org/news, imports the newest 25
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
-Blog Import is on [Product Hunt](https://www.producthunt.com/posts/blog-import-for-framer) today, 28 October. Questions there get an answer the same day.
+Blog Import is on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) today, 28 October. Questions there get an answer the same day.
 
 ## What it reads
 
