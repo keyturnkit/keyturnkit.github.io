@@ -24,7 +24,7 @@ export function describeCsv(c: Conversion, includeDrafts: boolean): { summary: s
       'Old addresses get no redirects. Links to your old posts will not lead to the new ones.',
       'Authors, categories and tags come as plain text. They are not linked collections in Framer.',
     ],
-    blogImport: 'does those in Framer. The newest 25 posts are free. $29 for one project, $59 for any number.',
+    blogImport: 'does those in Framer (redirects on Framer Pro). The newest 25 posts are free. $29 for one project, $59 for any number.',
   };
 }
 
