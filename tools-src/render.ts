@@ -17,14 +17,14 @@ const FREE_POSTS = 25;
  * claim about what Blog Import does: no free-post count, no "Blog Import copies/converts/adds", no Marketplace link.
  * Set it to true in the release that ships Substack and rebuild.
  */
-export const BLOG_IMPORT_READS_SUBSTACK = false;
+export const BLOG_IMPORT_READS_SUBSTACK = true;
 /**
  * The same for the Hashnode GitHub backup (.md files or the repo zip) and the Webflow CMS CSV. While a flag is false
  * the page does not offer that file type and a result for it (should one get through) makes no claim about Blog Import.
  * Set it to true in the release that ships the reader and rebuild.
  */
-export const BLOG_IMPORT_READS_HASHNODE = false;
-export const BLOG_IMPORT_READS_WEBFLOW = false;
+export const BLOG_IMPORT_READS_HASHNODE = true;
+export const BLOG_IMPORT_READS_WEBFLOW = true;
 
 /** Whether Blog Import reads this source on the live Marketplace. Sources not listed here always do. */
 const readsKind = (k: Kind) => (k === 'substack' ? BLOG_IMPORT_READS_SUBSTACK : k === 'hashnode' ? BLOG_IMPORT_READS_HASHNODE : k === 'webflow' ? BLOG_IMPORT_READS_WEBFLOW : true);
