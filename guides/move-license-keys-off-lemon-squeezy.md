@@ -25,7 +25,7 @@ Each row comes from our guide for that provider, checked against its docs on 27 
 
 | Provider | Secret in the extension | Browser limit | After a refund |
 |---|---|---|---|
-| [Polar](/guides/polar-license-keys-chrome-extension/) | None, customer-portal endpoints need no token | Activations, if turned on in the license key benefit | Revoke or disable the key; the next check fails |
+| [Polar](/guides/polar-license-keys-chrome-extension/) | None, customer-portal endpoints need no token | Activations, if the benefit has an activation limit; otherwise no browser limit | Revoke or disable the key; the next check fails |
 | [Dodo Payments](/guides/dodo-license-keys-chrome-extension/) | None, license endpoints are public | Activations per key | Disable the key; validate then returns `valid: false` |
 | [Gumroad](/guides/gumroad-license-keys-chrome-extension/) | None, verify needs no token | No activations, only a `uses` counter you check yourself | The key stays enabled; check the `refunded` and `chargebacked` fields yourself |
 | [Payhip](/guides/payhip-license-keys-chrome-extension/) | A per-product secret Payhip says is meant for public apps | A `uses` count you raise and lower with that secret (a soft limit) | Payhip disables the key by itself |
@@ -41,7 +41,7 @@ Keys from one provider don't work at another, so plan for the people who already
 
 ## In Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter for paid extensions. The free edition (MIT, on GitHub) uses Lemon Squeezy. Pro ($59 once) adds Polar, Dodo Payments, Gumroad and Payhip, and switching is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter for paid extensions. The free edition (MIT, on GitHub) uses Lemon Squeezy. Pro ($59 once) adds Polar, Dodo Payments, Gumroad and Payhip, and switching means changing `provider` in `lib/config.ts` and filling in that provider's block and your `checkoutUrl`:
 
 ```ts
 provider: 'polar', // or 'dodo', 'gumroad', 'payhip', 'lemonsqueezy'

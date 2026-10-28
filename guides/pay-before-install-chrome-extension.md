@@ -44,7 +44,7 @@ On that page, a single field and an Activate button:
 
 ```ts
 const r = await license.activate(key, 'Chrome');
-if (!r.ok) showError(r.error); // "License is disabled", "Could not reach the license server", ...
+if (!r.ok) showError(r.error); // "This key has been turned off. ...", "Could not reach the license server. Check your connection.", ...
 ```
 
 Say on the page that people who haven't bought yet can use the free part and buy later, so the same page works for both.
