@@ -49,6 +49,8 @@ We found these in real exports, not in Squarespace's documentation:
 - *Squarespace Import* by Adam Kansky: free for 25 posts, then $49 for one project or $99 unlimited.
 - [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours): free for your newest 25 posts; a license for the rest is $29 per project or $59 for any number, paid once. It also reads WordPress export files and live WordPress sites.
 
+[Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two point by point.
+
 ![Blog Import reading a Squarespace export: 9 posts, 1 draft, 2 authors, 4 categories, 6 tags, with options for redirects and copying images](/guides/img/blog-import-review.jpg)
 
 ![The imported blog in Framer CMS: a Journal collection with linked Authors, Categories and Tags collections](/guides/img/blog-import-collections.jpg)
