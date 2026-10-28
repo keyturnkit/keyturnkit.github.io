@@ -28,7 +28,7 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 
 **A few posts, or data you already have in a spreadsheet.** Use Framer's own CSV Import. It's free and does text well. Before you cancel the old site, check the images: our guide on [CSV imports and missing images](/guides/framer-cms-csv-import-images/) shows how.
 
-**A Squarespace blog.** Squarespace Import and Blog Import both read the Squarespace export, copy the images, carry YouTube and Vimeo videos over, and add redirects. Blog Import costs less, and also reads WordPress, Blogger and Medium if you have more than one blog. Try both on your 25 newest posts, which are free in each.
+**A Squarespace blog.** Squarespace Import and Blog Import both read the Squarespace export, copy the images, carry YouTube and Vimeo videos over, and add redirects. Blog Import costs less, and also reads WordPress, Blogger and Medium if you have more than one blog. Try both on your 25 newest posts, which are free in each. [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) goes through the two side by side.
 
 **A WordPress site you want to keep in sync.** WP Sync and Sillyweb Wp Sync connect to the live site and can import again later. Sillyweb also brings pages, custom post types, WooCommerce products and ACF fields, at no cost, which none of the export-based plugins do. If you're leaving WordPress for good, an export file is enough: PostPort, Blog Import and CSV Import all work from one.
 
