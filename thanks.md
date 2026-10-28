@@ -22,7 +22,7 @@ The plugin checks the code itself and sends nothing anywhere. Keep the code: you
 
 ## Keyturn Kit Pro
 
-Download the zip from your purchase on Polar, unzip it and follow `README.md`. `AGENTS.md` in the same folder tells Claude Code or Cursor how the license code is laid out.
+Download the zip from your purchase (the Polar purchase page, or the Gumroad receipt email if you bought there), unzip it and follow `README.md`. `AGENTS.md` in the same folder tells Claude Code or Cursor how the license code is laid out.
 
 ## Something wrong?
 
