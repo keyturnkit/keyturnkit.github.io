@@ -23,7 +23,7 @@ Framer's plans are $10 a month (Basic, 2 CMS collections, no redirects) and $30 
 
 1. In Squarespace, open the Import & export panel, click Export and pick WordPress. The file holds your posts, drafts, authors, categories and tags.
 2. In Framer, run [Blog Import](/blog-import/) on the file. Posts land in the CMS with their dates, covers and body, and the images inside posts are copied into Framer, so they keep working after Squarespace is cancelled.
-3. Squarespace post addresses carry the date (/blog/2024/3/9/my-post). On Framer Pro, the plugin adds a redirect from each of those to the new address, so shared links and search results keep working. On Basic, it gives you the list as a file to add when you upgrade.
+3. Squarespace post addresses carry the date (/blog/2024/3/9/my-post). On Framer Pro, the plugin adds a redirect from each of those to the new address, so shared links and search results keep working. On Basic there are no redirects; each post keeps its old address in the Old URL field so you can add them when you upgrade.
 4. Keep the Squarespace site running until you've checked a few posts on Framer and pointed your domain.
 
 Your newest 25 posts import free, so you can see the result before deciding; a license for the rest is $29. If you'd rather have help, [email us](/blog-move/). Our [Squarespace guide](/guides/squarespace-blog-to-framer/) has each step in more detail, and [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two plugins that read this export.

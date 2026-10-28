@@ -30,7 +30,7 @@ In this 34-second run the plugin reads wordpress.org/news, imports the newest 25
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
-Blog Import is on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) today, 28 October. Questions there get an answer the same day.
+Blog Import launched on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) on 28 October. Questions there get an answer the same day.
 
 ## What it reads
 
@@ -44,7 +44,7 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 ## What you get in Framer
 
-Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
+Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks (for Squarespace exports, from the version coming at the end of October). If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
 Run it again later and existing posts are updated, not duplicated.
 
@@ -86,7 +86,7 @@ Existing posts are updated, not duplicated. You can import again after you publi
 
 ### What does a license cover?
 
-The newest 25 posts import free. A license imports all of them. $29 covers one Framer project and the license code can be activated 3 times, so you can paste it again after reinstalling. $59 covers any number of projects.
+The newest 25 posts import free. A license imports all of them. $29 covers one Framer project; its key can make 3 license codes, so you can set it up again after reinstalling. $59 covers any number of projects.
 
 ### Where do I buy, and how do I get my code?
 
