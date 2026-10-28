@@ -1,0 +1,1 @@
+Cover photos for the Slack Tide template demo import. Wikimedia Commons, public domain or CC0, cropped to a 500 px square. Sources and credits: products/template-newsletter/clone/IMAGES.md in the team repo.
