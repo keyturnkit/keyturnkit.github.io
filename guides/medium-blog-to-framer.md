@@ -11,7 +11,7 @@ og_image: /og-blog-import.png
 
 Medium is an easy place to start writing and a hard place to own. When the writing becomes part of a business, people want it on their own site, under their own domain and design. If that site is in Framer, the stories need to move into Framer's CMS.
 
-The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Medium export, copies the images and adds the redirects. Your newest 25 posts import free. The rest of this page explains each step.
+The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Medium export and copies the images into Framer. Your newest 25 posts import free. The rest of this page explains each step.
 
 ## Export from Medium
 
@@ -37,7 +37,7 @@ Medium story addresses look like `medium.com/@you/my-story-4ce83a7e81d0`. Those 
 
 ## Getting it into Framer
 
-You could unzip the export, convert the HTML files to CSV with a script, and import that. You'd get the text, but you'd also get the replies, the small images and a title repeated at the top of every body.
+You could unzip the export, convert the HTML files to CSV with a script, and import that. You'd get the text, but you'd also get the replies, the small images and a title repeated at the top of every body. The free [Medium to Framer CSV](/tools/medium-to-framer-csv/) converter skips the replies and the repeated title and makes the CSV in your browser.
 
 We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), a Framer plugin that reads the Medium zip as it is. It imports stories and skips replies, keeps drafts as drafts, uses the subtitle as the excerpt and the featured image as the cover, turns tags into a linked collection, and copies large versions of the images into Framer. It also reads Squarespace, WordPress and Blogger exports. The newest 25 posts import for free.
 

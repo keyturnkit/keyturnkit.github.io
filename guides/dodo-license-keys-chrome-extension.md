@@ -52,7 +52,7 @@ Network errors, 429 and 5xx responses aren't an answer about the key. Keep the l
 
 ## Doing it with Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter that does all of the above, including the `business_id` check. The free edition (MIT, on GitHub) uses Lemon Squeezy. Dodo Payments, Polar, Gumroad and Payhip come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter that does all of the above, including the `business_id` check. The free edition (MIT, on GitHub) uses Lemon Squeezy. Dodo Payments, Polar, Gumroad and Payhip come with Pro ($59 once), where switching provider means changing `provider` in `lib/config.ts` and filling in that provider's block and your `checkoutUrl`:
 
 ```ts
 provider: 'dodo',

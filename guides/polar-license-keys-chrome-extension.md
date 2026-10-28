@@ -39,9 +39,11 @@ const res = await fetch('https://api.polar.sh/v1/customer-portal/license-keys/ac
 
 A 200 response has an `id`. That's the activation id: store it next to the key, because you pass it on every later check. The response also carries `license_key.status`, `expires_at` and the limits.
 
-A 403 means the key is revoked, disabled, expired or has used up its activations. Polar returns the same `NotPermitted` error for all of these, with the reason in `detail`, so show `detail` to the user. A 404 means Polar doesn't know the key.
+A 403 means the key is revoked, disabled, expired or has used up its activations. Polar returns the same `NotPermitted` error for all of these, with the reason in `detail`. Log `detail` for yourself and show the user a short sentence of your own; Keyturn Kit does it this way, with the raw text in the console and a fixed message on screen. A 404 means Polar doesn't know the key.
 
-Activations only exist if you turn them on in the license key benefit. Without them, skip this call and validate directly.
+Activations only exist if the license key benefit has an activation limit. Without one, Polar answers this call with a 403, "This license key does not support activations. Use the /validate endpoint instead to check license validity." Then validate the key directly, without an `activation_id`. Polar has nothing to count in that mode, so the key works in any number of browsers and the limit is not enforced.
+
+Keyturn Kit handles both. With an activation limit it activates once per browser. Without one it falls back to validate on that exact 403 and keeps working.
 
 ## Validate later, once a day
 
@@ -59,7 +61,7 @@ Revoke or disable the key in Polar after a refund. The next daily validate retur
 
 ## Doing it with Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Polar, Dodo Payments, Gumroad and Payhip come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Polar, Dodo Payments, Gumroad and Payhip come with Pro ($59 once), where switching provider means changing `provider` in `lib/config.ts` and filling in that provider's block and your `checkoutUrl`:
 
 ```ts
 provider: 'polar',

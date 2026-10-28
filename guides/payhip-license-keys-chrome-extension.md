@@ -51,7 +51,7 @@ The secret ships inside the extension, and anyone can unzip an extension. With i
 
 ## Doing it with Keyturn Kit
 
-[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Payhip, Gumroad, Polar and Dodo Payments come with Pro ($59 once), where switching provider is one line in `lib/config.ts`:
+[Keyturn Kit](/) is a WXT + React starter that does all of the above. The free edition (MIT, on GitHub) uses Lemon Squeezy. Payhip, Gumroad, Polar and Dodo Payments come with Pro ($59 once), where switching provider means changing `provider` in `lib/config.ts` and filling in that provider's block and your `checkoutUrl`:
 
 ```ts
 provider: 'payhip',

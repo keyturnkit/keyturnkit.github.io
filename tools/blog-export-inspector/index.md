@@ -4,7 +4,7 @@ title: "Blog export inspector"
 description: "Choose a Squarespace, WordPress, Blogger, Ghost, Substack or Medium export file and see what is inside it, in your browser, before you move to Framer."
 permalink: /tools/blog-export-inspector/
 og_image: /og-blog-import.png
-extra_css: /assets/tools.css?v=1
+extra_css: /assets/tools.css?v=3
 ---
 
 # Blog export inspector
@@ -21,6 +21,8 @@ The file is read in your browser and is never uploaded or sent anywhere.
 <div id="result" role="region" aria-label="Result" aria-live="polite"></div>
 
 <noscript><p>This page needs JavaScript to read the file on your device.</p></noscript>
+
+To list the address of every cover and post image in the file, use the free [image list](/tools/blog-export-image-list/).
 
 Not sure where to find the file? See the guides for [Squarespace](/guides/squarespace-export-xml/), [Ghost](/guides/ghost-blog-to-framer/) and [Medium](/guides/medium-export/).
 
