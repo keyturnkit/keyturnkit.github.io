@@ -23,7 +23,7 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 | WP Sync (19.studio) | A live WordPress site | 12 posts free, then $12.99 up to 1,000 posts or $29.99 unlimited (the maker's site doesn't say one-time or monthly) | Imported with the content; copied or linked isn't stated | Not mentioned |
 | Sillyweb Wp Sync | A live WordPress site, including pages, custom post types, WooCommerce and ACF fields | No price on the listing; the maker calls it free | Featured images, galleries and media; copied or linked isn't stated | Not mentioned |
 | Specter | A Ghost site, with your Content API key | Not shown on the listing | Featured images | Not mentioned |
-| Blog Import | Squarespace, WordPress (file or live site), Blogger, Medium and Ghost exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
+| Blog Import | Squarespace, WordPress (file or live site), Blogger, Medium, Ghost, Substack, Hashnode backups and Webflow CSV exports | First 25 posts free, then $29 one project or $59 any number | Copied into Framer, including images inside posts | Adds redirects (Framer Pro or higher) |
 
 ## Which one fits
 

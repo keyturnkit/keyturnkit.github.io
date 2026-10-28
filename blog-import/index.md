@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Blog Import for Framer"
-description: "A Framer plugin that moves a Squarespace, WordPress, Blogger, Medium or Ghost blog into Framer CMS, with its images and old links. The newest 25 posts import free."
+description: "A Framer plugin that moves a WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode blog into Framer CMS, with its images and old links. The newest 25 posts import free."
 permalink: /blog-import/
 og_image: /og-blog-import.png
 schema: software
@@ -20,7 +20,7 @@ offers:
 
 # Blog Import for Framer
 
-A Framer plugin for leaving Squarespace, Blogger, Medium, Ghost or WordPress. It reads the export file, moves the blog into Framer CMS, copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site. Run it while the old site is still up, so the images can be fetched.
+A Framer plugin for leaving WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode. It reads the export file, moves the blog into Framer CMS, copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site. Run it while the old site is still up, so the images can be fetched.
 
 Keeping a WordPress site online and syncing from it? A live-sync plugin may suit you better; [the comparison](/guides/framer-blog-import-plugins-compared/) shows which.
 
@@ -40,7 +40,10 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 - A WordPress export file, or just the address of a live WordPress site
 - A Blogger backup file
 - The zip Medium sends from "Download your information"
-- A Ghost export file, from Settings, Migration tools, Export (images whose address the file writes as `__GHOST_URL__` can't be copied; see the [Ghost guide](/guides/ghost-blog-to-framer/))
+- A Ghost export file, from Settings, Migration tools, Export. Type the old blog address so images written as `__GHOST_URL__` can be fetched, or choose a zip of the content/images folder if the site is gone (see the [Ghost guide](/guides/ghost-blog-to-framer/))
+- The zip Substack sends from Settings, Exports
+- A Hashnode backup from its GitHub backup repository
+- A CSV of the blog collection from Webflow's CMS
 
 ## What you get in Framer
 
