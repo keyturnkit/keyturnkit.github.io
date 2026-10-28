@@ -32,14 +32,13 @@ It fills in the obvious ones for you. On the free Noter template, for example, t
 
 Categories and authors that are their own collection in the template are matched by name. On Noter, WordPress posts filed under Development landed in Noter's Development category. Categories the template doesn't have are left empty, and the plugin lists them before and after the import so you can add them to the template's Categories collection and import again.
 
-<!-- CHECK: enum row text and default after the V371 fix -->
-Some templates also have a choice field, like Noter's Type (Default, Highlighted, Featured), that decides where a post appears. The match screen lets you pick the value your imported posts get, and starts on Default, so an old post doesn't take over the home page.
+Some templates also have a choice field, like Noter's Type (Default, Highlighted, Featured), that decides where a post appears. The match screen has a row for it, "Type: value for imported posts", and starts on Default, so an old post doesn't take over the home page. After the import, set Highlighted or Featured on the posts you want in those spots; until you do, the template shows those sections empty.
 
 ## Import
 
 Posts come in as drafts unless you tick "Publish the posts", so you can look them over on the canvas before they go live. Images are copied into Framer, so they stay when you close the old site.
 
-The template's own posts are never changed. <!-- CHECK: wording of the opt-in after the V371 fix --> On the first import you can tick "Remove the posts that came with the template"; it's off unless you tick it, and it only removes the posts that were there before you imported.
+The template's own posts are never changed unless you ask. On the first import there is a box, "Remove the 9 posts that came with the template" (the number is your template's), off until you tick it. Ticked, it lists the titles it will remove, and it only removes posts that were there before that first import.
 
 ## Running it again
 
