@@ -12,10 +12,10 @@ app_url: "https://www.framer.com/marketplace/plugins/blog-import-squarespace-wor
 offers:
   - name: "License for one Framer project"
     price: "29"
-    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import"
   - name: "License for any number of Framer projects"
     price: "59"
-    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import"
 ---
 
 # Blog Import for Framer
@@ -54,7 +54,7 @@ It doesn't import comments, pages, WordPress custom post types or WooCommerce pr
 
 The newest 25 posts import free, so you can see the result on your own blog first. To import all of them, a license is $29 for one Framer project or $59 for any number, paid once through Polar. After paying you get a key; [this page](/thanks/) shows how to turn it into the license code the plugin asks for.
 
-[Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
+[Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
 
 Prefer Gumroad? The same licenses are there: [$29 for one project](https://mamstudiohq.gumroad.com/l/xuebp) or [$59 for any number](https://mamstudiohq.gumroad.com/l/ufpxd). The key from Gumroad goes on the same [code page](https://blog-import-license.mam-studio.workers.dev/code).
 
