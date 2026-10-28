@@ -4,7 +4,7 @@ title: "Blog export inspector"
 description: "Choose a Squarespace, WordPress, Blogger, Ghost, Substack or Medium export file and see what is inside it, in your browser, before you move to Framer."
 permalink: /tools/blog-export-inspector/
 og_image: /og-blog-import.png
-extra_css: /assets/tools.css?v=1
+extra_css: /assets/tools.css?v=2
 ---
 
 # Blog export inspector

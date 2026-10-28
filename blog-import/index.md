@@ -34,7 +34,7 @@ Blog Import launched on [Product Hunt](https://www.producthunt.com/products/blog
 
 ## What it reads
 
-Not sure what your export holds? The free [blog export inspector](/tools/blog-export-inspector/) reads it in your browser and shows the posts, drafts, images and old addresses inside.
+Not sure what your export holds? The free [blog export inspector](/tools/blog-export-inspector/) reads it in your browser and shows the posts, drafts, images and old addresses inside. If you only want a CSV for Framer's CMS import, the free [XML to CSV converter](/tools/wordpress-xml-to-framer-csv/) makes one in your browser.
 
 - A Squarespace export file, from Import & export (Squarespace writes it in WordPress format)
 - A WordPress export file, or just the address of a live WordPress site

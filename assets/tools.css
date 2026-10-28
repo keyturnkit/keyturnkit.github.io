@@ -7,3 +7,5 @@
 #result h2:first-child { margin-top: 0; }
 #result h2:focus { outline: none; }
 @media (max-width: 639px) { .tool-pick { padding: 24px 16px; } .tool-pick input[type="file"]::file-selector-button { display: block; margin: 0 0 12px; } }
+.tool-opt { display: flex; align-items: center; gap: 8px; }
+.tool-opt input { width: 20px; height: 20px; accent-color: var(--a9); }
