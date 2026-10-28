@@ -54,6 +54,7 @@ Open the post with the most images, and the oldest post you have. Check the cove
 
 ## More guides
 
+- [Importing a blog with Framer's CSV Import plugin](/guides/framer-csv-import-blog/)
 - [Moving a Squarespace blog to Framer](/guides/squarespace-blog-to-framer/)
 - [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
 - [Moving a Blogger blog to Framer](/guides/blogger-blog-to-framer/)
