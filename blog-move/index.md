@@ -20,9 +20,9 @@ If you'd rather not run the import yourself, we'll do it with [Blog Import](/blo
 
 ## What it looks like
 
-These are our own test runs with the same plugin: a real Squarespace export with 92 posts, 2 authors and 16 categories, and the newest 25 posts of wordpress.org/news with 147 images copied into Framer.
+Our own test runs with the same plugin include a real Squarespace export with 92 posts, 2 authors and 16 categories, and the newest 25 posts of wordpress.org/news with 147 images copied into Framer. The screens below are from a smaller sample export, so they fit on a page.
 
-![Blog Import reading a Squarespace export before the import: posts, drafts, authors, categories and tags it found](/guides/img/blog-import-review.jpg)
+![Blog Import reading a sample Squarespace export before the import: 9 posts, 1 draft, 2 authors, 4 categories, 6 tags](/guides/img/blog-import-review.jpg)
 
 ![Posts, authors, categories and tags as linked collections in Framer CMS after the import](/guides/img/blog-import-collections.jpg)
 
