@@ -9,3 +9,6 @@
 @media (max-width: 639px) { .tool-pick { padding: 24px 16px; } .tool-pick input[type="file"]::file-selector-button { display: block; margin: 0 0 12px; } }
 .tool-opt { display: flex; align-items: center; gap: 8px; }
 .tool-opt input { width: 20px; height: 20px; accent-color: var(--a9); }
+.tool-scroll { margin: 0 0 24px; overflow-x: auto; }
+.tool-scroll table { min-width: 720px; }
+.tool-addr { overflow-wrap: anywhere; word-break: break-all; }

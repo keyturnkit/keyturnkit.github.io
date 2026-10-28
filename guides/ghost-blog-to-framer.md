@@ -38,6 +38,8 @@ If your Ghost site is still live, Specter is a Framer plugin that reads it throu
 
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
 
+If you want a CSV for Framer's CMS import instead, the free [Ghost to Framer CSV](/tools/ghost-to-framer-csv/) converter makes one in your browser and tells you how many images it had to leave out.
+
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 
 Rather not do it yourself? [Email us](/blog-move/) and we'll see how we can help.

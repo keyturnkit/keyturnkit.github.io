@@ -42,7 +42,7 @@ Redirects only help if your blog uses your own domain, which moves to Framer wit
 
 ## Getting it into Framer
 
-Framer's CMS imports CSV, so one route is converting the XML to CSV with a script. You get the post text, but not the labels as linked items, the full-size images or the redirects.
+Framer's CMS imports CSV, so one route is converting the XML to CSV with a script. You get the post text, but not the labels as linked items, the full-size images or the redirects. The free [Blogger to Framer CSV](/tools/blogger-to-framer-csv/) converter makes that file in your browser.
 
 We built [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), a Framer plugin that reads the Blogger file directly. It keeps drafts as drafts and skips deleted posts. Labels become a tags collection linked to each post. It copies the full-size images into Framer, so they don't depend on Google's hosting, and adds a redirect from every old .html address on [Framer Pro](https://framer.link/rVPBVzf) or higher. It also reads Squarespace and WordPress exports. The newest 25 posts import for free.
 

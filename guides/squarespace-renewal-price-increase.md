@@ -32,4 +32,5 @@ Your newest 25 posts import free, so you can see the result before deciding; a l
 
 - Commerce sites, member areas and scheduling don't move this way; this is for the site and its blog.
 - Count your posts and images first: the free [export inspector](/tools/blog-export-inspector/) reads the export in your browser.
+- To see which images are at addresses on Squarespace, the free [image list](/tools/blog-export-image-list/) shows every cover and post image address from the export and downloads as a CSV, so you can save them before you cancel.
 - A move takes an afternoon for a small blog and a few days for a big site with many pages. Compare that with the price difference over a year or two.
