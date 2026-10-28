@@ -26,6 +26,14 @@ An image cell in a CSV holds an address, not the picture. For the image to arriv
 - **The old host refuses.** Some hosts block or slow down many requests in a row, and an import asks for every cover at once. We saw WordPress.org reject batches with "too many requests".
 - **The old site is already gone.** If you cancel Squarespace or shut down WordPress first, the addresses point at nothing.
 
+## When the cover column comes in as a link
+
+Framer's CSV Import plugin (in the CMS view, under Plugins) guesses a type for each column. We read its [source code](https://github.com/framer/plugins/tree/main/plugins/csv-import) on 28 October 2026. It only guesses Image when every address in the column ends in .jpg, .jpeg, .png, .gif, .webp or .svg. One address like `cover.jpg?format=1500w`, or one with no extension, and the whole column is guessed as Link. If the plugin is creating that field for you, Link can then only become Link or Plain text, not Image.
+
+The way round it is to add an Image field to the collection yourself before importing, then map the cover column to it. The plugin accepts link addresses in an existing Image field.
+
+The same code also decides drafts. A row becomes a draft only if the CSV has a column named `:draft` with a value such as `true`. Use `true` and `false`: the check matches any value containing 1, y or true. Without that column, new rows are published and rows that update an existing item keep its current state.
+
 ## Why body images break later
 
 Images inside the post text are usually left as links to the old host. Everything looks right after the import, because the old site is still up. When you cancel it, those images disappear. Squarespace warns that image links in its export can stop working once the site is closed.
