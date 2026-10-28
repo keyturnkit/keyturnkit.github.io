@@ -18,6 +18,8 @@ In this 34-second run the plugin reads wordpress.org/news, imports the newest 25
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
+Blog Import is on [Product Hunt](https://www.producthunt.com/posts/blog-import-for-framer) today, 28 October. Questions there get an answer the same day.
+
 ## What it reads
 
 Not sure what your export holds? The free [blog export inspector](/tools/blog-export-inspector/) reads it in your browser and shows the posts, drafts, images and old addresses inside.
