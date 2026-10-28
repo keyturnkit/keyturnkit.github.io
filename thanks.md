@@ -22,10 +22,6 @@ The plugin checks the code itself and sends nothing anywhere. Keep the code: you
 
 Download the zip from your purchase on Polar, unzip it and follow `README.md`. `AGENTS.md` in the same folder tells Claude Code or Cursor how the license code is laid out.
 
-## Blog move service
-
-Reply to your Polar confirmation email (it comes to us) with your blog's export file, or the address of a live WordPress site, and invite proj.seedsmesh@gmail.com to your Framer project as an editor. We start when both arrive and finish within 2 working days. [What's included](/blog-move/).
-
 ## Something wrong?
 
 Email [proj.seedsmesh@gmail.com](mailto:proj.seedsmesh@gmail.com) from the address you paid with, and we'll sort it out. Keyturn Kit Pro has a full refund within 14 days if it doesn't work for you.

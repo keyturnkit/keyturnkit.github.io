@@ -23,7 +23,7 @@ Framer's plans are $10 a month (Basic, 2 CMS collections, no redirects) and $30 
 3. Squarespace post addresses carry the date (/blog/2024/3/9/my-post). On Framer Pro, the plugin adds a redirect from each of those to the new address, so shared links and search results keep working. On Basic, it gives you the list as a file to add when you upgrade.
 4. Keep the Squarespace site running until you've checked a few posts on Framer and pointed your domain.
 
-Your newest 25 posts import free, so you can see the result before deciding; a license for the rest is $29. If you'd rather not do it yourself, [we move the blog for you](/blog-move/) for $99. Our [Squarespace guide](/guides/squarespace-blog-to-framer/) has each step in more detail, and [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two plugins that read this export.
+Your newest 25 posts import free, so you can see the result before deciding; a license for the rest is $29. If you'd rather have help, [email us](/blog-move/). Our [Squarespace guide](/guides/squarespace-blog-to-framer/) has each step in more detail, and [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two plugins that read this export.
 
 ## Before you decide
 

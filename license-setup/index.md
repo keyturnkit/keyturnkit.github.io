@@ -1,36 +1,17 @@
 ---
 layout: default
-title: "We add license keys to your Chrome extension"
-description: "Send us your extension's repo. We add a paid tier with license keys from Lemon Squeezy, Polar, Gumroad, Dodo Payments or Payhip, checked from the extension with no server, and open a pull request within 3 working days."
+title: "Want help adding license keys to your extension?"
+description: "If you'd rather not wire up license keys yourself, email us about your extension and we'll reply. Keyturn Kit itself is free and MIT on GitHub."
 permalink: /license-setup/
 og_image: /guides/img/license-keys-chrome-extension-cover.png
 ---
 
-# We add license keys to your Chrome extension
+# Want help adding license keys to your extension?
 
-If you'd rather not wire up payments yourself, we'll add a paid tier to your existing extension with the same code that's in [Keyturn Kit](/), and hand it back as a pull request. $149, paid once.
+[Keyturn Kit](/) is the license-key code we use: the free edition is [MIT on GitHub](https://github.com/keyturnkit/keyturn-kit), and Pro adds Polar, Dodo Payments, Gumroad and Payhip, a free trial and free uses per day. If you'd rather have help fitting it into your extension, email us and we'll reply.
 
-## What you get
+<p><a class="btn btn-primary" href="mailto:proj.seedsmesh@gmail.com?subject=License%20keys%20for%20my%20extension">Email us</a></p>
 
-- License keys from the seller you pick: Lemon Squeezy, Polar, Gumroad, Dodo Payments or Payhip. The buyer pays on the seller's checkout, gets a key by email and pastes it into your extension.
-- A license page in your extension (popup or options), the key check with your store or product, a daily re-check and 7 days offline before locking.
-- Up to 3 features you name moved behind the paid tier, plus a free trial or a number of free uses per day if you want one.
-- The key page opening once after install, so people who paid on your site first can paste the key straight away.
-- Tests for the license code, and a short note in your README on how it works.
-- A pull request to your repository within 3 working days of getting access.
+Tell us what the extension does, how it's built (WXT, Plasmo, plain Manifest V3), which seller you use or want, and which features should be paid. Please don't send access to your repository in the first email.
 
-## What it doesn't include
-
-Setting up your seller account or products (we tell you exactly what to create), server-side checks, subscriptions with usage billing, or changes to features unrelated to the paid tier. Manifest V2 extensions need moving to Manifest V3 first.
-
-## How it works
-
-1. Pay below. You get a confirmation email.
-2. Reply with the repository (add keyturnkit on GitHub as a collaborator, or send a zip), which features should be paid, and which seller you use.
-3. We open a pull request, you review and merge it. One round of changes is included.
-
-If we can't add it to your extension, for example the build doesn't run, you get a full refund.
-
-<p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_aEJWvlJ8DcwezmbbOmlpYTJAupLXBfZbwvCac2MGFeG">Add license keys to my extension, $149</a></p>
-
-Prefer to do it yourself? [Keyturn Kit](/) is the same code as a starter, and the guides cover each seller.
+To do it yourself, [Selling a Chrome extension with license keys, no backend](/guides/license-keys-chrome-extension/) walks through it.

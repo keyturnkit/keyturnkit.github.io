@@ -44,7 +44,7 @@ Open a story with several images and check they are sharp, and look for any repl
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 
-Rather not do it yourself? [We move the blog for you](/blog-move/): $99, done within 2 working days, full refund if we can't.
+Rather not do it yourself? [Email us](/blog-move/) and we'll see how we can help.
 
 ## More guides
 

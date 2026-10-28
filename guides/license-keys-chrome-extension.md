@@ -191,4 +191,4 @@ There's also a paid edition that adds Polar, Dodo Payments, Gumroad and Payhip, 
 
 If you're on Lemon Squeezy and wondering what happens as it moves toward Stripe Managed Payments, see [Moving Chrome extension license keys off Lemon Squeezy](/guides/move-license-keys-off-lemon-squeezy/).
 
-Rather not wire it up yourself? [We add license keys to your extension](/license-setup/) for $149 and send a pull request within 3 working days.
+Rather not wire it up yourself? [Email us](/license-setup/) about your extension.

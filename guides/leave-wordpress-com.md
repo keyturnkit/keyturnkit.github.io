@@ -23,7 +23,7 @@ Do this first even if you're not sure you'll leave. It costs nothing and it's yo
 - Old links: WordPress.com addresses often look like /2024/03/09/my-post/. On Framer Pro or higher, the plugin adds a redirect from each old address to the new one. Framer Basic has no redirects; the plugin gives you the list as a file for later.
 - Comments, forms, shop and membership features don't move this way.
 
-Framer costs $10 a month on Basic (2 CMS collections) and $30 on Pro (redirects, 10 collections), on framer.com/pricing in late October 2026. [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/) has the steps in detail, and if you'd rather not do it yourself, [we move the blog for you](/blog-move/) for $99.
+Framer costs $10 a month on Basic (2 CMS collections) and $30 on Pro (redirects, 10 collections), on framer.com/pricing in late October 2026. [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/) has the steps in detail, and if you'd rather have help, [email us](/blog-move/).
 
 ## Or stay, with a backup
 
