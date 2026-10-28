@@ -26,4 +26,4 @@ Download the zip from your purchase (the Polar purchase page, or the Gumroad rec
 
 ## Something wrong?
 
-Email [proj.seedsmesh@gmail.com](mailto:proj.seedsmesh@gmail.com) from the address you paid with, and we'll sort it out. Keyturn Kit Pro has a full refund within 14 days if it doesn't work for you.
+Email [proj.seedsmesh@gmail.com](mailto:proj.seedsmesh@gmail.com) from the address you paid with, and we'll sort it out. Blog Import and Keyturn Kit Pro both have a full refund within 14 days if they don't work for you.

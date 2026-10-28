@@ -92,6 +92,10 @@ The newest 25 posts import free. A license imports all of them. $29 covers one F
 
 You can buy on Polar or on Gumroad at the same prices. Either way you get a key, paste it on the [license code page](https://blog-import-license.mam-studio.workers.dev/code), and paste the code it gives you into the plugin. The [thanks page](/thanks/) has the steps.
 
+### Can I get a refund?
+
+Yes. If it doesn't work for you, email proj.seedsmesh@gmail.com within 14 days of buying for a full refund.
+
 ### Does it import comments or pages?
 
 No. It imports blog posts with their authors, categories and tags. Comments, pages, WordPress custom post types and WooCommerce products are not imported.
