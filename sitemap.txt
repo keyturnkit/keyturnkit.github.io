@@ -39,3 +39,4 @@ https://keyturnkit.github.io/demo/popup.html
 https://keyturnkit.github.io/
 https://keyturnkit.github.io/guides/free-framer-blog-templates/
 https://keyturnkit.github.io/tools/chrome-extension-fee-calculator/
+https://keyturnkit.github.io/guides/framer-csv-import-blog/
