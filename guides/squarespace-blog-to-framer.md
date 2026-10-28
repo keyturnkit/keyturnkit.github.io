@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 Moving the pages is the easy part; you rebuild them in Framer anyway. The blog is harder, because it is data: posts, dates, authors, categories, images, and URLs that other sites and Google already point to.
 
+The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Squarespace export, copies the images and adds the redirects. Your newest 25 posts import free. The rest of this page explains each step.
+
 This is what we learned building an importer and testing it on real Squarespace exports from 2014 to 2026.
 
 ## What Squarespace gives you

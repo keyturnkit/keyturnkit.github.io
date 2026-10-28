@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 Medium is an easy place to start writing and a hard place to own. When the writing becomes part of a business, people want it on their own site, under their own domain and design. If that site is in Framer, the stories need to move into Framer's CMS.
 
+The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Medium export, copies the images and adds the redirects. Your newest 25 posts import free. The rest of this page explains each step.
+
 ## Export from Medium
 
 On Medium, open Settings from your profile picture, go to Security and apps, and choose Download your information. Medium emails you a link to a .zip file when it's ready ([Medium's help page](https://help.medium.com/hc/en-us/articles/115004745787-Export-your-account-data)).

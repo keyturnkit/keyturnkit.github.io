@@ -10,6 +10,8 @@ og_image: /og-blog-import.png
 
 Blogger has been around since 1999, and plenty of blogs on it are older than the people now redesigning them. Moving one to Framer is mostly about the archive: years of posts, the labels on them, images hosted by Google, and addresses that other sites still link to.
 
+The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the Blogger export, copies the images and adds the redirects. Your newest 25 posts import free. The rest of this page explains each step.
+
 Google itself moved its Android Developers Blog off Blogger on 15 October 2026, to its own developer site, for "improved formatting" and tighter integration with its other content ([the announcement](https://android-developers.googleblog.com/2026/10/android-developers-blog-is-moving.html)). Blogger isn't closing, and nothing has been announced about that; it's simply a sign that even Google outgrows it.
 
 This covers what Blogger gives you and how to bring it across. We checked it against sample Blogger exports in both the older and the current file format.
