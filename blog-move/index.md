@@ -30,6 +30,6 @@ Designing the blog pages, moving pages that aren't blog posts, comments, forms o
 
 If we can't move your blog, for example the export won't open, you get a full refund.
 
-<p><a class="btn btn-primary" href="CHECKOUT_URL">Move my blog, $99</a></p>
+<p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_DE32O8eCSW49H0mTi5ieE7JgAWUepdgcc7vbl12HZWv">Move my blog, $99</a></p>
 
 Prefer to do it yourself? Blog Import imports your newest 25 posts free, and a license for the rest is $29.
