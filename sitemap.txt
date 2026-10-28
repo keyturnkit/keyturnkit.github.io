@@ -27,6 +27,7 @@ https://keyturnkit.github.io/guides/squarespace-import-or-blog-import/
 https://keyturnkit.github.io/guides/squarespace-renewal-price-increase/
 https://keyturnkit.github.io/guides/leave-wordpress-com/
 https://keyturnkit.github.io/guides/cost-to-move-blog-to-framer/
+https://keyturnkit.github.io/guides/framer-agent-or-import-plugin/
 https://keyturnkit.github.io/guides/wix-blog-to-framer/
 https://keyturnkit.github.io/guides/wordpress-blog-to-framer/
 https://keyturnkit.github.io/demo/popup.html
