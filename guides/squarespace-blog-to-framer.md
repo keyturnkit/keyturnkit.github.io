@@ -76,6 +76,8 @@ The Framer pricing link on this page is our referral link. If you start a new Fr
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 
+Rather not do it yourself? [We move the blog for you](/blog-move/): $99, done within 2 working days, full refund if we can't.
+
 ## More guides
 
 - [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)

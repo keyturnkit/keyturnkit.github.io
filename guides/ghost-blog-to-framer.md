@@ -38,3 +38,5 @@ If your Ghost site is still live, Specter is a Framer plugin that reads it throu
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
+
+Rather not do it yourself? [We move the blog for you](/blog-move/): $99, done within 2 working days, full refund if we can't.
