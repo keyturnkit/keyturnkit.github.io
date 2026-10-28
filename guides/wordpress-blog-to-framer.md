@@ -68,7 +68,7 @@ WordPress URLs usually look like `/2024/03/09/my-post/` or `/my-post/`, and your
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
 
-Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
+Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing. If you want a CSV for Framer's CMS import instead, the free [XML to CSV converter](/tools/wordpress-xml-to-framer-csv/) makes one the same way.
 
 Rather not do it yourself? [Email us](/blog-move/) and we'll see how we can help.
 

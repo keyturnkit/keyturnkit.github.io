@@ -9,7 +9,7 @@ og_image: /og-blog-import.png
 
 # Framer CMS CSV import: when images don't come across
 
-A CSV is the quickest way to get rows into Framer's CMS, and for text it works well. Images are where blog imports go wrong, often days later, after the old site is switched off. Framer's own guide to CSV import ends with a reminder to check for missing images ([Import data from CSV](https://www.framer.com/learn/cms-import/)). This is what to look for and why it happens.
+A CSV is the quickest way to get rows into Framer's CMS, and for text it works well. If you have a WordPress or Squarespace export, the free [XML to CSV converter](/tools/wordpress-xml-to-framer-csv/) makes the file in your browser. Images are where blog imports go wrong, often days later, after the old site is switched off. Framer's own guide to CSV import ends with a reminder to check for missing images ([Import data from CSV](https://www.framer.com/learn/cms-import/)). This is what to look for and why it happens.
 
 ## Two kinds of images in a blog post
 
