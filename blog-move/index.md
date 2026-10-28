@@ -18,6 +18,14 @@ If you'd rather not run the import yourself, we'll do it with [Blog Import](/blo
 - A short note listing anything we couldn't bring over, such as embeds we don't support.
 - Done within 2 working days of getting your export and the invite.
 
+## What it looks like
+
+These are our own test runs with the same plugin: a real Squarespace export with 92 posts, 2 authors and 16 categories, and the newest 25 posts of wordpress.org/news with 147 images copied into Framer.
+
+![Blog Import reading a Squarespace export before the import: posts, drafts, authors, categories and tags it found](/guides/img/blog-import-review.jpg)
+
+![Posts, authors, categories and tags as linked collections in Framer CMS after the import](/guides/img/blog-import-collections.jpg)
+
 ## What it doesn't include
 
 Designing the blog pages, moving pages that aren't blog posts, comments, forms or shop products. If your Framer project has no blog pages yet, we connect the posts to a plain blog layout you can restyle, or to your template's.
