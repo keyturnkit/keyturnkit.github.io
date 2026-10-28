@@ -9,7 +9,7 @@ og_image: /guides/img/license-keys-chrome-extension-cover.png
 
 # What it costs to add payments to a Chrome extension
 
-Google stopped handling payments for Chrome Web Store items, so a paid extension needs its own way to take money and decide who gets the paid features. Here are the usual routes and what each costs. We make Keyturn Kit, so weigh that. Prices are from each page in late October 2026.
+Google stopped handling payments for Chrome Web Store items, so a paid extension needs its own way to take money and decide who gets the paid features. Here are the usual routes and what each costs. We make Keyturn Kit, so weigh that. Prices are from each page in late October 2026. To put your own price and sales into these rates, use the [fee calculator](/tools/chrome-extension-fee-calculator/).
 
 Whatever you pick, the payment provider takes its own cut on each sale (a merchant of record such as Lemon Squeezy, Polar, Gumroad or Dodo Payments also handles sales tax for you; check each one's pricing page).
 
