@@ -38,5 +38,8 @@ https://keyturnkit.github.io/guides/wordpress-blog-to-framer/
 https://keyturnkit.github.io/demo/popup.html
 https://keyturnkit.github.io/
 https://keyturnkit.github.io/guides/free-framer-blog-templates/
+https://keyturnkit.github.io/guides/substack-blog-to-framer/
+https://keyturnkit.github.io/guides/hashnode-blog-to-framer/
+https://keyturnkit.github.io/guides/webflow-blog-to-framer/
 https://keyturnkit.github.io/tools/chrome-extension-fee-calculator/
 https://keyturnkit.github.io/guides/framer-csv-import-blog/
