@@ -28,4 +28,4 @@ Framer's guide to [importing CSV data](https://www.framer.com/learn/cms-import/)
 
 Not sure where to find the file? See the guides for [WordPress](/guides/wordpress-blog-to-framer/) and [Squarespace](/guides/squarespace-export-xml/). To see what an export holds before you convert it, use the [blog export inspector](/tools/blog-export-inspector/).
 
-<script type="module" src="/assets/tools/csv.js?v=1"></script>
+<script type="module" src="/assets/tools/csv.js?v=2"></script>
