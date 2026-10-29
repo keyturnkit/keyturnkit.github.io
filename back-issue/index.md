@@ -12,7 +12,7 @@ Back Issue is a blog template we made for blogs that already have years of posts
 
 <img src="/back-issue/home.jpg" alt="Back Issue home page: the 2026 volume number and the lead story" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
-<p><a class="btn btn-primary" href="https://www.framer.com/marketplace/templates/back-issue/">See it on the Framer Marketplace</a> <a class="btn" href="https://buy.polar.sh/polar_cl_7jOAsxYG6MG5M78OOJ79nw0O0MPF05COVfN7O05xeCp">Buy for $69</a></p>
+<p><a class="btn btn-primary" href="https://www.framer.com/marketplace/templates/back-issue/">See it on the Framer Marketplace</a> <a class="btn" href="https://buy.polar.sh/polar_cl_7jOAsxYG6MG5M78OOJ79nw0O0MPF05COVfN7O05xeCp?utm_source=site&utm_campaign=back-issue">Buy for $69</a></p>
 
 ## Made to be filled from an old blog
 
@@ -43,6 +43,8 @@ An old blog rarely has a strong photo on every post. In Back Issue those posts g
 The blog uses two CMS collections, posts and categories, so it publishes on Framer Basic. Redirects from your old post addresses need Framer Pro or higher. The extra fields (year, entry number, cover style, title size) are written by Blog Import; if you write a new post in Framer later, the Read me page in the project says which to fill.
 
 $69 once. After paying you get a link that copies the project into your Framer account, plus the setup steps. If the template doesn't work for you, email proj.seedsmesh@gmail.com within 14 days of buying for a full refund.
+
+Prefer to check out on Gumroad? Back Issue is [there too](https://mamstudiohq.gumroad.com/l/rnolgb?utm_source=site&utm_campaign=back-issue), same price and the same remix link and setup steps.
 
 ## More
 
