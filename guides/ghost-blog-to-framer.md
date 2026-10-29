@@ -32,6 +32,10 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 - **Members, newsletters and paid content settings.** Member-only posts come in as ordinary posts.
 - **Custom routes.** The redirects assume Ghost's default address, `/your-post-slug/`. If you changed routes in Ghost, check the redirects after importing.
 
+## A free template for a newsletter archive
+
+If your Ghost site was mainly a newsletter, [Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free Framer template we made for it: a grid of issues, newest first, and a reading page per issue with links to the one before and after. Remix it, then open Blog Import on its Issues collection, choose your Ghost export file, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
+
 ## Ghost to Framer with a site that's still running
 
 If your Ghost site is still live, Specter is a Framer plugin that reads it through Ghost's Content API with a key you create. Blog Import works from the export file instead, so it also works after the Ghost site is gone, apart from the images above.

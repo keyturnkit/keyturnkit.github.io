@@ -47,6 +47,12 @@ Good for: a single writer who also wants to show work.
 
 Good for: a blog that also publishes episodes.
 
+## One more, made by us: Slack Tide
+
+[Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free template we built for newsletter and photo blog archives. It has one collection, Issues, which is the collection Blog Import makes, so the fields already match: Title, Date, Excerpt, Cover image and Content show on the page, and the rest are filled by the plugin. The archive is a grid of covers, three across on desktop, and every issue page links to the one before and after. It comes in a light and a dark scheme that follow the reader's system setting.
+
+Good for: a Substack or Ghost newsletter moving to Framer.
+
 ## Bringing your old posts
 
 Whichever you pick, the hard part of moving in is the same: the old posts, their images and their old addresses. [Blog Import](/blog-import/), the Framer plugin we make, reads a WordPress, Squarespace, Ghost, Medium or Blogger export (or a live WordPress site), puts the posts into Framer CMS with authors and categories as linked collections, copies the images into Framer and adds a redirect for each old address on Framer Pro or higher. You then connect the template's pages to that collection, or copy the template's layouts onto it. The newest 25 posts import free.
