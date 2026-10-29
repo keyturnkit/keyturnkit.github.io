@@ -49,6 +49,8 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks, including Squarespace video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
+Want to see it work before your own export is ready? Type `keyturnkit.github.io/samples/slack-tide` where the plugin asks for a WordPress address. It reads 16 sample posts with covers and a category, and they import into a new collection in about a minute.
+
 Run it again later and existing posts are updated, not duplicated.
 
 It doesn't import comments, pages, WordPress custom post types or WooCommerce products.
