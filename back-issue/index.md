@@ -12,7 +12,7 @@ Back Issue is a blog template we made for blogs that already have years of posts
 
 <img src="/back-issue/home.jpg" alt="Back Issue home page: the 2026 volume number and the lead story" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
-<p><a class="btn btn-primary" href="https://www.framer.com/marketplace/templates/back-issue/">See it on the Framer Marketplace</a> <a class="btn" href="https://buy.polar.sh/polar_cl_7jOAsxYG6MG5M78OOJ79nw0O0MPF05COVfN7O05xeCp">Buy for $69</a></p>
+<p><a class="btn btn-primary" href="https://www.framer.com/marketplace/templates/back-issue/">See it on the Framer Marketplace</a> <a class="btn" href="https://buy.polar.sh/polar_cl_7jOAsxYG6MG5M78OOJ79nw0O0MPF05COVfN7O05xeCp?utm_source=site&utm_campaign=back-issue">Buy for $69</a></p>
 
 ## Made to be filled from an old blog
 
