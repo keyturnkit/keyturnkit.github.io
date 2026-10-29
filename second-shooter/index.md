@@ -8,7 +8,7 @@ og_image: /second-shooter/home.jpg
 
 # Second Shooter: a photo journal template for Framer
 
-Second Shooter is a template we made for photographers whose stories already live on an old blog: one post per wedding, elopement or place, thirty to eighty photos each. The home page opens on the newest stories as large photo cards, and each story gets a full-width cover, its date and place, and every photo at full width.
+Second Shooter is a template we made for photographers whose stories already live on an old blog: one post per wedding, elopement or place, thirty to eighty photos each. The home page opens on the newest stories as large photo cards, and each story gets a full-width cover, its date and place, and every photo large in the text column with its caption underneath. The sample photos are from Pexels, and the stories and people in them are illustrative.
 
 <img src="/second-shooter/home.jpg" alt="Second Shooter home page: the intro line and the newest stories as large photo cards" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
