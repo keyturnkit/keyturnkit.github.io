@@ -56,6 +56,10 @@ The Framer pricing link on this page is our referral link. If you start a new Fr
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 
+## A template made for it
+
+[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style blog template we made around the fields Blog Import writes. Import with "2 collections, Blog and categories" and the home page and post pages fill in from your posts, and a post without a photo gets a cover set from its title. Blogger labels come in as tags, so the category pages stay empty until you give posts a category in Framer. It runs on Framer Basic. $69 once, with a full refund within 14 days.
+
 Rather not do it yourself? [Email us](/blog-move/) and we'll see how we can help.
 
 ## More guides
