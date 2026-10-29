@@ -44,6 +44,8 @@ The blog uses two CMS collections, posts and categories, so it publishes on Fram
 
 $69 once. After paying you get a link that copies the project into your Framer account, plus the setup steps. If the template doesn't work for you, email proj.seedsmesh@gmail.com within 14 days of buying for a full refund.
 
+Prefer to check out on Gumroad? Back Issue is [there too](https://mamstudiohq.gumroad.com/l/rnolgb?utm_source=site&utm_campaign=back-issue), same price and the same remix link and setup steps.
+
 ## More
 
 - [Blog Import for Framer](/blog-import/)
