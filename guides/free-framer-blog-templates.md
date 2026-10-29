@@ -53,6 +53,10 @@ Good for: a blog that also publishes episodes.
 
 Good for: a Substack or Ghost newsletter moving to Framer.
 
+## If you want a paid one made for Blog Import
+
+[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style template we made around the fields Blog Import writes, so there is nothing to map: each year becomes a volume, each post a numbered entry, and a post without a photo gets a cover set from its title. It uses two collections, Blog and categories, so it runs on Framer Basic. $69 once, with a full refund within 14 days.
+
 ## Bringing your old posts
 
 Whichever you pick, the hard part of moving in is the same: the old posts, their images and their old addresses. [Blog Import](/blog-import/), the Framer plugin we make, reads a WordPress, Squarespace, Ghost, Medium or Blogger export (or a live WordPress site), puts the posts into Framer CMS with authors and categories as linked collections, copies the images into Framer and adds a redirect for each old address on Framer Pro or higher. You then connect the template's pages to that collection, or copy the template's layouts onto it. The newest 25 posts import free.

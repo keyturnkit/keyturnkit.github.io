@@ -49,6 +49,8 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks, including Squarespace video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
+Want to see it work before your own export is ready? Type `keyturnkit.github.io/samples/slack-tide` where the plugin asks for a WordPress address. It reads 16 sample posts with covers and a category, and they import into a new collection in about a minute.
+
 Run it again later and existing posts are updated, not duplicated.
 
 It doesn't import comments, pages, WordPress custom post types or WooCommerce products.
@@ -64,6 +66,12 @@ Prefer Gumroad? The same licenses are there: [$29 for one project](https://mamst
 Rather not run it yourself? [Email us](/blog-move/) and we'll see how we can help.
 
 The Framer pricing link on this page is our referral link. If you start a new Framer account through it, Framer pays us a share of the first year; the price is the same for you.
+
+## A template made for it
+
+[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is our magazine-style blog template for Framer, built around what Blog Import writes. Import your posts with "2 collections, Blog and categories" and the home page, post pages and category pages fill in with your own years, covers and categories. It runs on Framer Basic. $69 once, with a full refund within 14 days. [More about Back Issue](/back-issue/).
+
+<img src="/blog-import/back-issue.jpg" alt="Back Issue home page in Framer, filled with imported posts" width="1200" height="900" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
 ## Questions
 
