@@ -75,6 +75,8 @@ The Framer pricing link on this page is our referral link. If you start a new Fr
 
 For a newsletter or photo blog there is also [Slack Tide](/slack-tide/), a free archive template: a grid of issues and a reading page for each, filled with "1 collection, everything inside each post". If the letter is mostly words, [Paper Route](/paper-route/) is the free text-only version.
 
+Wedding and portrait photographers moving a Showit or WordPress journal can use [Second Shooter](/second-shooter/): every story opens on a full-width cover with its photos large in the text column. $69 once.
+
 ## Questions
 
 ### Does it work on Framer Basic?
