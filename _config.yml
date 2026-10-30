@@ -10,3 +10,5 @@ plugins:
   - jekyll-sitemap
 exclude:
   - refs
+# V558: true while Blog Import is hidden on the Framer Marketplace; set to false when it is back.
+blog_import_hidden: true

@@ -80,6 +80,7 @@
   </header>
 
   <article class="doc">
+{% if framer and site.blog_import_hidden %}<p class="review-note" style="padding:12px 16px;border:1px solid currentColor;border-radius:10px;font-size:15px;line-height:22px">Framer is checking a new version of Blog Import, so its Marketplace page is offline for now. Need your blog moved before it's back? <a href="/blog-move/">Email us</a> and we'll help.</p>{% endif %}
     {% if page.url contains '/guides/' %}<p class="crumbs">{% if framer %}<a href="/blog-import/">Blog Import</a> / <a href="/blog-import/#guides">Guides</a>{% else %}<a href="/">Keyturn Kit</a> / <a href="/#guides">Guides</a>{% endif %}</p>{% endif %}
     {{ content }}
   </article>
