@@ -38,6 +38,7 @@ If you would rather start from a design, [Second Shooter](/second-shooter/) is o
 
 ## More
 
+- [Moving a Squarespace photography blog to Framer](/guides/squarespace-photography-blog-to-framer/)
 - [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
 - [Redirects when you move a blog to Framer](/guides/framer-blog-redirects/)
 - [Framer CMS limits for a blog](/guides/framer-cms-limits-blog/)

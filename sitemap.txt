@@ -43,3 +43,4 @@ https://keyturnkit.github.io/guides/hashnode-blog-to-framer/
 https://keyturnkit.github.io/guides/webflow-blog-to-framer/
 https://keyturnkit.github.io/tools/chrome-extension-fee-calculator/
 https://keyturnkit.github.io/guides/framer-csv-import-blog/
+https://keyturnkit.github.io/guides/squarespace-photography-blog-to-framer/
