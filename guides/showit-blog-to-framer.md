@@ -27,7 +27,7 @@ Showit's own help page covers it ([Export WordPress](https://learn.showit.com/en
 
 ## Check before you switch the domain
 
-- **Photo captions.** The current version of Blog Import keeps every photo but not the caption text under it. The next version keeps captions as a line under each photo; if your posts rely on captions, wait for it or re-import later, which updates the same posts instead of adding copies.
+- **Photo captions.** Blog Import keeps each caption as a line in italics under its photo. Open a few posts that rely on captions and check they all came across.
 - **Old addresses.** On Framer Pro or higher, Blog Import adds a redirect for each old post address. On Basic it gives you the old and new addresses as a CSV to add later.
 - **Galleries.** WordPress gallery blocks come in as a run of photos. Open two or three of your longest posts on a phone and look.
 - **Design.** Framer's CMS gives you a list page and a post page to design once; every post then uses them.
