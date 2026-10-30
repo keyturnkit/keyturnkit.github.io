@@ -34,6 +34,8 @@ Your newest 25 posts import free. A license imports the rest: $29 for one Framer
 - **Galleries.** WordPress gallery blocks come in as a run of photos. Open two or three of your longest posts on a phone and look.
 - **Design.** Framer's CMS gives you a list page and a post page to design once; every post then uses them.
 
+If you would rather start from a design, [Second Shooter](/second-shooter/) is our photo journal template built for these imports: big photo cards, full-width story pages with captions, and an enquiry form.
+
 ## More
 
 - [Moving a WordPress blog to Framer](/guides/wordpress-blog-to-framer/)
