@@ -37,7 +37,7 @@ Blog Import launched on [Product Hunt](https://www.producthunt.com/products/blog
 Not sure what your export holds? The free [blog export inspector](/tools/blog-export-inspector/) reads it in your browser and shows the posts, drafts, images and old addresses inside. If you only want a CSV for Framer's CMS import, the free [XML to CSV converter](/tools/wordpress-xml-to-framer-csv/) makes one in your browser.
 
 - A Squarespace export file, from Import & export (Squarespace writes it in WordPress format)
-- A WordPress export file, or just the address of a live WordPress site
+- A WordPress export file, from Tools, Export, All content
 - A Blogger backup file
 - The zip Medium sends from "Download your information"
 - A Ghost export file, from Settings, Migration tools, Export. Type the old blog address so images written as `__GHOST_URL__` can be fetched, or choose a zip of the content/images folder if the site is gone (see the [Ghost guide](/guides/ghost-blog-to-framer/))
@@ -48,8 +48,6 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 ## What you get in Framer
 
 Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks, including Squarespace video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
-
-Want to see it work before your own export is ready? Type `keyturnkit.github.io/samples/slack-tide` where the plugin asks for a WordPress address. It reads 16 sample posts with covers and a category, and they import into a new collection in about a minute.
 
 Run it again later and existing posts are updated, not duplicated.
 

@@ -16,7 +16,7 @@ Back Issue is a blog template we made for blogs that already have years of posts
 
 ## Made to be filled from an old blog
 
-The blog runs on the collection the [Blog Import](/blog-import/) plugin creates. Remix the template, open Blog Import on the Blog collection, choose your export file or WordPress address, pick "2 collections, Blog and categories" and tick the box to replace the sample posts. Years, entry numbers, covers and title sizes come from your posts, so imported posts need nothing set by hand.
+The blog runs on the collection the [Blog Import](/blog-import/) plugin creates. Remix the template, open Blog Import on the Blog collection, choose your export file, pick "2 collections, Blog and categories" and tick the box to replace the sample posts. Years, entry numbers, covers and title sizes come from your posts, so imported posts need nothing set by hand.
 
 Your newest 25 posts import free. A Blog Import license imports the rest, and Back Issue buyers get 30% off it with the code in their purchase email.
 

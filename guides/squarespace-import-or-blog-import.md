@@ -20,9 +20,9 @@ Both read the file Squarespace exports in WordPress format (Settings, Advanced, 
 | | Squarespace Import | Blog Import |
 |---|---|---|
 | License after 25 posts | $49 one project, $99 unlimited | $29 one project, $59 any number |
-| Other sources | Webflow, in a separate plugin (the $99 key covers both) | WordPress (file or live site), Blogger, Medium, Ghost, Substack, Hashnode and Webflow in the same plugin |
+| Other sources | Webflow, in a separate plugin (the $99 key covers both) | WordPress, Blogger, Medium, Ghost, Substack, Hashnode and Webflow in the same plugin |
 | Framer Basic (2 collections) | Not mentioned on the listing | Option to keep authors, categories and tags inside each post |
-| Try without an export | "See it on a sample" shows the review on a made-up blog | Needs a file, or a live WordPress address |
+| Try without an export | "See it on a sample" shows the review on a made-up blog | Needs an export file |
 | Support | Email, replies within a day | Email |
 
 ## Which to pick
