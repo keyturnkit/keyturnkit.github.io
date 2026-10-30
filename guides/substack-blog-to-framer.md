@@ -42,6 +42,10 @@ Before it imports anything, the plugin reads the whole zip and tells you what it
 
 If your Substack used your own domain, point that domain at Framer once the posts are in. The redirects then send `yourdomain.com/p/your-post` to the new address. If you stayed on `name.substack.com`, old links keep pointing at Substack, since that address belongs to them.
 
+## A free template for a newsletter archive
+
+[Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free Framer template we made for this case: a grid of issues, newest first, with the cover, month and title of each, and a reading page per issue with links to the one before and after. It runs on the collection Blog Import makes, so there is nothing to connect. Remix it, then open Blog Import on its Issues collection, choose your Substack zip, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
+
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export zip: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.

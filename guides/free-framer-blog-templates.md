@@ -47,6 +47,12 @@ Good for: a single writer who also wants to show work.
 
 Good for: a blog that also publishes episodes.
 
+## One more, made by us: Slack Tide
+
+[Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free template we built for newsletter and photo blog archives. It has one collection, Issues, which is the collection Blog Import makes, so the fields already match: Title, Date, Excerpt, Cover image and Content show on the page, and the rest are filled by the plugin. The archive is a grid of covers, three across on desktop, and every issue page links to the one before and after. It comes in a light and a dark scheme that follow the reader's system setting.
+
+Good for: a Substack or Ghost newsletter moving to Framer.
+
 ## If you want a paid one made for Blog Import
 
 [Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style template we made around the fields Blog Import writes, so there is nothing to map: each year becomes a volume, each post a numbered entry, and a post without a photo gets a cover set from its title. It uses two collections, Blog and categories, so it runs on Framer Basic. $69 once, with a full refund within 14 days.
