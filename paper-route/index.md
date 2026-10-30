@@ -12,7 +12,7 @@ Paper Route is a free template we made for a letter that is mostly words. The ho
 
 <img src="/paper-route/home.jpg" alt="Paper Route home page in the light scheme: the title and the list of issues" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
-<p><a class="btn btn-primary" href="PAPER_ROUTE_MARKETPLACE_URL">Get it free on the Framer Marketplace</a></p>
+<p><a class="btn btn-primary" href="https://framer.link/qg3OtUc">Remix it free in Framer</a></p>
 
 ## Bring your archive in
 
