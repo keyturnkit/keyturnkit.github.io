@@ -12,7 +12,7 @@ Second Shooter is a template we made for photographers whose stories already liv
 
 <img src="/second-shooter/home.jpg" alt="Second Shooter home page: the newest story as a full-width photo with the title over its lower edge" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
-<p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_F90VTtmuwNcrOPiYuxDciUWydmB6FuKivPo9t2pHHIM">Buy for $69</a> <a class="btn" href="https://mamstudiohq.gumroad.com/l/twfja">Buy on Gumroad</a> <a class="btn" href="https://encouraging-lottery-638690.framer.app">See the live preview</a></p>
+<p><a class="btn btn-primary" href="https://buy.polar.sh/polar_cl_F90VTtmuwNcrOPiYuxDciUWydmB6FuKivPo9t2pHHIM">Buy for $69</a> <a class="btn" href="https://mamstudiohq.gumroad.com/l/twfja">Buy on Gumroad</a> <a class="btn" href="https://www.framer.com/marketplace/templates/second-shooter/">On the Framer Marketplace</a> <a class="btn" href="https://encouraging-lottery-638690.framer.app">See the live preview</a></p>
 
 ## Your stories come with you
 
