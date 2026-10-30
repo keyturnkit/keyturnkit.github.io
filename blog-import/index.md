@@ -73,6 +73,8 @@ The Framer pricing link on this page is our referral link. If you start a new Fr
 
 <img src="/blog-import/back-issue.jpg" alt="Back Issue home page in Framer, filled with imported posts" width="1200" height="900" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
+For a newsletter or photo blog there is also [Slack Tide](/slack-tide/), a free archive template: a grid of issues and a reading page for each, filled with "1 collection, everything inside each post".
+
 ## Questions
 
 ### Does it work on Framer Basic?
