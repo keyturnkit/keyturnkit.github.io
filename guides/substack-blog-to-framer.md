@@ -44,7 +44,7 @@ If your Substack used your own domain, point that domain at Framer once the post
 
 ## A free template for a newsletter archive
 
-[Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free Framer template we made for this case: a grid of issues, newest first, with the cover, month and title of each, and a reading page per issue with links to the one before and after. It runs on the collection Blog Import makes, so there is nothing to connect. Remix it, then open Blog Import on its Issues collection, choose your Substack zip, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
+[Slack Tide](/slack-tide/) is a free Framer template we made for this case: a grid of issues, newest first, with the cover, month and title of each, and a reading page per issue with links to the one before and after. It runs on the collection Blog Import makes, so there is nothing to connect. Remix it, then open Blog Import on its Issues collection, choose your Substack zip, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
 
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
 

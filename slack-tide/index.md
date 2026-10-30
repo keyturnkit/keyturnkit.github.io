@@ -12,7 +12,7 @@ Slack Tide is a free template we made for a newsletter or photo blog that alread
 
 <img src="/slack-tide/home-dark.jpg" alt="Slack Tide home page in the dark scheme: masthead, subscribe form and the first row of issues" width="1200" height="900" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
-<p><a class="btn btn-primary" href="SLACK_TIDE_MARKETPLACE_URL">Get it free on the Framer Marketplace</a></p>
+<p><a class="btn btn-primary" href="https://framer.link/3G6qCn1">Remix it free in Framer</a></p>
 
 ## Bring your archive in
 

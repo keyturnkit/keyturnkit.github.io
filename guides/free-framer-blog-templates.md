@@ -49,7 +49,7 @@ Good for: a blog that also publishes episodes.
 
 ## One more, made by us: Slack Tide
 
-[Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free template we built for newsletter and photo blog archives. It has one collection, Issues, which is the collection Blog Import makes, so the fields already match: Title, Date, Excerpt, Cover image and Content show on the page, and the rest are filled by the plugin. The archive is a grid of covers, three across on desktop, and every issue page links to the one before and after. It comes in a light and a dark scheme that follow the reader's system setting.
+[Slack Tide](/slack-tide/) is a free template we built for newsletter and photo blog archives. It has one collection, Issues, which is the collection Blog Import makes, so the fields already match: Title, Date, Excerpt, Cover image and Content show on the page, and the rest are filled by the plugin. The archive is a grid of covers, three across on desktop, and every issue page links to the one before and after. It comes in a light and a dark scheme that follow the reader's system setting.
 
 Good for: a Substack or Ghost newsletter moving to Framer.
 

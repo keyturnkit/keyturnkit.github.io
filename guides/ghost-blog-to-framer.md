@@ -34,7 +34,7 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 
 ## A free template for a newsletter archive
 
-If your Ghost site was mainly a newsletter, [Slack Tide](SLACK_TIDE_MARKETPLACE_URL) is a free Framer template we made for it: a grid of issues, newest first, and a reading page per issue with links to the one before and after. Remix it, then open Blog Import on its Issues collection, choose your Ghost export file, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
+If your Ghost site was mainly a newsletter, [Slack Tide](/slack-tide/) is a free Framer template we made for it: a grid of issues, newest first, and a reading page per issue with links to the one before and after. Remix it, then open Blog Import on its Issues collection, choose your Ghost export file, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection" so the samples go.
 
 ## Ghost to Framer with a site that's still running
 
