@@ -42,4 +42,4 @@ We read the limit as covering all collections on the site together. Framer's pri
 
 ## Doing the import
 
-[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), the Framer plugin we make, has an option for Basic: it keeps authors, categories and tags inside each post, so the whole blog fits in one collection. On Pro it creates the separate collections and links them, and adds a redirect for each old address. It reads Squarespace, WordPress, Blogger, Medium and Ghost exports. The newest 25 posts import free, which is a quick way to see how much of your item limit a real post takes before you move the rest. There's more on the [Blog Import page](/blog-import/).
+[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), the Framer plugin we make, has an option for Basic: it keeps authors, categories and tags inside each post, so the whole blog fits in one collection. On Pro it creates the separate collections and links them, and adds a redirect for each old address. It reads Squarespace, WordPress, Blogger, Medium and Ghost exports. There's more on the [Blog Import page](/blog-import/).

@@ -36,6 +36,6 @@ Each story's file keeps the title, subtitle, body, publish time, a link to the o
 
 ## Moving the posts
 
-The HTML is Medium's own markup, with a lot of wrapper classes, so pasting it into another editor gives messy results. [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), the Framer plugin we make, reads the zip as it comes from Medium: it skips replies, keeps drafts as drafts, cleans the HTML down to what Framer's rich text understands and copies the images into Framer. The newest 25 posts import free. The step-by-step version is in [Medium to Framer](/guides/medium-blog-to-framer/).
+The HTML is Medium's own markup, with a lot of wrapper classes, so pasting it into another editor gives messy results. [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), the Framer plugin we make, reads the zip as it comes from Medium: it skips replies, keeps drafts as drafts, cleans the HTML down to what Framer's rich text understands and copies the images into Framer. The step-by-step version is in [Medium to Framer](/guides/medium-blog-to-framer/).
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your export file: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.

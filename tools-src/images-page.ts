@@ -24,7 +24,7 @@ export function describeImages(l: ImageList, includeDrafts: boolean): { summary:
   return {
     summary: `This is a ${NAME[l.source]} export with ${n(l.posts, 'published post')}${draftPart}. ${l.postsWithImages.toLocaleString('en-US')} of the ${n(l.postsListed, 'listed post')} ${l.postsWithImages === 1 ? 'has' : 'have'} images. The list has ${n(l.rows.length, 'row')}, ${n(l.covers, 'cover image')} and ${n(l.inBody, 'image')} inside posts, at ${n(l.distinct, 'different address', 'different addresses')}.`,
     notes,
-    last: 'copies cover and body images into Framer during the import. The newest 25 posts are free, $29 for one project, $59 for any number.',
+    last: 'copies cover and body images into Framer during the import. It is free, with no limit on posts.',
   };
 }
 

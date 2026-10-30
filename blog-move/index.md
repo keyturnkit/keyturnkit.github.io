@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "Want help moving your blog to Framer?"
-description: "If you'd rather not run the import yourself, email us what you have and we'll reply. Blog Import itself imports your newest 25 posts free."
+description: "If you'd rather not run the import yourself, email us what you have and we'll reply. Blog Import itself is free, with no limit on posts."
 permalink: /blog-move/
 og_image: /og-blog-import.png
 ---
 
 # Want help moving your blog to Framer?
 
-Most people move their blog themselves with [Blog Import](/blog-import/): your newest 25 posts import free, and a license for the rest is $29. If you'd rather have help, email us and we'll reply.
+Most people move their blog themselves with [Blog Import](/blog-import/), which is free with no limit on posts. If you'd rather have help, email us and we'll reply.
 
 <p><a class="btn btn-primary" href="mailto:proj.seedsmesh@gmail.com?subject=Help%20moving%20my%20blog%20to%20Framer">Email us</a></p>
 

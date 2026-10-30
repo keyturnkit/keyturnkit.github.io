@@ -37,7 +37,7 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 - **Authors, series and comments.** The backup doesn't hold them.
 - **Your hashnode.dev address.** Redirects from `yourname.hashnode.dev` can't be set in Framer, because Hashnode owns that domain.
 
-The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
+More on the [Blog Import page](/blog-import/).
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your backup: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 
