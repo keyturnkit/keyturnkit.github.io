@@ -21,9 +21,6 @@ A Framer plugin for leaving WordPress, Squarespace, Substack, Ghost, Medium, Blo
 
 Keeping a WordPress site online and syncing from it? A live-sync plugin may suit you better; [the comparison](/guides/framer-blog-import-plugins-compared/) shows which.
 
-<video src="/blog-import/demo.mp4" poster="/blog-import/demo-poster.jpg" controls muted playsinline preload="none" width="1600" height="1200" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)"></video>
-
-In this 34-second run the plugin reads wordpress.org/news, imports the newest 25 posts and copies 147 images into Framer.
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
@@ -92,7 +89,7 @@ Existing posts are updated, not duplicated. You can import again after you publi
 
 ### Does it cost anything?
 
-No. Blog Import is free, with no limit on posts and no license. If you bought a license before it went free, email proj.seedsmesh@gmail.com from the address you paid with for a refund.
+No. Blog Import is free, with no limit on posts and no license.
 
 ### Does it import comments or pages?
 

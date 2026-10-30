@@ -14,7 +14,7 @@ Polar sends a confirmation email with an **Access purchase** button. That button
 
 ## Blog Import
 
-Blog Import is free now, with no limit on posts and no license code to enter. If you bought a Blog Import license, email [proj.seedsmesh@gmail.com](mailto:proj.seedsmesh@gmail.com) from the address you paid with and we'll refund it.
+Blog Import is free now, with no limit on posts and no license code to enter.
 
 ## Keyturn Kit Pro
 

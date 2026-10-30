@@ -30,16 +30,16 @@ The quickest way is to open the export in a text editor, find one of your galler
 
 ## Bringing it into Framer
 
-[Blog Import](/blog-import/), the Framer plugin we make, reads the Squarespace file as it is. It is in Framer's review right now, so it is temporarily off the Marketplace. The version in review works from export files.
+[Blog Import](/blog-import/), the Framer plugin we make, reads the Squarespace file as it is. It is free, with no limit on posts.
 
-When it is back, the steps are short:
+The steps are short:
 
 1. Install Blog Import in your Framer project and choose the export file. It lists how many posts, categories and tags it found.
 2. Pick how the CMS should be laid out: posts with separate categories and tags collections, or everything inside each post for Framer Basic.
 3. Leave "Copy images into Framer" on. This copies each photo from `static1.squarespace.com` into Framer, so the posts keep working after Squarespace is gone.
 4. Import. Each post keeps its title, slug, date, excerpt, cover, categories and tags, and the photos sit in the body where they were.
 
-Your newest 25 posts import free. A license imports the rest: $29 for one Framer project or $59 for any number, paid once. Blog Import doesn't import comments.
+Blog Import doesn't import comments.
 
 ## What we saw with 50 photos in one post
 
@@ -47,7 +47,7 @@ We built a test post with 50 captioned photos and ran it through a real Framer p
 
 First, where the photos are hosted decides whether they copy. Photos on a plain static host, resized to 1600 px and under 400 KB each, all copied in under 20 seconds. Pointed at a host that refused Framer's requests, every image failed. So keep the Squarespace site online until the copy is done, and check afterwards that the photos in your posts load from Framer, not from `static1.squarespace.com`.
 
-Second, captions. Framer's formatted text drops the HTML tags most blogs use for a captioned photo, so the photo arrived but the caption under it was gone. The fix turns each caption into a line in italics under its photo, and with it our test post came through with 50 photos and 50 captions in order. That fix is in the version of Blog Import now in Framer's review, not in the version that was on the Marketplace before. Whether it picks up your Squarespace captions depends on how they are written in your export, so do the caption search above.
+Second, captions. Framer's formatted text drops the HTML tags most blogs use for a captioned photo, so the photo arrived but the caption under it was gone. The fix turns each caption into a line in italics under its photo, and with it our test post came through with 50 photos and 50 captions in order. That fix is in the current version of Blog Import. Whether it picks up your Squarespace captions depends on how they are written in your export, so do the caption search above.
 
 ## Old addresses
 
