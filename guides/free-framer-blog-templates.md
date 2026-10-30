@@ -61,7 +61,7 @@ If the blog is mostly photographs, from weddings, elopements or portrait session
 
 ## Bringing your old posts
 
-Whichever you pick, the hard part of moving in is the same: the old posts, their images and their old addresses. [Blog Import](/blog-import/), the Framer plugin we make, reads a WordPress, Squarespace, Ghost, Medium or Blogger export (or a live WordPress site), puts the posts into Framer CMS with authors and categories as linked collections, copies the images into Framer and adds a redirect for each old address on Framer Pro or higher. You then connect the template's pages to that collection, or copy the template's layouts onto it. The newest 25 posts import free.
+Whichever you pick, the hard part of moving in is the same: the old posts, their images and their old addresses. [Blog Import](/blog-import/), the Framer plugin we make, reads a WordPress, Squarespace, Ghost, Medium or Blogger export, puts the posts into Framer CMS with authors and categories as linked collections, copies the images into Framer and adds a redirect for each old address on Framer Pro or higher. You then connect the template's pages to that collection, or copy the template's layouts onto it.
 
 Three things we learned from Noter and Reado:
 

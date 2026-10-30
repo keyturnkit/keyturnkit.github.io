@@ -76,12 +76,12 @@ export function describeCsv(c: Conversion, includeDrafts: boolean): { summary: s
     if (c.emptyBodies) limits.push(`${n(c.emptyBodies, 'post')} ${c.emptyBodies === 1 ? 'has' : 'have'} no HTML text in the export, so the Content cell ${c.emptyBodies === 1 ? 'is' : 'cells are'} empty.`);
   }
   limits.push(...c.notes);
-  const same = 'does those in Framer (redirects on Framer Pro). The newest 25 posts are free. $29 for one project, $59 for any number.';
+  const same = 'does those in Framer (redirects on Framer Pro). It is free, with no limit on posts.';
   return {
     summary: `This is a ${t.name} export with ${n(c.published, `published ${t.post}`, `published ${t.posts}`)}${draftPart}. The CSV has ${n(c.rows, 'row')}, one per ${t.post}. Cover image address found for ${c.withCover} of them.`,
     limits,
     blogImport: ghost
-      ? 'copies the images that have a full address into Framer, links authors and tags, and adds redirects on Framer Pro. The newest 25 posts are free. $29 for one project, $59 for any number.'
+      ? 'copies the images that have a full address into Framer, links authors and tags, and adds redirects on Framer Pro. It is free, with no limit on posts.'
       : same,
     draftLabel: ghost ? ' Include unpublished posts (drafts, scheduled and sent)' : ' Include drafts',
   };

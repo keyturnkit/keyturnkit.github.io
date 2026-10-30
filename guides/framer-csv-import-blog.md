@@ -52,7 +52,7 @@ A reference field (single or multiple) is filled from slugs of items in the refe
 - **Redirects** from your old post addresses aren't made.
 - **Linked authors and categories** need the extra steps above, one collection at a time.
 
-[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads the export file directly and does those in one run: it copies cover and body images into Framer, links authors, categories and tags as collections, keeps drafts, and adds a redirect for each old address on Framer Pro or higher. The newest 25 posts import free; a license is $29 for one project or $59 for any number.
+[Blog Import](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) reads the export file directly and does those in one run: it copies cover and body images into Framer, links authors, categories and tags as collections, keeps drafts, and adds a redirect for each old address on Framer Pro or higher. It is free, with no limit on posts.
 
 ## More guides
 

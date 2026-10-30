@@ -11,25 +11,25 @@ og_image: /og-blog-import.png
 
 There are three ways to get an existing blog into Framer, and the price runs from nothing to five figures. All prices below come from each provider's own page, read between 26 and 28 October 2026. We make Blog Import, so weigh that.
 
-[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to.
 
 First, the cost you pay whichever way you go: Framer itself, $10 a month on Basic (2 CMS collections, no redirects) or $30 on Pro (10 collections and redirects).
 
 | Way | Price | What you do | What you get |
 |---|---|---|---|
 | Framer's CSV Import, by hand | Free | Turn your posts into a CSV, map the columns | Text and cover images; images inside posts stay linked to the old host, no redirects |
-| An import plugin | Blog Import: newest 25 posts free, then $29 for one project or $59 unlimited. Others: Squarespace Import $49 / $99, WP Sync from $12.99, Sillyweb Wp Sync free | Run it on your export file or site | Posts with images copied into Framer; redirects on Pro (depends on the plugin, see [the comparison](/guides/framer-blog-import-plugins-compared/)) |
+| An import plugin | Blog Import: free. Others: Squarespace Import $49 / $99, WP Sync from $12.99, Sillyweb Wp Sync free | Run it on your export file or site | Posts with images copied into Framer; redirects on Pro (depends on the plugin, see [the comparison](/guides/framer-blog-import-plugins-compared/)) |
 | An agency | Varies; one studio's migration page starts at $10,000 | Brief them | The whole site rebuilt in Framer, design included |
 
 ## Which one makes sense
 
 **A few posts, no images worth keeping:** CSV Import. Free, and fine for text.
 
-**A real blog you're moving yourself:** a plugin. The free 25 posts show you the result before you pay. For a Squarespace blog, [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two that read that export.
+**A real blog you're moving yourself:** a plugin. For a Squarespace blog, [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two that read that export.
 
 **A blog you don't want to touch:** a designer or agency, or [email us](/blog-move/) and we'll see how we can help.
 
-**A whole site with custom pages, forms and design:** an agency, or a freelancer from Framer's Experts directory. The blog is usually a small part of that bill; some agencies run an import plugin for it, which is what our $59 unlimited license is for.
+**A whole site with custom pages, forms and design:** an agency, or a freelancer from Framer's Experts directory. The blog is usually a small part of that bill; some agencies run an import plugin for it.
 
 ## The cost people forget
 

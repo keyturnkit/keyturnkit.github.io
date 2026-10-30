@@ -11,7 +11,7 @@ og_image: /og-blog-import.png
 
 Squarespace raised prices for existing sites from 1 August 2026, and each site sees the new price at its renewal, so notices are still arriving. In the Squarespace forum thread about it, renewal notices of $276 and $348 a year are quoted, and Squarespace staff said on 3 August that "an internal error that misapplied prices on certain plans" had sent some people a higher figure than intended. We make Blog Import, a Framer plugin for moving blogs, so we have a stake in you leaving; read the next section first anyway.
 
-[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to.
 
 ## The cheap fix: check the plan, not the platform
 
@@ -26,7 +26,7 @@ Framer's plans are $10 a month (Basic, 2 CMS collections, no redirects) and $30 
 3. Squarespace post addresses carry the date (/blog/2024/3/9/my-post). On Framer Pro, the plugin adds a redirect from each of those to the new address, so shared links and search results keep working. On Basic there are no redirects; each post keeps its old address in the Old URL field so you can add them when you upgrade.
 4. Keep the Squarespace site running until you've checked a few posts on Framer and pointed your domain.
 
-Your newest 25 posts import free, so you can see the result before deciding; a license for the rest is $29. If you'd rather have help, [email us](/blog-move/). Our [Squarespace guide](/guides/squarespace-blog-to-framer/) has each step in more detail, and [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two plugins that read this export.
+Blog Import is free, with no limit on posts. If you'd rather have help, [email us](/blog-move/). Our [Squarespace guide](/guides/squarespace-blog-to-framer/) has each step in more detail, and [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two plugins that read this export.
 
 ## Before you decide
 

@@ -11,7 +11,7 @@ og_image: /og-blog-import.png
 
 Framer's Agent can now move content into Framer: its Agents page says it "recreates pages, structure, and CMS content in Framer from a live site, export, or reference", and one of Framer's own sample prompts is moving WordPress blog posts into a CMS collection. We make Blog Import, an import plugin, so we have a stake in this; here is what Framer's own pages say and where each one fits. All quotes are from framer.com, read on 28 October 2026.
 
-[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to; your newest 25 posts import free.
+[Blog Import on the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) is the plugin this page refers to.
 
 ## What Framer says about the Agent
 
@@ -26,7 +26,7 @@ Framer's Agent can now move content into Framer: its Agents page says it "recrea
 - Images inside the posts are copied into Framer, so they keep working after the old site is cancelled.
 - The old addresses are read from the export itself, and on Framer Pro a redirect is added for each post; you don't build the spreadsheet.
 - It reads export files, so it works from Squarespace, Blogger, Medium and Ghost exports, not only a live site.
-- No AI credits. [Blog Import](/blog-import/) imports your newest 25 posts free; a license for the rest is $29 for one project or $59 for any number.
+- No AI credits. [Blog Import](/blog-import/) is free, with no limit on posts.
 
 ## Which to use
 

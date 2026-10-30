@@ -34,9 +34,9 @@ In the Webflow Designer, open the CMS panel, select your blog collection and use
 
 Blog Import moves the blog collection only. If your Webflow site has many collections that link to each other, or you rely on the 301 redirects you set up in Webflow, use Webflow Import, a Framer plugin made for whole Webflow sites: it reads every collection's CSV at once, keeps the links between them and brings over Webflow's own redirects. It's $49 for one project or $99 for any number, with 25 items per collection free (its Marketplace listing, 27 October 2026).
 
-Blog Import is $29 or $59, with your newest 25 posts free, and also reads WordPress, Squarespace, Substack, Ghost, Medium, Blogger and Hashnode, if you have a second blog to move.
+Blog Import is free, with no limit on posts, and also reads WordPress, Squarespace, Substack, Ghost, Medium, Blogger and Hashnode, if you have a second blog to move.
 
-The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
+More on the [Blog Import page](/blog-import/).
 
 Before you import, the free [export inspector](/tools/blog-export-inspector/) shows what's in your CSV: posts, drafts, images and old addresses. It reads the file in your browser and uploads nothing.
 

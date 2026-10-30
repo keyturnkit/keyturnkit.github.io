@@ -18,7 +18,7 @@ Slack Tide is a free template we made for a newsletter or photo blog that alread
 
 The 16 issues in the template are samples. The [Blog Import](/blog-import/) plugin replaces them with yours: open the CMS, select the Issues collection and click Manage, choose your Substack, Ghost, WordPress, Medium, Blogger or Squarespace export, pick "1 collection, everything inside each post" and tick "Remove the 16 posts already in this collection". Publish, and the archive and every issue page fill from your posts.
 
-Your newest 25 posts import free. A Blog Import license imports the rest: $29 for one Framer project or $59 for any number, paid once.
+Blog Import is free, with no limit on posts.
 
 <img src="/slack-tide/issue.jpg" alt="A Slack Tide issue page in the light scheme: title, subtitle, date, cover and text" width="1200" height="900" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 

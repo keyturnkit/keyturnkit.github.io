@@ -16,9 +16,9 @@ Second Shooter is a template we made for photographers whose stories already liv
 
 ## Your stories come with you
 
-The 12 stories in the template are samples. The [Blog Import](/blog-import/) plugin replaces them with yours: open the CMS, select the Stories collection and click Manage, choose the export file from your Showit blog (Showit blogs run on WordPress) or type a WordPress address, pick "2 collections, Blog and categories" and tick "Remove the 12 posts already in this collection". A post with 50 photos comes across with 50 photos, each caption as a line under its photo and each alt text, in the same order.
+The 12 stories in the template are samples. The [Blog Import](/blog-import/) plugin replaces them with yours: open the CMS, select the Stories collection and click Manage, choose the export file from your Showit blog (Showit blogs run on WordPress), pick "2 collections, Blog and categories" and tick "Remove the 12 posts already in this collection". A post with 50 photos comes across with 50 photos, each caption as a line under its photo and each alt text, in the same order.
 
-Your newest 25 posts import free. A Blog Import license imports the rest: $29 for one Framer project or $59 for any number, paid once.
+Blog Import is free, with no limit on posts.
 
 <img src="/second-shooter/story.jpg" alt="A Second Shooter story page: full-width cover, title, date and place, then the text" width="1200" height="900" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--line)">
 
