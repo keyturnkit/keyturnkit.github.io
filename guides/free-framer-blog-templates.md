@@ -55,7 +55,7 @@ Good for: a Substack or Ghost newsletter moving to Framer.
 
 ## If you want a paid one made for Blog Import
 
-[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style template we made around the fields Blog Import writes, so there is nothing to map: each year becomes a volume, each post a numbered entry, and a post without a photo gets a cover set from its title. It uses two collections, Blog and categories, so it runs on Framer Basic. $69 once, with a full refund within 14 days.
+[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style template we made around the fields Blog Import writes, so there is nothing to map: each year becomes a volume, each post a numbered entry, and a post without a photo gets a cover set from its title. It uses two collections, Blog and categories, so it runs on Framer Basic. $49 once, with a full refund within 14 days.
 
 If the blog is mostly photographs, from weddings, elopements or portrait sessions, [Second Shooter](/second-shooter/) is our photo journal template: each story opens on a full-width cover and keeps every photo large in the text column. It runs on Framer Basic, $69 once.
 

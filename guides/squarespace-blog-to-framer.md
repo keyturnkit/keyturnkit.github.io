@@ -83,7 +83,7 @@ Before you import, the free [export inspector](/tools/blog-export-inspector/) sh
 
 ## A template made for it
 
-[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style blog template we made around the fields Blog Import writes. Import with "2 collections, Blog and categories" and the home page, post pages and category pages fill in from your posts, and a post without a photo gets a cover set from its title. It runs on Framer Basic. $69 once, with a full refund within 14 days.
+[Back Issue](https://www.framer.com/marketplace/templates/back-issue/) is a magazine-style blog template we made around the fields Blog Import writes. Import with "2 collections, Blog and categories" and the home page, post pages and category pages fill in from your posts, and a post without a photo gets a cover set from its title. It runs on Framer Basic. $49 once, with a full refund within 14 days.
 
 If the blog is mostly photographs, from weddings, elopements or portrait sessions, [Second Shooter](/second-shooter/) is our photo journal template: each story opens on a full-width cover and keeps every photo large in the text column. It runs on Framer Basic, $69 once.
 
