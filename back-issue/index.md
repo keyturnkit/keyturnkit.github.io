@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Back Issue: a magazine blog template for Framer"
-description: "A Framer blog template that sets your posts like the bound volumes of a magazine. Fill it from your old WordPress, Squarespace, Substack or Ghost blog with Blog Import. Runs on Framer Basic, $69."
+description: "A Framer blog template that sets your posts like the bound volumes of a magazine. Fill it from your old WordPress, Squarespace, Substack or Ghost blog with Blog Import. Runs on Framer Basic, $49."
 permalink: /back-issue/
 og_image: /back-issue/home.jpg
 ---
