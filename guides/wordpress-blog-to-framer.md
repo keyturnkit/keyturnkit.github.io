@@ -48,7 +48,7 @@ Two catches:
 - *PostPort* by Luke Sn reads the export file for $39 one-time. Every post arrives as a draft, authors and tags come in as text, and you pick image files from your computer to upload.
 - [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours) reads the export file. It brings drafts from the export file, turns authors, categories and tags into linked collections, copies images into Framer, and adds redirects on Framer Pro or higher. It is free for your newest 25 posts; a license for the rest is $29 per project or $59 for any number, paid once. It doesn't do custom post types or WooCommerce.
 
-![Blog Import reading a live WordPress site: 1112 posts, 15 authors, 10 categories and 20 tags, with options for redirects and copying images](/guides/img/blog-import-review-wp.jpg)
+![Blog Import's review step for a WordPress blog: 1112 posts, 15 authors, 10 categories and 20 tags, with options for redirects and copying images](/guides/img/blog-import-review-wp.jpg)
 
 ![The imported blog in Framer CMS: a Journal collection with linked Authors, Categories and Tags collections](/guides/img/blog-import-collections.jpg)
 
