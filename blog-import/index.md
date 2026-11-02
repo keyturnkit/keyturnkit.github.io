@@ -46,7 +46,13 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube embeds and Vimeo players become video blocks, including Squarespace video blocks; a Vimeo link on a line of its own stays as text. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
-Run it again later and existing posts are updated, not duplicated.
+Run it again later and existing posts are updated, not duplicated. Only images that changed are uploaded again, and after you confirm it can remove posts you deleted on the old site, or a template's sample posts.
+
+WordPress captions come in as an italic line under the photo, and a caption also becomes the alt text when the photo has none. Galleries come in as a run of photos.
+
+Opened from the canvas, it can fill a collection your template already has: it matches the fields and adds the posts as drafts unless you tick Publish. That route adds no redirects.
+
+Before anything is written, a review screen counts the posts, drafts, authors, categories and tags. After the import, a report lists any image that wasn't copied, covers that were dropped and posts that were renamed, and it can copy the redirects as a CSV for Framer's Redirect Sync plugin.
 
 It doesn't import comments, pages, WordPress custom post types or WooCommerce products.
 
