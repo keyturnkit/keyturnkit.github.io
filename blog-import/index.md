@@ -20,7 +20,7 @@ offers:
 
 # Blog Import for Framer
 
-A Framer plugin for leaving WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode. It reads the export file, moves the blog into Framer CMS, copies the images into Framer and adds a redirect for each old post address, so the blog keeps working after you cancel the old site. Run it while the old site is still up, so the images can be fetched.
+A Framer plugin for leaving WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode. It reads the export file, moves the blog into Framer CMS, copies the images into Framer and, on Framer Pro or higher, adds a redirect for each old post address, so the blog keeps working after you cancel the old site. Run it while the old site is still up, so the images can be fetched.
 
 Keeping a WordPress site online and syncing from it? A live-sync plugin may suit you better; [the comparison](/guides/framer-blog-import-plugins-compared/) shows which.
 
@@ -44,7 +44,7 @@ Not sure what your export holds? The free [blog export inspector](/tools/blog-ex
 
 ## What you get in Framer
 
-Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube and Vimeo embeds become video blocks, including Squarespace video blocks. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
+Each post arrives with its title, slug, date, cover image, excerpt and body. Authors, categories and tags become their own collections, linked from each post; on Framer Basic, where four collections is too many, they can stay inside each post instead. Drafts stay drafts. YouTube embeds and Vimeo players become video blocks, including Squarespace video blocks; a Vimeo link on a line of its own stays as text. If a Vimeo block shows "Unable to resolve '@vimeo/player'" in the CMS, add a Vimeo element to any page once (Insert, Media, Vimeo) and reload the tab. Framer loads its video player per project, and you can delete the element afterwards. On [Framer Pro](https://framer.link/rVPBVzf) or higher, each old post address gets a redirect to the new one.
 
 Run it again later and existing posts are updated, not duplicated.
 
@@ -90,7 +90,7 @@ Yes. The plugin copies the images in your posts and each cover image into Framer
 
 ### What if my old site is already gone?
 
-The posts still import from your export file, but the images can't be fetched. Any image that can't be copied keeps its old address and only shows while that site is online. The result screen says how many there were.
+The posts still import from your export file. An image in the text that can't be fetched keeps its old address and only shows while that site is online, and a cover that can't be fetched is left empty. Images on Medium, Substack, Hashnode or Webflow servers are still copied while those servers serve them, and for a Ghost site that is gone you can choose a zip of your content/images folder. The result screen says how many images weren't copied.
 
 ### Do I need Framer Pro?
 
@@ -102,7 +102,7 @@ Existing posts are updated, not duplicated. You can import again after you publi
 
 ### What does a license cover?
 
-The newest 25 posts import free. A license imports all of them. $29 covers one Framer project; its key can make 3 license codes, so you can set it up again after reinstalling. $59 covers any number of projects.
+The newest 25 posts import free. A license imports all of them. $29 covers one Framer project. Your code can be pasted again in that project after reinstalling, and a Polar key can make 3 codes in all. $59 covers any number of projects.
 
 ### Where do I buy, and how do I get my code?
 

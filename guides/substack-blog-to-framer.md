@@ -32,7 +32,7 @@ Before it imports anything, the plugin reads the whole zip and tells you what it
 ## What doesn't
 
 - **Subscribers.** The email list is in the same export as a separate CSV, but Framer CMS is not a newsletter tool, so the plugin doesn't touch it. Move it to whichever email service you use next.
-- **Paid access.** Posts that were only for paid subscribers become ordinary public posts in Framer. The plugin tells you how many before you import, and you can leave them out of Framer if they should stay behind a paywall.
+- **Paid access.** Posts that were only for paid subscribers become ordinary public posts in Framer. The plugin tells you how many before you import. It has no option to skip them, so if they should stay behind a paywall, delete them in Framer CMS after importing, and again after any later import.
 - **Podcast audio.** Episodes come in as their show notes, without the audio file. The plugin says how many episodes it found.
 - **Threads.** These are Substack's chat-style posts, not articles, so they are skipped.
 - **Authors and tags.** The export doesn't include them.

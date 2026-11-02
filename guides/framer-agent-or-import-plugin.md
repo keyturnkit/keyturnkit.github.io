@@ -25,7 +25,7 @@ Framer's Agent can now move content into Framer: its Agents page says it "recrea
 - Every post in the export is handled the same way, each time you run it, and running it again updates posts rather than duplicating them.
 - Images inside the posts are copied into Framer, so they keep working after the old site is cancelled.
 - The old addresses are read from the export itself, and on Framer Pro a redirect is added for each post; you don't build the spreadsheet.
-- It reads export files, so it works from Squarespace, Blogger, Medium and Ghost exports, not only a live site.
+- It reads export files, so it works from WordPress, Squarespace, Blogger, Medium, Ghost, Substack, Hashnode and Webflow exports, even after the old site is gone.
 - No AI credits. [Blog Import](/blog-import/) imports your newest 25 posts free; a license for the rest is $29 for one project or $59 for any number.
 
 ## Which to use

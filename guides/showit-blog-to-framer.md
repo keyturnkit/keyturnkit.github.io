@@ -21,7 +21,7 @@ Showit's own help page covers it ([Export WordPress](https://learn.showit.com/en
 
 1. In your Framer project, install [Blog Import](/blog-import/) from the Framer Marketplace and open it.
 2. Choose the XML file. Blog Import lists how many posts, categories and tags it found.
-3. Pick how the CMS should be laid out: posts with separate categories and tags collections, or everything inside each post for Framer Basic.
+3. Pick how the CMS should be laid out: 4 collections with linked authors, categories and tags, 2 collections with linked categories (this one runs on Framer Basic), or 1 collection with everything inside each post.
 4. Leave "Copy images into Framer" on, so the photos keep working after the Showit site is gone. A post with 50 photos copies in well under a minute.
 5. Import. Each post keeps its title, slug, date, excerpt, cover, categories and tags, and photos sit in the body where they were.
 

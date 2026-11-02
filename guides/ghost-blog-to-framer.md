@@ -38,7 +38,7 @@ If your Ghost site was mainly a newsletter, [Slack Tide](/slack-tide/) is a free
 
 ## Ghost to Framer with a site that's still running
 
-If your Ghost site is still live, Specter is a Framer plugin that reads it through Ghost's Content API with a key you create. Blog Import works from the export file instead, so it also works after the Ghost site is gone, apart from the images above.
+If your Ghost site is still live, Specter is a Framer plugin that reads it through Ghost's Content API with a key you create. Blog Import works from the export file instead, so it also works after the Ghost site is gone; images written as `__GHOST_URL__` then come from a zip of your content/images folder.
 
 The newest 25 posts import free. More on the [Blog Import page](/blog-import/).
 

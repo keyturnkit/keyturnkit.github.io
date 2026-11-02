@@ -28,7 +28,7 @@ In the Webflow Designer, open the CMS panel, select your blog collection and use
 - **Categories** as a linked collection.
 - **Draft and archived items**, when your export has those columns: drafts stay drafts, archived items are left out.
 - **A note for items without a date**, so you can set them in Framer CMS. In a real export of 61 posts and 3 categories, one post had no date.
-- **A redirect** for each old address. The Old blog address box on the review screen starts at `/blog`. Change it to where your blog lived on Webflow, and the plugin adds `/blog/your-post-slug` as the old address for each post, pointing at the new Framer one. Redirects need a Framer plan that includes them.
+- **A redirect** for each old address. The Old blog address box on the review screen starts at `/blog`. Change it to where your blog lived on Webflow, and the plugin uses that path plus each post's slug, such as `/blog/your-post-slug`, as the old address, pointing at the new Framer one. Redirects need a Framer plan that includes them.
 
 ## When another plugin fits better
 

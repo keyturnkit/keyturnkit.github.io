@@ -52,7 +52,7 @@ We found these in real exports, not in Squarespace's documentation:
 **A plugin.** Two on the Framer Marketplace read the Squarespace file directly:
 
 - *Squarespace Import* by Adam Kansky: free for 25 posts, then $49 for one project or $99 unlimited.
-- [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours): free for your newest 25 posts; a license for the rest is $29 per project or $59 for any number, paid once. It also reads WordPress export files.
+- [*Blog Import*](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/) (ours): free for your newest 25 posts; a license for the rest is $29 per project or $59 for any number, paid once. It also reads WordPress, Blogger, Medium, Ghost, Substack, Hashnode and Webflow exports.
 
 [Squarespace Import or Blog Import](/guides/squarespace-import-or-blog-import/) compares the two point by point.
 

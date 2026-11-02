@@ -35,7 +35,7 @@ The quickest way is to open the export in a text editor, find one of your galler
 The steps are short:
 
 1. Install Blog Import in your Framer project and choose the export file. It lists how many posts, categories and tags it found.
-2. Pick how the CMS should be laid out: posts with separate categories and tags collections, or everything inside each post for Framer Basic.
+2. Pick how the CMS should be laid out: 4 collections with linked authors, categories and tags, 2 collections with linked categories (this one runs on Framer Basic), or 1 collection with everything inside each post.
 3. Leave "Copy images into Framer" on. This copies each photo from `static1.squarespace.com` into Framer, so the posts keep working after Squarespace is gone.
 4. Import. Each post keeps its title, slug, date, excerpt, cover, categories and tags, and the photos sit in the body where they were.
 

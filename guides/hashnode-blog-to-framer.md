@@ -27,7 +27,7 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 - **Posts**, with title, slug, publish date, excerpt (your SEO description), cover image and body, including code blocks.
 - **Images** from Hashnode's CDN, copied into Framer.
 - **Tags**, as a linked collection.
-- **Embeds** (Hashnode's `%[...]` lines) as plain links.
+- **Embeds** (Hashnode's `%[...]` lines) as links, except YouTube videos, which become video blocks.
 - **A redirect** for each post's old address, `/your-post-slug`, on Framer Pro or higher. It only helps if your old domain now points at the Framer site.
 
 ## What doesn't
