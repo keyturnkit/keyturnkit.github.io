@@ -56,6 +56,10 @@ The newest 25 posts import free, so you can see the result on your own blog firs
 
 [Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
 
+The license box sits at the bottom of the plugin, under the file picker. Paste the code there and click Activate. The plugin also shows the project ID that the $29 license asks for. The code is checked inside the plugin and nothing is sent.
+
+<img src="/blog-import/license-box.jpg" alt="The license box in Blog Import: a License code field, an Activate button, the Polar link to buy a license and the link to the code page" width="336" height="226" loading="lazy" style="width:100%;max-width:336px;height:auto;border-radius:12px;border:1px solid var(--line)">
+
 Prefer Gumroad? The same licenses are there: [$29 for one project](https://mamstudiohq.gumroad.com/l/xuebp) or [$59 for any number](https://mamstudiohq.gumroad.com/l/ufpxd). The key from Gumroad goes on the same [code page](https://blog-import-license.mam-studio.workers.dev/code).
 
 Rather not run it yourself? [Email us](/blog-move/) and we'll see how we can help.
