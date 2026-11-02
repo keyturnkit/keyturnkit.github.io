@@ -26,7 +26,7 @@ With [Blog Import](https://www.framer.com/marketplace/plugins/blog-import-square
 
 ## What doesn't
 
-- **Images that point at your Ghost site without a domain.** Recent Ghost exports write image addresses as `__GHOST_URL__/content/images/...`, and the file doesn't say what the domain was. The plugin can't fetch those, so it leaves them out and tells you how many before you import. Images with a full address (on a CDN, for example) are copied into Framer. If most of your images are the placeholder kind, keep Ghost running until you've moved them, or download them from Ghost first.
+- **Images that point at your Ghost site without a domain.** Recent Ghost exports write image addresses as `__GHOST_URL__/content/images/...`, and the file doesn't say what the domain was. The plugin tells you how many there are and asks for the old blog address, so it can fetch them while the Ghost site is still online. If the site is already gone, choose a zip of your content/images folder instead and the plugin takes the images from there. Images with a full address (on a CDN, for example) are copied into Framer either way.
 - **Pages.** Only posts are imported.
 - **Co-authors.** A post gets its first author.
 - **Members, newsletters and paid content settings.** Member-only posts come in as ordinary posts.
