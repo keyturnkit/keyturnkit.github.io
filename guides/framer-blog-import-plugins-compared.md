@@ -37,7 +37,7 @@ There are several Framer plugins that bring a blog into the CMS, and they differ
 
 **Ghost.** Specter reads a Ghost site that is still running, through its Content API with a key you create. Blog Import reads Ghost's export file instead, so it also works after the site is gone, but it can't copy images whose address the file writes as `__GHOST_URL__`. Our [Ghost guide](/guides/ghost-blog-to-framer/) has the details.
 
-**A Webflow site.** Webflow Import reads the CSV of every collection at once, keeps the links between them and brings over Webflow's own redirects, which matters for a site with more than a blog. Blog Import doesn't read Webflow exports today.
+**A Webflow site.** Webflow Import reads the CSV of every collection at once, keeps the links between them and brings over Webflow's own redirects, which matters for a site with more than a blog. Blog Import reads the CSV of the blog collection only, so it suits a Webflow site where the blog is the part to move.
 
 **A Substack you keep running.** Substack Sync reads the live publication and can sync again later. It's the simpler choice while the newsletter stays on Substack.
 
