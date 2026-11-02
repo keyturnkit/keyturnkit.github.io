@@ -30,7 +30,7 @@ The quickest way is to open the export in a text editor, find one of your galler
 
 ## Bringing it into Framer
 
-[Blog Import](/blog-import/), the Framer plugin we make, reads the Squarespace file as it is. It is free, with no limit on posts.
+[Blog Import](/blog-import/), the Framer plugin we make, reads the Squarespace file as it is.
 
 The steps are short:
 
@@ -39,7 +39,7 @@ The steps are short:
 3. Leave "Copy images into Framer" on. This copies each photo from `static1.squarespace.com` into Framer, so the posts keep working after Squarespace is gone.
 4. Import. Each post keeps its title, slug, date, excerpt, cover, categories and tags, and the photos sit in the body where they were.
 
-Blog Import doesn't import comments.
+Your newest 25 posts import free. A license imports the rest: $29 for one Framer project or $59 for any number, paid once. Blog Import doesn't import comments.
 
 ## What we saw with 50 photos in one post
 

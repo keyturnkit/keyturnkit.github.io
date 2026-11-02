@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Blog Import for Framer"
-description: "A Framer plugin that moves a WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode blog into Framer CMS, with its images and old links. Free, with no limit on posts."
+description: "A Framer plugin that moves a WordPress, Squarespace, Substack, Ghost, Medium, Blogger, Webflow or Hashnode blog into Framer CMS, with its images and old links. The newest 25 posts import free."
 permalink: /blog-import/
 og_image: /og-blog-import.png
 schema: software
@@ -10,9 +10,12 @@ app_category: "BusinessApplication"
 app_os: "Framer"
 app_url: "https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/"
 offers:
-  - name: "Blog Import"
-    price: "0"
-    url: "https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/"
+  - name: "License for one Framer project"
+    price: "29"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import"
+  - name: "License for any number of Framer projects"
+    price: "59"
+    url: "https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import"
 ---
 
 # Blog Import for Framer
@@ -49,7 +52,11 @@ It doesn't import comments, pages, WordPress custom post types or WooCommerce pr
 
 ## Price
 
-Blog Import is free, with no limit on posts. There is no license to buy and nothing to activate.
+The newest 25 posts import free, so you can see the result on your own blog first. To import all of them, a license is $29 for one Framer project or $59 for any number, paid once through Polar. After paying you get a key; [this page](/thanks/) shows how to turn it into the license code the plugin asks for.
+
+[Buy a license on Polar](https://buy.polar.sh/polar_cl_i4o62urYwzz1cDIpdNUCidOB022hhycvh5u1V0RTaWd?utm_source=site&utm_campaign=blog-import). Choose $29 for one project or $59 for any number on the checkout page. You can buy before installing the plugin.
+
+Prefer Gumroad? The same licenses are there: [$29 for one project](https://mamstudiohq.gumroad.com/l/xuebp) or [$59 for any number](https://mamstudiohq.gumroad.com/l/ufpxd). The key from Gumroad goes on the same [code page](https://blog-import-license.mam-studio.workers.dev/code).
 
 Rather not run it yourself? [Email us](/blog-move/) and we'll see how we can help.
 
@@ -87,9 +94,17 @@ Not to import. Redirects from your old post addresses need Framer Pro or higher.
 
 Existing posts are updated, not duplicated. You can import again after you publish more on the old site.
 
-### Does it cost anything?
+### What does a license cover?
 
-No. Blog Import is free, with no limit on posts and no license.
+The newest 25 posts import free. A license imports all of them. $29 covers one Framer project; its key can make 3 license codes, so you can set it up again after reinstalling. $59 covers any number of projects.
+
+### Where do I buy, and how do I get my code?
+
+You can buy on Polar or on Gumroad at the same prices. Either way you get a key and paste it on the [license code page](https://blog-import-license.mam-studio.workers.dev/code). For the $29 license you also paste the Framer project ID that the plugin shows. Then paste the code it gives you into the plugin, which checks it inside Framer and sends nothing. The [thanks page](/thanks/) has the steps.
+
+### Can I get a refund?
+
+Yes. If it doesn't work for you, email proj.seedsmesh@gmail.com within 14 days of buying for a full refund.
 
 ### Does it import comments or pages?
 

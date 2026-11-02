@@ -25,6 +25,8 @@ Showit's own help page covers it ([Export WordPress](https://learn.showit.com/en
 4. Leave "Copy images into Framer" on, so the photos keep working after the Showit site is gone. A post with 50 photos copies in well under a minute.
 5. Import. Each post keeps its title, slug, date, excerpt, cover, categories and tags, and photos sit in the body where they were.
 
+Your newest 25 posts import free. A license imports the rest: $29 for one Framer project or $59 for any number, paid once.
+
 ## Check before you switch the domain
 
 - **Photo captions.** Blog Import keeps each caption as a line in italics under its photo. Open a few posts that rely on captions and check they all came across.
