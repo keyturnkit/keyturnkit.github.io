@@ -76,6 +76,8 @@ For a newsletter or photo blog there is also [Slack Tide](/slack-tide/), a free 
 
 Wedding and portrait photographers moving a Showit or WordPress journal can use [Second Shooter](/second-shooter/): every story opens on a full-width cover with its photos large in the text column. $69 once.
 
+Buying one of the paid templates also takes 30% off the Blog Import license: the code is in the template's Read me page. Slack Tide's Read me has a code for 20% off.
+
 ## Questions
 
 ### Does it work on Framer Basic?
