@@ -27,6 +27,8 @@ Keeping a WordPress site online and syncing from it? A live-sync plugin may suit
 
 <p><a class="btn btn-primary" href="https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/">Open in the Framer Marketplace</a></p>
 
+To start a new blog, open your project, switch to the CMS, choose the Plugins tab, pick Blog Import and click Create. That makes the Blog collection the plugin fills. If you open it from the canvas in a project with no collection yet, it has nowhere to put the posts.
+
 Blog Import launched on [Product Hunt](https://www.producthunt.com/products/blog-import-for-framer) on 28 October. Questions there get an answer the same day.
 
 ## What it reads
