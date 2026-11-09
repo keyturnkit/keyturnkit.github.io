@@ -11,6 +11,8 @@ og_image: /og-blog-import.png
 
 WordPress gives you two ways to get your posts out. Which one you use changes what you get.
 
+[Ce guide en français](/guides/migrer-wordpress-vers-framer/)
+
 The short route: [open Blog Import in the Framer Marketplace](https://www.framer.com/marketplace/plugins/blog-import-squarespace-wordpress/), our plugin that reads the WordPress export, copies the images and adds the redirects. Your newest 25 posts import free. In your project, start from the CMS: Plugins tab, Blog Import, Create. The rest of this page explains each step.
 
 ## Way 1: the export file
